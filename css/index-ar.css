@@ -17,3 +17,37 @@
 #offers-container .card{
     box-shadow: 0 16px 15px 0 rgba(0, 0, 0, 0.2);
 }
+/* 
+#services{
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border: 1px solid green;
+} */
+
+#services-container img { 
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+}
+
+#services-container .reserve-div {
+    position: relative;
+    top: -50px;
+    color: white;
+    text-align: center;
+}
+
+#services-container .reserve-div button {
+    
+    background-color: rgba(128, 128, 128, 0.8);
+    border: none;
+    border-radius: 8px;
+}
+
+#services-container .reserve-div button p {
+    padding: 0 0.9rem;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+}
