@@ -1,0 +1,117 @@
+
+  :root{
+    --main-color:#b3952b;
+}
+@font-face {
+  font-family: TajawalRegular;
+  src: url(../css/Tajawal/Tajawal-Regular.ttf);
+}
+html{
+  font-family: TajawalRegular;
+}
+
+body{
+    padding:0px;
+    margin:0px;
+}
+
+.nav-item .nav-link{
+    color: black;
+}
+.nav-item .nav-link a {
+    text-decoration: none;
+}
+
+.nav-item .item_active:hover,
+.nav-item .item_active:active {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.signup{
+    width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 250px;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item .dropdown-toggle::after{
+    display: none;
+}
+
+
+/* Main navigation items */
+.navbar-nav li {
+  width: calc(33% - 20px); 
+  margin-right: 20px; /* Gap between items */
+}
+
+ span .navbar-text{
+    color:gray;
+    align-items: start;
+    justify-content:flex-end;
+    margin-right: auto;
+
+ }
+ 
+
+ .navbar-text{
+  display: flex;
+  /* align-items: center; */
+/* justify-content: flex-end; */
+ }
+ .To_Another_Language{
+  margin-right: 5px;
+  white-space: nowrap;
+ }
+ .To_Another_Language a{
+  color: var(--main-color);
+  text-decoration: none;
+ }
+  span.navbar-text .icon{
+    align-items: center; 
+ justify-content: flex-end;
+ font-size: 30px;
+ margin-top:10px ;
+
+ }
+
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .navbar-nav li:not(:last-child) {
+      width: calc(25% - 15px); 
+      margin-right: 15px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .navbar-nav li:not(:last-child) {
+      width: calc(20% - 10px);
+      margin-right: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-nav li {
+      width: 100%;
+      max-width: 50%; 
+      margin-bottom: 10px;
+    }
+  }
+
+
+
+
