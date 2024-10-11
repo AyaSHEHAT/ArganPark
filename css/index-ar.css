@@ -21,18 +21,19 @@
 #services-container img { 
     height: 250px;
     object-fit: cover;
-    position: relative;
+    /* position: relative; */
 }
 
 #services-container .reserve-div {
-    position: relative;
-    top: -50px;
+    /* position: relative;
+    top: -50px; */
+    margin-top: 150px;
     color: white;
     text-align: center;
 }
 
 #services-container .reserve-div button {
-    
+    height: 50px;
     background-color: rgba(128, 128, 128, 0.8);
     border: none;
     border-radius: 8px;
