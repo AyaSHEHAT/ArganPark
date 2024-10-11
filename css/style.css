@@ -1,18 +1,66 @@
-*{
+@font-face {
+    font-family: TajawalRegular;
+    src: url(../css/Tajawal/Tajawal-Regular.ttf);
+}
+
+@font-face {
+    font-family: TajawalLight;
+    src: url(../css/Tajawal/Tajawal-Light.ttf);
+}
+
+@font-face {
+    font-family: TajawalMedium;
+    src: url(../css/Tajawal/Tajawal-Medium.ttf);
+}
+
+@font-face {
+    font-family: TajawalBlack;
+    src: url(../css/Tajawal/Tajawal-Black.ttf);
+}
+
+@font-face {
+    font-family: TajawalBold;
+    src: url(../css/Tajawal/Tajawal-Bold.ttf);
+}
+
+@font-face {
+    font-family: TajawalExtraBold;
+    src: url(../css/Tajawal/Tajawal-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: TajawalExtraLight;
+    src: url(../css/Tajawal/Tajawal-ExtraLight.ttf);
+}
+
+:root {
+    --gold-color: #b3952b;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: TajawalRegular;
 }
 
-#main-container{
-    height: 50vh;
-    padding: 1rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--gold-color) !important;
 }
 
-#search-div{
-    padding: 1rem;
-    background-color: #f1f1f1;
-    border: 2px solid green;
-    color: black;
-    text-align: center;
+.btn {
+    background-color: var(--gold-color);
+    border-color: var(--gold-color);
+    color: white;
+}
+
+.btn:hover {
+    background-color: white;
+    border-color: var(--gold-color);
+    color: var(--gold-color);
 }

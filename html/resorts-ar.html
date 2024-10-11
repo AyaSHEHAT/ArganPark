@@ -6,6 +6,7 @@
     <title>المنتجعات</title>
     <link rel="stylesheet" href="/css/all.min.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/resorts.css">
 </head>
 <body dir="rtl">
@@ -49,7 +50,7 @@
       </nav>
 </div>
 
-<div class="search">
+<div class="">
     <div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -90,23 +91,101 @@
     </div>
 </div>
 
+
+<div class="search container-fluid">
+  <form class="">
+    <div class="row g-4">
+      
+      <div class="col-md">
+        <div class="form-floating">
+          <select class="form-select" id="floatingSelectGrid">
+            <option selected><span> الرياض <i class="fa-solid fa-location-dot"></i></span></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <label for="floatingSelectGrid" class="d-flex justify-content-between"><div>الموقع او الفندق</div> <div>|</div></label>
+        </div>
+      </div>
+
+      <div class="col-md">
+        <div class="form-floating">
+          <select class="form-select" id="floatingSelectGrid">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <label for="floatingSelectGrid" class="d-flex justify-content-between"><div>الموقع او الفندق</div> <div>|</div></label>
+        </div>
+      </div>
+
+      <div class="col-md">
+        <div class="form-floating">
+          <select class="form-select" id="floatingSelectGrid">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <label for="floatingSelectGrid">Works with selects</label>
+        </div>
+      </div>
+      
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+</div> <!-- search -->
+
 <div class="resorts-card m-xl-4 m-lg-4">
     <div class="card mb-3 m-xl-4 m-lg-4 p-xl-4 p-lg-4" style="max-width: 999px;">
         <div class="row g-0">
           <div class="col-md-4 text-center">
             <img src="/images/El'azizia.jpg" class="img-fluid rounded-start" alt="...">
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 d-flex justify-content-between">
             <div class="card-body">
               <h3 class="card-title">فندق أرجان بارك العزيزية...</h3>
-              <p class="card-text"><small class="text-muted"><i class="fa-solid fa-route"></i> 6كم من مركز مدينة الرياض</small></p>
+              <p class="card-text"><small class="text-muted text-body-secondary"><i class="fa-solid fa-route"></i> 6كم من مركز مدينة الرياض</small></p>
               <p class="card-text"><small class="text-body-secondary">الرياض-حي العزيزية-شارع الشباب1424</small></p>
-              <p class="card-text"><small class="text-body-secondary"><i class="fa-solid fa-wifi"></i></small></p>
+              <p class="card-text"><small class="text-body-secondary d-flex justify-content-between"><i class="fa-solid fa-wifi"></i> <i class="fa-solid fa-p"></i> <i class="fa-solid fa-elevator"></i> <i class="fa-solid fa-wheelchair"></i> <i class="fa-solid fa-cart-flatbed-suitcase"></i> <i class="fa-solid fa-bell-concierge"></i> <i class="fa-solid fa-person-shelter"></i></small></p>
+            </div>
+            <div class="card-body" dir="ltr">
+              <!-- <h3 class="card-title">ف.</h3> -->
+              <p class="card-text"> متاح بالاقساط <i class="fa-regular fa-circle-check text-success"></i></p>
+              <h2 class="card-text">SAR 355</h2>
+              <button class="btn">احجز الان</button>
+              <p class="card-text"><small class="text-body-secondary text-muted" style="font-size: .85em;">إجمالي ليلة واحدة شاملا ضريبة القيمة المضافة</small></p>
             </div>
           </div>
+          
         </div>
-      </div>
-</div>
+      </div> <!-- card1 -->
+      <div class="card mb-3 m-xl-4 m-lg-4 p-xl-4 p-lg-4" style="max-width: 999px;">
+        <div class="row g-0">
+          <div class="col-md-4 text-center">
+            <img src="/images/Elshefaa.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 d-flex justify-content-between">
+            <div class="card-body">
+              <h3 class="card-title">فندق أرجان بارك الشفاء</h3>
+              <p class="card-text"><small class="text-muted text-body-secondary"><i class="fa-solid fa-route"></i> 12كم من مركز مدينة الرياض</small></p>
+              <p class="card-text"><small class="text-body-secondary">الرياض-حي الشفاء-شارع نجران1424</small></p>
+              <p class="card-text"><small class="text-body-secondary d-flex justify-content-between"><i class="fa-solid fa-wifi"></i> <i class="fa-solid fa-p"></i> <i class="fa-solid fa-elevator"></i> <i class="fa-solid fa-wheelchair"></i> <i class="fa-solid fa-cart-flatbed-suitcase"></i> <i class="fa-solid fa-bell-concierge"></i> <i class="fa-solid fa-person-shelter"></i></small></p>
+            </div>
+            <div class="card-body" dir="ltr">
+              <p class="card-text"> متاح بالاقساط <i class="fa-regular fa-circle-check text-success"></i></p>
+              <h2 class="card-text">SAR 255</h2>
+              <button class="btn">احجز الان</button>
+              <p class="card-text"><small class="text-body-secondary text-muted" style="font-size: .85em;">إجمالي ليلة واحدة شاملا ضريبة القيمة المضافة</small></p>
+            </div>
+          </div>
+          
+        </div>
+      </div> <!-- card2 -->
+</div> <!-- resorts-card -->
 <script src="/js/all.min.js"></script>
 <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
