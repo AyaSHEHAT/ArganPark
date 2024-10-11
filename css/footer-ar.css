@@ -34,3 +34,10 @@ footer #links a{
 footer #links a:hover{
     color: #b3952b;
 }
+/* footer #social-media a{
+    width: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+} */
