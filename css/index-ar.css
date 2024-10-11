@@ -17,12 +17,6 @@
 #offers-container .card{
     box-shadow: 0 16px 15px 0 rgba(0, 0, 0, 0.2);
 }
-/* 
-#services{
-    background-color: #f1f1f1;
-    padding: 1rem;
-    border: 1px solid green;
-} */
 
 #services-container img { 
     height: 250px;
@@ -51,3 +45,5 @@
     font-weight: bolder;
     color: white;
 }
+
+
