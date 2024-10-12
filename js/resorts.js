@@ -43,11 +43,7 @@ arrivalDateInput.addEventListener('change', () => {
   const arrivalDate = new Date(arrivalDateInput.value);
   const minDepartureDate = new Date(arrivalDate);
   minDepartureDate.setDate(arrivalDate.getDate() + 1);
-
-  // Update the minimum value of the departure date
   departuralDateInput.setAttribute('min', formatDate(minDepartureDate));
-
-  // Automatically update the departure date to arrival date + 1 if necessary
   if (new Date(departuralDateInput.value) <= arrivalDate) {
     departuralDateInput.value = formatDate(minDepartureDate);
   }
