@@ -3,11 +3,12 @@
 }
 
 #search-div{
-    padding: 1rem;
-    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    /* padding: 1rem;
     border: 2px solid green;
     color: black;
-    text-align: center;
+    text-align: center; */
 }
 
 #offers-container {
@@ -21,12 +22,9 @@
 #services-container img { 
     height: 250px;
     object-fit: cover;
-    /* position: relative; */
 }
 
 #services-container .reserve-div {
-    /* position: relative;
-    top: -50px; */
     margin-top: 150px;
     color: white;
     text-align: center;

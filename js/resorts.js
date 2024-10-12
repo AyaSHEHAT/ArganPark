@@ -75,11 +75,11 @@ clickableDiv.addEventListener('click', () => {
     numbersDiv.style.display = 'block';
     numbersDiv.classList.add("d-flex")
     numbersDiv.classList.add("justify-content-around")
-  } else {
-    numbersDiv.style.display = 'none';
-    numbersDiv.classList.remove("d-flex")
-    numbersDiv.classList.remove("justify-content-around")
-  }
+  } //else {
+  //   numbersDiv.style.display = 'none';
+  //   numbersDiv.classList.remove("d-flex")
+  //   numbersDiv.classList.remove("justify-content-around")
+  // }
 });
 
 // Function to update the values of guests and rooms
