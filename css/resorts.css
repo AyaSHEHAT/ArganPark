@@ -8,7 +8,27 @@
 .resorts-card .card{
     background-color: #F3F5FC;
 }
-.form-select{
-    background-color: #F3F5FC !important;
+.input, .form-select, input[type='date']{
     border: none;
+    background-color: #F3F5FC !important;
+    border-radius: 10px;
+}
+ .arrival-date{
+   border-left: 1px solid black;
+
+} 
+.form-floating>label{
+    color: #838DB1;
+    right: 0 !important;
+    left: auto !important;
+}
+.form-floating>input{
+    height: auto !important;
+    /* left: auto !important; */
+}
+.numbersDiv{
+    display: none;
+}
+.input label,.nights,.clickable-div,.input>i{
+    color: #838DB1;
 }
