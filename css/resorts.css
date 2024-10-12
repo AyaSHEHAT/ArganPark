@@ -32,3 +32,11 @@
 .input label,.nights,.clickable-div,.input>i{
     color: #838DB1;
 }
+.clickable-div{
+    height: 5.5rem;
+}
+.resorts-card button{
+    font-family: TajawalRegular;
+    font-size: larger;
+    letter-spacing: 2px;
+}
