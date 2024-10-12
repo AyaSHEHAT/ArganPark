@@ -62,6 +62,7 @@ setDefaultDates();
 
 const clickableDiv = document.querySelector('.clickable-div');
 const numbersDiv = document.querySelector('.numbersDiv');
+const guestsDiv = document.querySelector('.guests-div');
 
 const inputNumAdult = document.getElementById('inputNumAdult');
 const inputNumChildren = document.getElementById('inputNumChildren');
@@ -73,13 +74,15 @@ const numberRooms = document.getElementById('numberRooms');
 clickableDiv.addEventListener('click', () => {
   if (numbersDiv.style.display === 'none') {
     numbersDiv.style.display = 'block';
-    numbersDiv.classList.add("d-flex")
-    numbersDiv.classList.add("justify-content-around")
-  } //else {
-  //   numbersDiv.style.display = 'none';
-  //   numbersDiv.classList.remove("d-flex")
-  //   numbersDiv.classList.remove("justify-content-around")
-  // }
+    numbersDiv.classList.add("d-flex");
+    numbersDiv.classList.add("justify-content-around");
+    guestsDiv.classList.remove("py-4");
+  } 
+  // //else {
+  // //   numbersDiv.style.display = 'none';
+  // //   numbersDiv.classList.remove("d-flex")
+  // //   numbersDiv.classList.remove("justify-content-around")
+  // // }
 });
 
 // Function to update the values of guests and rooms
