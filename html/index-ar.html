@@ -82,9 +82,9 @@
         </nav>
 
     <!-- MAIN CONTAINER -->
-    <div id="main-container" class="d-flex justify-content-between mb-5">
+    <div id="main-container" class="d-flex justify-content-between  mb-5">
 
-        <div id="search-div" class="p-2 d-none col-lg-4 d-lg-flex flex-column justify-content-between align-items-center">
+        <div id="search-div" class="p-2 d-none col-lg-4 d-lg-flex flex-column text-center" style="height: max-content;">
             <!-- Radio Buttons -->    
             <div id="radio-check" class="d-flex justify-content-center gap-5">
                     <div class="btn-group my-2" role="group" aria-label="Basic radio toggle button group">
@@ -97,7 +97,7 @@
                 </div>
 
                 <!-- Location -->
-                    <div class="w-100 input p-3 d-flex justify-content-between align-items-center">
+                    <div class="w-100 input p-3 d-flex justify-content-between align-items-center mb-1">
                         <label for="floatingSelectGrid">
                             الموقع او الفندق
                         </label>
@@ -115,7 +115,7 @@
                     </div>
 
                 <!-- Date & Number of nights -->
-                <div class=" input d-flex justify-content-between align-items-center pt-1" style="width: 100%;">
+                <div class=" input d-flex justify-content-between align-items-center pt-1 mb-2" style="width: 100%;">
                     <div class="arrival-date px-4" style="width: 40%;">
                         <label class="form-label" for="arrivalDate" style="display: block; margin-bottom: 5px;">
                         موعد الوصول
@@ -124,7 +124,7 @@
                         border: 1px solid #ccc; margin-bottom: 10px;" />
                     </div>
         
-                    <div class="departural-date px-4" style="width: 43%;">
+                    <div class="departural-date px-4" style="width: 40%;">
                         <label class="form-label" for="departuralDate" style="display: block; margin-bottom: 5px;">
                         موعد المغادرة
                         </label>
@@ -138,29 +138,32 @@
                 </div>
 
                 <!-- Number of guests -->
-                <div class="input clickable-div text-center p-xl-3">
-                    <span id="numberGuests">2</span> نزلاء . <span id="numberRooms">1</span> غرفة 
+                <div class="input clickable-div text-center p-lg-3 mb-2" style="width: 100%; height: auto;">
+                    <!-- <div class="guests-div py-4">
+                    </div> -->
+                        <span id="numberGuests">2</span> نزلاء . <span id="numberRooms">1</span> غرفة 
+                    
                     <div class="numbersDiv " style="display: none;">
 
-                        <div class="form-floating col-xl-4 col-lg-4 col-md-12">
+                        <div class="form-floating">
                             <input type="number" min="1" class="form-control" name="inputNumAdult" id="inputNumAdult"
                             placeholder="عدد البالغين" value="1" />
                             <label for="inputNumAdult">عدد البالغين</label>
                         </div>
         
-                        <div class="form-floating col-xl-4 col-lg-4 col-md-12">
+                        <div class="form-floating">
                             <input type="number" min="0" class="form-control" name="inputNumChildren" id="inputNumChildren"
                             placeholder="عدد الاطفال" value="1" />
                             <label for="inputNumChildren">عدد الاطفال</label>
                         </div>
         
-                        <div class="form-floating col-xl-4 col-lg-4 col-md-12">
+                        <div class="form-floating">
                             <input type="number" min="1" class="form-control" name="inputNumRooms" id="inputNumRooms"
                             placeholder="عدد الغرف" value="1" />
                             <label for="inputNumRooms">عدد الغرف</label>
                         </div>
-        
                     </div>
+
                 </div>
 
                 <!-- Search Button -->
@@ -202,7 +205,7 @@
             </div>
         </div>
         <div id="offers-container" class="row">
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-lg-3 offer-card">
                 <div class="card p-1">
                     <img src="../images/main-slider-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -210,7 +213,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-lg-3 offer-card">
                 <div class="card p-1">
                     <img src="../images/main-slider-2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -218,7 +221,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-lg-3 offer-card">
                 <div class="card p-1">
                     <img src="../images/main-slider-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -226,7 +229,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-lg-3 offer-card">
                 <div class="card p-1">
                     <img src="../images/main-slider-2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -234,7 +237,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-lg-3 offer-card">
                 <div class="card p-1">
                     <img src="../images/main-slider-3.webp" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -242,7 +245,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-lg-3 offer-card">
                 <div class="card p-1">
                     <img src="../images/main-slider-2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -250,7 +253,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-lg-3 offer-card">
                 <div class="card p-1">
                     <img src="../images/main-slider-3.webp" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -273,7 +276,7 @@
                     <img src="../images/shalehat.jpg" class="card-img" alt="...">
                     <div class="card-img-overlay reserve-div d-flex justify-content-between mx-4">
                         <h5 class="card-title text-light fa-2x">شاليهات فندقية</h5>
-                        <button id="reserve-btn"><p>احجز الآن</p></button>
+                        <button class="reserve-btn"><p>احجز الآن</p></button>
                     </div>
                 </div>
             </div>
@@ -282,7 +285,7 @@
                     <img src="../images/hotels.jpeg" class="card-img" alt="...">
                     <div class="card-img-overlay reserve-div d-flex justify-content-between mx-4">
                         <h5 class="card-title text-light fa-2x">شقق وفنادق</h5>
-                        <button id="reserve-btn"><p>احجز الآن</p></button>
+                        <button class="reserve-btn"><p>احجز الآن</p></button>
                     </div>
                 </div>
             </div>
@@ -291,7 +294,7 @@
                     <img src="../images/halls.webp" class="card-img" alt="...">
                     <div class="card-img-overlay reserve-div d-flex justify-content-between mx-4">
                         <h5 class="card-title text-light fa-2x">قاعات مناسبات</h5>
-                        <button id="reserve-btn" class=""><p>احجز الآن</p></button>
+                        <button class="reserve-btn" class=""><p>احجز الآن</p></button>
                     </div>
                 </div>
             </div>
