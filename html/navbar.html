@@ -13,20 +13,57 @@
 
 <body dir="rtl" class="container-fluid">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <!-- Logo -->
-    <a class="navbar-brand" href="#">
-      <img src="/images/web-icon.png" alt="Logo" class="img-fluid">
-    </a>
-
-    <!-- Toggler for small screens -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar mainNav navbar-expand-lg navbar-light bg-light">
+     <!-- Toggler for small screens -->
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+        <!-- Logo -->
+
+     <div class="">
+       <a class="navbar-brand " href="#">
+         <img src="/images/web-icon.png" alt="Logo" class="img-fluid">
+        </a>
+      </div>
+
+   
+    <!-- <div class="user-logo">
+      <i class="fa-regular fa-circle-user fa-2x"></i>
+    </div> -->
+
+    <!-- Visible only on mobile -->
+    <div class="user-container d-lg-none"> 
+      <div class="user-logo" id="userLogo">
+        <i class="fa-regular fa-circle-user fa-2x"></i> 
+      </div>
+      <!-- Default User Icon -->
+    
+      <div class="dropdown-menu-user" id="userMenu">
+        <div class="user-info d-flex align-items-center">
+          <div class="user-logo2 mb-2" id="userLogo">
+            <i class="fa-regular fa-circle-user fa-2x"></i> 
+          </div>
+          <div class="welcomediv">
+            <h5> <span class="welcome">مرحبا بك</span> محمد الشمري</h5>
+            <p>muhammed1@gmail.com</p>
+          </div>
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-user mx-1"></i> الملف الشخصي</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-calendar mx-1"></i> حجوزاتي</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-wallet mx-1"></i> المحفظة</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-credit-card mx-1"></i> طرق الدفع</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-gift mx-1"></i> كابونات</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-headphones mx-1"></i> تواصل معنا</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-sign-out-alt mx-1"></i> تسجيل الخروج</a></li>
+        </ul>
+      </div>
+    </div>
+    
 
     <!-- Navbar Links -->
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex gap-4">
+      <ul class="navbar-nav mainNav me-auto mb-2 mb-lg-0 d-flex gap-4">
         <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
           <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownResorts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             منتجعات

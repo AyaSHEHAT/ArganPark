@@ -1,4 +1,103 @@
-.imgs img{
+.imgs img {
     max-width: 550px;
+    object-fit: cover;
+
     border-radius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Sliderimgs {
+    /* width: 540px; */
+    overflow: hidden;
+    background: white;
+}
+
+/*header*/
+header {
+    width: 800px;
+    margin: 40px auto;
+}
+
+header h1 {
+    text-align: center;
+    font: 100 60px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+/*photobanner*/
+.photobanner__wrap {
+    display: flex;
+}
+
+.photobanner__wrap:hover .photobanner {
+    animation-play-state: paused;
+}
+
+.photobanner {
+    display: flex;
+    animation-name: swiperAnimation;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.photobanner img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    padding-right: 20px;
+}
+
+@keyframes swiperAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.mx-5 {
+    margin-right: 5.5rem !important;
+    margin-left: 5.5rem !important;
+}
+
+.services {
+    color: #848EB2;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid #848EB2;
+    font-weight: 400;
+}
+
+.services i {
+
+    font-size: 1.75rem;
+
+}
+
+.hotel-name>svg {
+    color: #848EB2;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.hotel-name p {
+    color: #848EB2;
+    /* font-weight: lighter;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400; */
+}
+
+.hotel-name {
+    border-bottom: 1px solid #848EB2;
+
 }

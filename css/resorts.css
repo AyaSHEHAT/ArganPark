@@ -41,3 +41,6 @@
     font-size: larger;
     letter-spacing: 2px;
 }
+.guests-div{
+    cursor: pointer;
+}

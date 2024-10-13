@@ -1,4 +1,4 @@
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,18 +10,18 @@ nav{
     z-index: 1000;
 }
 
-nav img{
+nav img {
     width: 10rem;
 }
 
-nav ul{
+nav ul.mainNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
 }
 
-nav ul li a{
+nav ul li a {
     color: #333;
     text-decoration: none;
     font-size: 1.2rem;
@@ -29,20 +29,20 @@ nav ul li a{
     border-radius: 0.5rem;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: #b3952b;
 }
 
-nav ul li a.active{
+nav ul li a.active {
     background-color: #b3952b;
     color: #fff;
 }
 
-#nav-links a::after{
+#nav-links a::after {
     display: "none";
 }
 
-#nav-links{
+#nav-links {
     margin-top: 1rem;
 }
 
@@ -51,20 +51,108 @@ nav ul li a.active{
 #change-lang-to-en:hover {
     cursor: pointer;
 }
+
 #change-lang-to-en span {
-    font-size: 1.3rem; 
+    font-size: 1.3rem;
     color: #b3952b;
 }
+
 #change-lang-to-en:hover span {
     color: #d4b131;
 }
+
 #change-lang-to-en {
     height: 3.8rem;
     margin-left: 0.5rem;
 }
-.dropdown-toggle::after{
+
+.dropdown-toggle::after {
     content: none !important;
 }
+
 /* .dropdown{
     padding:20px !important;
 } */
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+nav ul li a:hover {
+    color: #b3952b;
+}
+
+.user-logo svg {
+    color: #b3952b;
+}
+
+.user-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.user-logo {
+    cursor: pointer;
+}
+
+.dropdown-menu-user {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #fff;
+    border-radius: 10px;
+    width: 450px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 20px;
+}
+
+.dropdown-menu-user ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.dropdown-menu-user li {
+    padding: 10px 0;
+    display: flex;
+    align-items: right;
+}
+
+.dropdown-menu-user i {
+    margin-left: 10px;
+}
+
+.close-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+@media (min-width: 992px) {
+    .user-container {
+        display: none;
+    }
+}
+
+.dropdown-menu-user.active {
+    display: block;
+}
+
+.user-logo2 , .welcomediv span ,.welcomediv p, .user-container .navbar-nav a{
+    color: #848EB2;
+    font-weight: lighter;
+}
+.welcomediv p{
+    text-decoration: underline;
+}
+.user-container .navbar-nav a:hover{
+    color: #b3952b;
+    text-decoration: underline;
+}
