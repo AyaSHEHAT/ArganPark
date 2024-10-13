@@ -41,4 +41,28 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     updateSlider();
+
+
+
+    const radioButtons = document.querySelectorAll('.btn-check');
+    const labels = document.querySelectorAll('.btn-outline');
+
+    function updateBackground() {
+        labels.forEach(label => {
+            const input = document.getElementById(label.getAttribute('for'));
+            if (input.checked) {
+                label.style.backgroundColor = '#b3952b';
+                label.style.color = '#fff';
+            } else {
+                label.style.backgroundColor = 'transparent';
+                label.style.color = '#000';
+            }
+        });
+    }
+
+    radioButtons.forEach(radio => {
+        radio.addEventListener('change', updateBackground);
+    });
+
+    updateBackground();
 });

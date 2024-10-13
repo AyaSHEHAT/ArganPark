@@ -59,8 +59,29 @@ h6 {
     color: white;
 }
 
+
 .btn:hover {
     background-color: white;
     border-color: var(--gold-color);
     color: var(--gold-color);
+    cursor: pointer;
+}
+
+.btn-outline {
+    background-color: white;
+    border: 1px solid var(--gold-color);
+    color: var(--gold-color);
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-outline:hover {
+    background-color:#bba142; /*lighter than #b3952b*/
+    color: white;
+    cursor: pointer;
 }
