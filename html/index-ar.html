@@ -9,14 +9,167 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/index-ar.css">
     <link rel="stylesheet" href="/css/footer-ar.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/resorts.css">
 </head>
 
 <body dir="rtl" class="container-fluid">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg mb-lg-3">
+        <a class="navbar-brand" href="#">
+            <img src="../images/logooo.jpg" style="width: 50px;" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+            <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle item_active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        منتجعات
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li><a class="dropdown-item" href="#">2 </a></li>
+                        <li><a class="dropdown-item" href="#">3  </a></li>
+                    </ul>
+                    </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle item_active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    فنادق
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                    <li><a class="dropdown-item" href="#">2 </a></li>
+                    <li><a class="dropdown-item" href="#">3  </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle item_active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    قاعة مناسبات
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                    <li><a class="dropdown-item" href="#">2 </a></li>
+                    <li><a class="dropdown-item" href="#">3  </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle item_active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                العروض
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                    <li><a class="dropdown-item" href="#">2 </a></li>
+                    <li><a class="dropdown-item" href="#">3  </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                <button type="button" class="btn signup">الدخول او إنشاء حساب جديد</button>
+                </li>
+
+            </ul>
+            <span class="navbar-text">
+                <p class="To_Another_Language d-inline-block">
+                    Browse in <br>
+                    <a href="#">English</a>
+                </p>
+                <i class="fa-solid fa-earth-americas ms-2 icon"></i>
+            </span>
+
+            </div>
+        </nav>
 
     <!-- MAIN CONTAINER -->
-    <div id="main-container" class="d-flex justify-content-between mb-5">
-        <div id="search-div" class="col-12 d-none col-lg-4 d-lg-block">
-            
+    <div id="main-container" class="d-flex justify-content-between  mb-5">
+
+        <div id="search-div" class="p-2 d-none col-lg-4 d-lg-flex flex-column text-center" style="height: max-content;">
+            <!-- Radio Buttons -->    
+            <div id="radio-check" class="d-flex justify-content-center gap-5">
+                    <div class="btn-group my-2" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="hotels" autocomplete="off" checked>
+                        <label class="btn-outline mx-2" for="hotels">فنادق</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="resorts" autocomplete="off">
+                        <label class="btn-outline mx-2" for="resorts">منتجعات</label>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                    <div class="w-100 input p-3 d-flex justify-content-between align-items-center mb-1">
+                        <label for="floatingSelectGrid">
+                            الموقع او الفندق
+                        </label>
+                        <div class="d-flex justify-content-center gap-4 align-items-baseline">
+                            <div class="d-flex justify-content-between align-items-baseline">
+                                <select class="form-select" id="floatingSelectGrid">
+                                    <option selected value="الرياض"> الرياض </option>
+                                    <option value="القصيم">القصيم</option>
+                                    <option value="مكة">مكة</option>
+                                    <option value="العزيزية">العزيزية</option>
+                                </select>
+                            </div>
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                        </div>
+                    </div>
+
+                <!-- Date & Number of nights -->
+                <div class=" input d-flex justify-content-between align-items-center pt-1 mb-2" style="width: 100%;">
+                    <div class="arrival-date px-4" style="width: 40%;">
+                        <label class="form-label" for="arrivalDate" style="display: block; margin-bottom: 5px;">
+                        موعد الوصول
+                        </label>
+                        <input class="form-control" type="date" name="arrivalDate" id="arrivalDate" required style="padding: 5px; border-radius: 5px; 
+                        border: 1px solid #ccc; margin-bottom: 10px;" />
+                    </div>
+        
+                    <div class="departural-date px-4" style="width: 40%;">
+                        <label class="form-label" for="departuralDate" style="display: block; margin-bottom: 5px;">
+                        موعد المغادرة
+                        </label>
+                        <input class="form-control" type="date" name="departuralDate" id="departuralDate" required style="padding: 5px; border-radius: 5px; 
+                        border: 1px solid #ccc; margin-bottom: 13px;" />
+                    </div>
+        
+                    <div class="nights" style="width: 10%;">
+                        <span id="nightNumbers">1</span> ليلة
+                    </div>
+                </div>
+
+                <!-- Number of guests -->
+                <div class="input clickable-div text-center p-lg-3 mb-2" style="width: 100%; height: auto;">
+                    <!-- <div class="guests-div py-4">
+                    </div> -->
+                        <span id="numberGuests">2</span> نزلاء . <span id="numberRooms">1</span> غرفة 
+                    
+                    <div class="numbersDiv " style="display: none;">
+
+                        <div class="form-floating">
+                            <input type="number" min="1" class="form-control" name="inputNumAdult" id="inputNumAdult"
+                            placeholder="عدد البالغين" value="1" />
+                            <label for="inputNumAdult">عدد البالغين</label>
+                        </div>
+        
+                        <div class="form-floating">
+                            <input type="number" min="0" class="form-control" name="inputNumChildren" id="inputNumChildren"
+                            placeholder="عدد الاطفال" value="1" />
+                            <label for="inputNumChildren">عدد الاطفال</label>
+                        </div>
+        
+                        <div class="form-floating">
+                            <input type="number" min="1" class="form-control" name="inputNumRooms" id="inputNumRooms"
+                            placeholder="عدد الغرف" value="1" />
+                            <label for="inputNumRooms">عدد الغرف</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Search Button -->
+                <div>
+                    <button id="search-btn" class="btn">ابحث</button>
+                </div>
         </div>
 
         <div id="carouselExampleAutoplaying" class="carousel slide col-12 col-lg-7" data-bs-ride="carousel">
@@ -52,7 +205,7 @@
             </div>
         </div>
         <div id="offers-container" class="row">
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-lg-3 offer-card">
                 <div class="card p-1">
                     <img src="../images/main-slider-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -60,7 +213,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-lg-3 offer-card">
                 <div class="card p-1">
                     <img src="../images/main-slider-2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -68,7 +221,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-lg-3 offer-card">
                 <div class="card p-1">
                     <img src="../images/main-slider-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -76,7 +229,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-lg-3 offer-card">
                 <div class="card p-1">
                     <img src="../images/main-slider-2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -84,7 +237,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-lg-3 offer-card">
                 <div class="card p-1">
                     <img src="../images/main-slider-3.webp" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -92,7 +245,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-lg-3 offer-card">
                 <div class="card p-1">
                     <img src="../images/main-slider-2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -100,7 +253,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-lg-3 offer-card">
                 <div class="card p-1">
                     <img src="../images/main-slider-3.webp" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -122,8 +275,8 @@
                 <div class="card">
                     <img src="../images/shalehat.jpg" class="card-img" alt="...">
                     <div class="card-img-overlay reserve-div d-flex justify-content-between mx-4">
-                        <h5 class="card-title fa-2x">شاليهات فندقية</h5>
-                        <button id="reserve-btn"><p>احجز الآن</p></button>
+                        <h5 class="card-title text-light fa-2x">شاليهات فندقية</h5>
+                        <button class="reserve-btn"><p>احجز الآن</p></button>
                     </div>
                 </div>
             </div>
@@ -131,8 +284,8 @@
                 <div class="card">
                     <img src="../images/hotels.jpeg" class="card-img" alt="...">
                     <div class="card-img-overlay reserve-div d-flex justify-content-between mx-4">
-                        <h5 class="card-title fa-2x">شقق وفنادق</h5>
-                        <button id="reserve-btn"><p>احجز الآن</p></button>
+                        <h5 class="card-title text-light fa-2x">شقق وفنادق</h5>
+                        <button class="reserve-btn"><p>احجز الآن</p></button>
                     </div>
                 </div>
             </div>
@@ -140,8 +293,8 @@
                 <div class="card">
                     <img src="../images/halls.webp" class="card-img" alt="...">
                     <div class="card-img-overlay reserve-div d-flex justify-content-between mx-4">
-                        <h5 class="card-title fa-2x">قاعات مناسبات</h5>
-                        <button id="reserve-btn" class=""><p>احجز الآن</p></button>
+                        <h5 class="card-title text-light fa-2x">قاعات مناسبات</h5>
+                        <button class="reserve-btn" class=""><p>احجز الآن</p></button>
                     </div>
                 </div>
             </div>
@@ -189,5 +342,6 @@
 <script src="/js/all.min.js"></script>
 <script src="/js/bootstrap.bundle.min.js"></script>
 <script src="/js/index.js"></script>
+<script src="/js/resorts.js"></script>
 </body>
 </html>
