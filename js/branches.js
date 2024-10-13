@@ -31,9 +31,17 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             this.classList.add('active');
             this.style.color = '#b3952b';
-            document.querySelector('#branch-name').innerText = this.querySelector('p').innerText;
-            document.querySelector('#branch-address').innerText = this.querySelector('address').innerText;
-            document.querySelector('#branch-phone').innerText = this.querySelector('phone').innerText;
+            //check on dir attribute in body tag
+            if (document.body.getAttribute('dir') === 'rtl') {
+                document.querySelector('#branch-name').innerText = this.querySelector('p').innerText;
+                document.querySelector('#branch-address').innerText = this.querySelector('address').innerText;
+                document.querySelector('#branch-phone').innerText = this.querySelector('phone').innerText;
+            } else {
+                document.querySelector('#branch-name').innerText = this.querySelector('titleEn').innerText;
+                document.querySelector('#branch-address').innerText = this.querySelector('addressEn').innerText;
+                document.querySelector('#branch-phone').innerText = this.querySelector('phoneEn').innerText;
+            }
+
         });
     });
 
