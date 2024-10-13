@@ -62,3 +62,9 @@ nav ul li a.active{
     height: 3.8rem;
     margin-left: 0.5rem;
 }
+.dropdown-toggle::after{
+    content: none !important;
+}
+/* .dropdown{
+    padding:20px !important;
+} */
