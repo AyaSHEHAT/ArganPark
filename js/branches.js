@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             this.classList.add('active');
             this.style.color = '#b3952b';
-            //check on dir attribute in body tag
             if (document.body.getAttribute('dir') === 'rtl') {
                 document.querySelector('#branch-name').innerText = this.querySelector('p').innerText;
                 document.querySelector('#branch-address').innerText = this.querySelector('address').innerText;
