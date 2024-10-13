@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الفروع</title>
+    <title>Branches</title>
     <link rel="stylesheet" href="/css/all.min.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/branches.css">
 
 </head>
-<body dir="rtl" class="container-fluid">
-    <!-- Switch -->    
+<body class="container-fluid">
+    <!-- Switch -->
     <div id="switch-controls" class="form-check form-switch d-flex justify-content-between align-items-baseline mb-3 mx-5">
-        <h1>فروعنا</h1>
+        <h1>Our branches</h1>
         <div class="d-flex justify-content-center align-items-baseline gap-5 ">
             <input class="form-check-input" type="checkbox" id="switch-branches">
-            <label class="form-check-label fs-3 mx-2" for="switch-branches">عرض الخريطة</label>
+            <label class="form-check-label fs-3 mx-2" for="switch-branches">Display map</label>
         </div>
     </div>
 
@@ -27,35 +27,39 @@
         </div>
         <div id="branches-list-container" class="col-10 col-lg-7">
             <div class="branch text-center d-flex justify-content-start align-items-center p-1 mb-3 active" style="color: #b3952b;">
-                <p>فندق ارجان بارك العزيزية</p>
-                <address class="d-none">الرياض - حي العزيزية - شارع الشباب</address>
-                <phone class="d-none">0555089637</phone>
+                <p>Arjaan Park Al-Aziziyah Hotel</p>
+                <titleEn class="d-none">Arjaan Park Al-Aziziyah Hotel</titleEn>
+                <addressEn class="d-none">Riyadh - Al-Aziziyah Dist - Al-Shabab Street</addressEn>
+                <phoneEn class="d-none">0555089637</phoneEn>
             </div>
             <div class="branch text-center d-flex justify-content-start align-items-center p-1 mb-3">
-                <p>فندق ارجان بارك الشفاء</p>
-                <address class="d-none">الرياض - حي الشفاء - شارع الشفاء</address>
-                <phone class="d-none">0555089638</phone>
+                <p>Arjaan Park Al-Shabab Hotel</p>
+                <titleEn class="d-none">Arjaan Park Al-Shabab Hotel</titleEn>
+                <addressEn class="d-none">Riyadh - Al-Shifaa Dist - Al-Shabab Street</addressEn>
+                <phoneEn class="d-none">0555089638</phoneEn>
             </div>
             <div class="branch text-center d-flex justify-content-start align-items-center p-1 mb-3">
-                <p>فندق ارجان بارك الرياض</p>
-                <address class="d-none">الرياض - حي الرياض - شارع الرياض</address>
-                <phone class="d-none">0555089639</phone>
+                <p>Arjaan Park Riyadh Hotel</p>
+                <titleEn class="d-none">Arjaan Park Riyadh Hotel</titleEn>
+                <addressEn class="d-none">Riyadh - Riyadh Dist - Riyadh Street</addressEn>
+                <phoneEn class="d-none">0555089639</phoneEn>
             </div>
             <div class="branch text-center d-flex justify-content-start align-items-center p-1 mb-3">
-                <p>فندق ارجان بارك جدة</p>
-                <address class="d-none">جدة - حي الجنوب - شارع الجنوب</address>
-                <phone class="d-none">0555089640</phone>
+                <p>Arjaan Park Jeddah Hotel</p>
+                <titleEn class="d-none">Arjaan Park Jeddah Hotel</titleEn>
+                <addressEn class="d-none">Jeddah - Al-Janoub Dist - Al-Janoub Street</addressEn>
+                <phoneEn class="d-none">0555089640</phoneEn>
             </div>
         </div>
         <div id="location-details" class="col-8 col-lg-4"  >
             <div class="mb-5 mt-3">
-                <h4 id="branch-name" class="fw-light">فندق ارجان بارك العزيزية</h4>
+                <h4 id="branch-name" class="fw-light">Arjaan Park Al-Aziziyah Hotel</h4>
                 <hr class="m-auto w-50">
             </div>
             <div class="mb-4">
                 <div class="d-flex gap-4 align-items-start">
                     <i class="fa-solid fa-diamond-turn-right fa-flip-horizontal fa-2x" ></i>
-                    <p id="branch-address">الرياض - حي العزيزية - شارع الشباب</p>
+                    <p id="branch-address">Riyadh - Al-Shifa Dist - Al-Shabab Street</p>
                 </div>
                 <hr class="m-auto">
             </div>
@@ -69,14 +73,14 @@
             <div class="mb-4">    
                 <div class="d-flex gap-4 align-items-start mb-2">
                     <i class="fa-regular fa-calendar-check fa-2x"></i>
-                    <p class="text-decoration-underline">حجز جديد</p>
+                    <p class="text-decoration-underline">New Booking</p>
                 </div>
                 <hr class="m-auto">
             </div>
             <div class="mb-4">    
                 <div class="d-flex gap-4 align-items-start mb-2">
                     <i class="fa-regular fa-newspaper fa-2x"></i>
-                    <p class="text-decoration-underline">تفاصيل</p>
+                    <p class="text-decoration-underline">Details</p>
                 </div>
                 <hr class="m-auto">
             </div>
@@ -87,9 +91,9 @@
     <hr class="m-auto my-5" style="width: 40%;">
 
     <!-- SPONSORS SLIDER -->
-    <h2 class="text-center mb-3 text-black fw-lighter">الحجز من خلال مواقع اخرى</h2>
+    <h2 class="text-center mb-3 text-black fw-lighter">Booking through other sites</h2>
     <div id="sponsors" class="d-flex justify-content-evenly   align-items-center">
-        <button id="next" class="btn btn-outline-secondary"><i class="fas fa-chevron-right"></i></button>
+        <button id="prev" class="btn btn-outline-secondary"><i class="fas fa-chevron-left"></i></button>
         <div id="sponsors-container" class="d-flex justify-content-between">
             <div class="sponsor-item">
                 <a href="">
@@ -122,7 +126,8 @@
                 </a>
             </div>
         </div>
-        <button id="prev" class="btn btn-outline-secondary"><i class="fas fa-chevron-left"></i></button>
+        <button id="next" class="btn btn-outline-secondary"><i class="fas fa-chevron-right"></i></button>
+        
     </div>
     
 
