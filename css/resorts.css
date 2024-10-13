@@ -14,7 +14,7 @@
     border-radius: 10px;
 }
  .arrival-date{
-   border-left: 1px solid black;
+   border-left: 1px solid lightgray;
 
 } 
 .form-floating>label{
@@ -28,6 +28,7 @@
 }
 .numbersDiv{
     display: none;
+    padding: 0 3px;
 }
 .input label,.nights,.clickable-div,.input>i{
     color: #838DB1;
