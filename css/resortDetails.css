@@ -101,3 +101,16 @@ header h1 {
     border-bottom: 1px solid #848EB2;
 
 }
+nav.sideLink{
+    box-shadow: none;
+}
+nav.sideLink {
+    box-shadow: none;
+    color: #848EB2;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.item_active:hover{
+    color: #b3952b;
+    /* text-decoration: underline; */
+}
