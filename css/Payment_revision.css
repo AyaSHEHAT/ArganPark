@@ -1,0 +1,132 @@
+
+:root{
+    --main-color:#b3952b;
+}
+.golden-word
+{
+    color: var(--main-color);
+    margin: 10px;
+}
+.revision {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.content-container {
+    display: flex;
+    justify-content:flex-end;
+    padding: 20px;
+}
+
+.right-div,
+.left-div {
+    flex: 1;
+}
+
+.right-div p,
+.left-div p {
+    margin-top: 10px;
+}
+
+/* Existing styles remain unchanged */
+
+/*
+.rivision
+{
+    display: flex;
+    flex-direction: row;
+ 
+}
+
+div.right-div p,div.left-div p {
+  color: gray;
+}
+
+.right-div
+{
+    display: flex;
+    flex-direction: column;
+    
+justify-content: flex-end;
+flex:1;
+}
+
+.left-div
+{    display: flex;
+    flex-direction: column;
+    flex:1;
+   */
+
+.conditions p{
+    color:gray;
+}
+.cancel p{
+    color:gray;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.payment label {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 0.5rem; */
+    color:gray;
+
+}
+
+.payment input[type="radio"] {
+    margin-right: 10px;
+}
+
+.payment img {
+    width: 5rem;
+    height: auto;
+    margin: 0.5rem;
+}
+hr{
+    width:40%;
+}
+.buttons{
+    display: flex;
+    margin:3px;
+}
+
+.whitebtn{
+    /* width:20%; */
+
+    width:auto;
+    font-weight: bold;
+    color: gray;
+    background-color: white;
+}
+
+.goldenbtn{
+    font-weight: bold;
+    /* width:15%; */
+    width:auto;
+color:white;
+background-color: var(--main-color);
+}
+.goldenbtn:hover{
+    font-weight: bold;
+    color: var(--main-color);
+    background-color: white;
+}
+@media (max-width: 768px) {
+    .payment label {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .payment img {
+        width: 25px;
+    }
+}
+
+

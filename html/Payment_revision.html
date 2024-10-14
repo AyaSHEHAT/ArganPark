@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المراجعة و الدفع</title>
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/Payment_revision.css">
+    <link rel="stylesheet" href="/css/card.css">
+
+</head>
+<body dir="rtl" class="container-fluid">
+    <div class="row">
+    <div class="col-6">
+
+    <div class="revision">
+        <h1 class="golden-word">المراجعة</h1>
+        <hr>
+        <h3 class="golden-word">..غرفة بسرير مزدوج</h3>
+        <div class="content-container">
+            <div class="right-div">
+                <p class="gray-word"><i class="fa-solid fa-location-dot text-black-50 "></i> الرياض-حى العزيزية -شارع الشباب </p>
+                <p><i class="fa-solid fa-door-open text-black-50"></i> مساحة الوحدة 40م</p>
+            </div>
+            <div class="left-div">
+                <p><i class="fa-solid fa-user icon-color text-black-50"></i>  تتسع لشخصين</p>
+                <p><i class="fas fa-clock text-black-50"></i> خدمة الغرف على مدار 24 ساعة </p> 
+            </div>
+        </div>
+        <hr>
+    </div>
+    
+    <!-- <div class="revision">
+        <h1 class="golden-word">المراجعة</h1>
+    
+        <hr>
+        <h3 class="golden-word">   غرفة بسرير مزدوج..</h3>
+        <div class="right-div">
+            <p class="gray-word"><i class="fa-solid fa-location-dot gray-icon"></i>الرياض - حى العزيزية - شارع الشباب </p>
+            <p><i class="fa-solid fa-door-open"></i> مساحة الوحدة 40م</p>
+        </div>
+        <div class="left-div">
+            <p><i class="fa-solid fa-user icon-color"></i> تتسع لشخصين</p>
+            <p><i class="fas fa-clock text-light bg-black" style="border-radius:50%;"></i>خدمة الغرف على مدار 24 ساعة </p> 
+        </div>
+        <hr>
+    </div> -->
+    
+    <div class="conditions">
+        <h1>الشروط</h1>
+        <p> شروط الحجز(من قبل المضيف)  </p>
+        <p>١- الالتزام بوقت الخروج الموضح </p>
+        <p>٢- العدد المسموح به للدخول ٣ أشخاص بحد أقصى </p>
+        <p>٣- ممنوع اصطحاب أى نوع من الحيوانات </p>
+        <p>٤- يمنع الشيشه منعاً باتاً و يسمح بالتدخين و  يوجد طفاية للدخان</p>     
+    </div>
+    <div class="cancel">
+
+        <h1>سياسة الإلغاء </h1>
+        <p>سياسة الإلغاء و الاسترجاع</p>
+        <p>بإمكانك إلغاء او تأجيل الحجز مجاناً قبل تاريخ ٠٤/٠٧/٢٠٢٤</p>
+    </div>
+    
+    <div class="payment">
+        <h1 class="golden-word">الدفع</h1>
+        <div class="buttons"> 
+            <button type="button" class="btn goldenbtn">CASHPARK</button>
+        <button type="button" class="btn whitebtn">استخدام رصيد المحفظة</button>
+</div>
+        <label>    <input type="radio" name="payment" value="VISA"   id="VISA" placeholder="الدفع بالبطاقة"><img src="/images/VISA.jfif"> الدفع بالبطاقة</label>
+        <hr>
+
+        <label> <input type="radio" name="payment" value="tabby"  id="tabby"><img src="/images/tabby(1)(1).png">  قسمها على 4 دفعات أى فوائد او رسوم</label>
+       <hr>
+        <label>    <input type="radio" name="payment" value="tamara" id="tamara"><img src="/images/tamara(1)(1).png"> ادفع على 3 دفعات بدون فوائد او رسوم</label>
+        <hr>
+        <label> <input type="radio" name="payment" value="stcpay" id="stcpa"><img src="/images/stc.png"> دفع بإستخدام </label>
+    <hr>
+    </div>
+</div>
+<div class="col-lg-5">
+    <div class="card mb-5">
+        <div class="price-info">
+            <div class="rate-per-night">
+                <h4 class="ratepernight" style="margin-right: 2rem;">255 SAR/ليلة</h4>
+            </div>
+            
+            <div class="total-cost">
+                <h5 style="text-align: center;">إجمالي ٣ ليالى <span style="color: #b3952b; font-size: 2rem;;"  id="totalCost">SAR 765</span> شامل ضريبة القيمة المضافة</h5>
+            </div>
+            
+            <div class="separator">
+                <hr style="width:29rem; margin:2rem; height:2px; background-color:#ccc;">
+            </div>
+        </div>
+        
+        <div class="row g-0">
+            <div class="col-md-12">
+                <!-- <h4 style="position: relative; display: block;">بإمكانك تعديل التاريخ</h4> -->
+                <h6 class=" text-start">بإمكانك تعديل التاريخ</h6>
+                <div class="card-body">
+                    
+                    <div class="input d-flex justify-content-evenly">
+                        <div class="arrival-date m-1 px-2">
+                            <label class="form-label" for="arrivalDate">موعد الوصول</label>
+                            <input class="form-control" type="date" name="arrivalDate" id="arrivalDate" required style="padding: 5px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 10px;" />
+                        </div>
+
+                        <div class="departural-date m-1">
+                            <label class="form-label" for="departuralDate">موعد المغادرة</label>
+                            <input class="form-control" type="date" name="departuralDate" id="departuralDate" required style="padding: 5px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 10px;" />
+                        </div>
+
+                        <div class="nights pt-4">
+                            <span id="nightNumbers">1</span> ليلة
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-body" dir="ltr">
+            <h2 class="card-text"></h2>
+        </div>
+        <hr style="width:29rem; margin:2rem; height:2px; background-color:#ccc;">
+        
+        <div class="arrival-departural row" style="display: flex; align-items: center;">
+            <div class="col-2">
+            </div>
+            <div class="col-6">
+                <p>وقت الوصول</p>
+                <p>4:00 مساءً</p>
+            </div>
+            <div class="col-4">
+                <p>وقت المغادرة</p>
+                <p>2:00 مساءً</p>
+            </div>
+        </div>
+        
+        <hr style="width:29rem; margin:2rem; height:2px; background-color:#ccc;">
+        
+        <h5 style="text-align: center;">ستدفع الان 255 ريال</h5>
+        <h2 style="text-align: center; color:black;">ملخص الحجز</h2>
+        
+        <div class="summary-details row">
+
+            <div class="col-2">
+            </div>
+            <div class="col-5">
+                <p>ليالى</p>
+                <p>ستدفع الان 255ريال</p>
+                <p>كود الخصم</p>
+                <p>ستدفع عند الوصول</p>
+            </div>
+            <div class="col-5">
+                <p id="nightNumbers">3</p>
+                <p class="text-success" id="advancedPayment">-255 SAR</p>
+                <p class="text-success" id="promoCode">-100 SAR</p>
+                <p id="complementary">410 SAR</p>
+            </div>
+            
+            <hr style="width:29rem; margin:2rem; height:2px; background-color:#ccc;">
+            
+            <div class="row">
+                <div class="col-2">
+                </div>
+                <div class="col-5">
+                    <p style="margin-right: 20px; color: black; font-weight: bold;">المجموع</p>
+                </div>
+                <div class="col-5">
+                    <p style="font-weight: bold;" id="net">665 SAR</p>
+                </div>
+            </div>
+            
+            <hr style="width:29rem; margin:2rem; height:2px; background-color:#ccc;">
+            
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="row w-100">
+                    <div class="col-md-6">
+                        <p>كود الخصم</p>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" style="background-color: #f1f5f8;">
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-success">تطبيق</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- <div class="col-lg-4">
+
+
+    <div class="card mb-5" >
+        <h3 class="ratepernight" > 255SAR/ليلة</h3>
+        <h3  style="text-align: center;" > إجمالي ٣ ليالى <span style="color: #b3952b;" id="totalCost">SAR 765 </span> شامل ضريبة القيمة المضافة</h3> -->
+
+
+        <!-- <hr style="width:33rem; margin:0 auto; height:2px; background-color:#ccc;"> -->
+        <!-- <hr style="width:35rem; margin:2rem; ; height:2px; background-color:#ccc;"> 
+        <div class="row g-0">
+          <div class="col-md-8 d-flex justify-content-between">
+              <div class="card-body">
+                <h4 style="right:2rem; position: relative; display: block;" > بإمكانك تعديل التاريخ</h4>    
+      
+
+        <div class="col-md">
+   -->
+
+          <!-- </div> -->
+        <!-- </div>
+        <div class="col-md p-5">
+          <div class="input d-flex justify-content-evenly">
+            <div class="arrival-date m-1 px-2">
+              <label class="form-label" for="arrivalDate" style="display: block; margin-bottom: 10px;">
+                موعد الوصول
+              </label>
+              <input class="form-control" type="date" name="arrivalDate" id="arrivalDate" required style="padding: 5px; border-radius: 5px; 
+              border: 1px solid #ccc; margin-bottom: 10px;" />
+            </div>
+
+            <div class="departural-date m-1">
+              <label class="form-label" for="departuralDate" style="display: block; margin-bottom: 10px;">
+                موعد المغادرة
+              </label>
+              <input class="form-control" type="date" name="departuralDate" id="departuralDate" required style="padding: 5px; border-radius: 5px; 
+              border: 1px solid #ccc; margin-bottom: 10px;" />
+            </div>
+            <div class="nights pt-4">
+              <span id="nightNumbers">1</span> ليلة
+            </div>
+          </div>
+        </div>
+
+    <div class="card-body" dir="ltr">
+        <h2 class="card-text"></h2>
+    </div>
+    <hr style="width:35rem; margin:2rem; ; height:2px; background-color:#ccc;">
+    <div class="arrival-departural row " style="display: flex;">
+        <div class="col-8">
+            <p>وقت الوصول</p>
+            <p>4:00 مساءً  </p>
+        </div>
+        <div class="col-4">
+            <p>وقت المغادرة</p>
+            <p>2:00 مساءً  </p>
+        </div>
+                </div>
+                <hr style="width:35rem; margin:2rem; ; height:2px; background-color:#ccc;">
+                <h5  style="text-align: center;" > ستدفع الان 255 ريال</h5>
+                <h2  style="text-align: center; color:black;" >  ملخص الحجز</h2>
+                <div class="summary-details row">
+                    <div class="col-md-6">
+                        <p>ليالى </p>
+                        <p>ستدفع الان 255ريال </p>
+                        <p>كود الخصم</p>
+                        <p>ستدفع عند الوصول</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p id="nightNumbers">3 </p>
+                        <p class="text-success" id="advancedPayment">-255 SAR </p>
+                        <p class="text-success" id="promoCode">-100 SAR </p>
+                        <p id="complementary"> 410 SAR </p>
+
+                    </div>
+                    <hr style="width:35rem; margin:2rem; ; height:2px; background-color:#ccc;"> -->
+
+                    <!-- <div style="display: flex; justify-content: space-evenly;">
+                        <p style="margin-right: 20px; color: black; font-weight: bold;">المجموع</p>
+                        <p style="font-weight: bold;" id="net">665 SAR</p>
+                    </div> -->
+
+
+
+
+
+                    <!-- here -->
+                    <!-- <div class="row" style="display: flex; ;">
+                       <div class="col-6"> <p style="margin-right: 20px; color: black; font-weight: bold;">المجموع</p></div>
+                        <div class="col-6">
+                         <p style="font-weight: bold;" id="net">665 SAR</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <hr style="width:35rem; margin:2rem; ; height:2px; background-color:#ccc;">
+
+                    <div class="row">
+                        <div class="col-md-6">
+           <p>كود الخصم</p>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="text-success btn " style="margin-top:2rem; background-color: #f1f5f8;">
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-success" style="margin-top:2rem;"> تطبيق</button>
+                        </div>
+                    </div>
+
+                 
+        </div>
+    </div>
+            
+
+</div>
+    </div> -->
+
+    <script src="/js/index.js"></script>
+<script src="/js/all.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
