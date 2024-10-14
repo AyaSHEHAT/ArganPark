@@ -110,7 +110,7 @@ nav.sideLink {
     font-weight: bolder;
     font-size: 1.5rem;
 }
-.item_active:hover{
+.item_active:hover, .item_active.active{
     color: #b3952b;
     /* text-decoration: underline; */
 }

@@ -8,6 +8,32 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = 'confirmation.html';
     });
     let changeLangToArabic = document.getElementById('change-lang-to-ar');
+    
+const emailBtn=document.querySelector('.loginWithMail');
+const phoneBtn=document.querySelector('.loginWithPhone');
+const phoneDiv=document.querySelector('.phoneDiv');
+const emailDiv=document.querySelector('.emailDiv');
+emailBtn.addEventListener('click',function(){
+ console.log();
+ if(emailBtn.classList.contains('active')==false){
+  emailBtn.classList.add('active');
+  phoneBtn.classList.remove('active');
+  phoneDiv.classList.add('d-none');
+  emailDiv.classList.remove('d-none');
+
+ }
+  
+})
+phoneBtn.addEventListener('click',function(){
+ console.log();
+ if(phoneBtn.classList.contains('active')==false){
+  phoneBtn.classList.add('active');
+  emailBtn.classList.remove('active');
+  phoneDiv.classList.remove('d-none');
+  emailDiv.classList.add('d-none');
+ }
+  
+})
 
 
 });
@@ -27,4 +53,5 @@ closeMenu.addEventListener('click', () => {
   userMenu.classList.remove('active');
   userLogo.innerHTML = '<i class="fa-regular fa-circle-user fa-2x"></i>';  // Reset to user icon
 });
+
 
