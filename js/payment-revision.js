@@ -2,12 +2,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //catch all texts that will be changed
     let totalNights;
-    let dayPrice = 500;
+    let dayPrice = 255;
     let advancedPayment = dayPrice;
     let discount = 0;
     
     let totalCost = document.getElementById('totalCost');
-    let dayPriceDiv = document.getElementById('day-price-div');
+    let nightPriceDiv = document.getElementById('night-price');
     let advancedPaymentSpan = document.getElementsByClassName('advanced-payment');
     let discountSpan = document.getElementById('discount-value');
     let complementarySpan = document.getElementById('complementary');
@@ -80,7 +80,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateAllNumbers() {
         //
-        dayPriceDiv.innerText = dayPrice + ' ريال سعودي / ليلة';
+        // dayPriceDiv.innerText = dayPrice + ' ريال سعودي / ليلة';
+        nightPriceDiv.innerText = dayPrice;
         //
         totalCost.innerText = totalNights * dayPrice + ' SAR';
         //

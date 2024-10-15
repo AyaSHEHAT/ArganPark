@@ -1,186 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>المراجعة و الدفع</title>
-    <link rel="stylesheet" href="/css/all.min.css">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/Payment_revision.css">
-    <link rel="stylesheet" href="/css/card.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Payment Revision</title>
+        <link rel="stylesheet" href="/css/all.min.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="/css/style.css"> -->
+        <link rel="stylesheet" href="/css/Payment_revision.css">
+        <link rel="stylesheet" href="/css/card.css">
 
-</head>
-<body  class="container-fluid " style="padding-top: 50px;">
-    <div class="row" >
-    <div class="col-6">
+        <style>
+        .with-navbar
+        {
+            display: flex;
 
-    <div class="revision">
-        <h1 class="golden-word">Revision</h1>
-        <hr>
-        <h3 class="golden-word">Double bed room..</h3>
-        <div class="content-container">
-            <div class="right-div">
-                <p class="gray-word"><i class="fa-solid fa-location-dot text-black-50 "></i> Riyadh - Al-Aziziya District - Youth Street</p>
-                <p><i class="fa-solid fa-door-open text-black-50"></i> Unit area 40m²</p>
-            </div>
-            <div class="left-div">
-                <p><i class="fa-solid fa-user icon-color text-black-50"></i> Accommodates two people</p>
-                <p><i class="fas fa-clock text-black-50"></i> Room service available 24 hours</p> 
-            </div>
-        </div>
-        <hr>
-    </div>
+        }
+        .accordion{
+            border: none;
+            box-shadow: none;
+            margin: 0;
+            padding: 0;
+        }
+        @media(max-width:450){
+            .with-navbar{
+            display: none;
+            }
+            .accordion{
+                display: flex;
+                flex-direction: column;
+            }
+        }
 
-    <div class="conditions">
-        <h1>Conditions</h1>
-        <p> Booking Conditions (Host's Terms) </p>
-        <p>1. Adherence to the departure time shown </p>
-        <p>2. Maximum number allowed for entry: 3 people </p>
-        <p>3. Prohibition of bringing any kind of animals </p>
-        <p>4. Smoking is strictly prohibited, but smoking is permitted, and there is a smoke detector</p> 
-    </div>
-    <div class="cancel">
-        <h1>Cancellation Policy</h1>
-        <p>Cancellation and Refund Policy</p>
-        <p>You can cancel or postpone your reservation for free until July 04, 2024</p>
-    </div>
-    
-    <div class="payment">
-        <h1 class="golden-word">Payment</h1>
-        <div class="buttons"> 
-            <button type="button" class="btn goldenbtn">CASHPARK</button>
-            <button type="button" class="btn whitebtn">Use Wallet Balance</button>
-        </div>
-        <label>    
-            <input type="radio" name="payment" value="VISA" id="VISA" placeholder="Pay by card"><img src="/images/VISA.jfif"> Pay by Card</label>
-        <hr>
-    
-        <label> <input type="radio" name="payment" value="tabby" id="tabby"><img src="/images/tabby(1)(1).png"> Split into 4 installments Any interest or fees</label>
-        <hr>
-        <label>    <input type="radio" name="payment" value="tamara" id="tamara"><img src="/images/tamara(1)(1).png"> Pay in 3 installments without any interest or fees</label>
-        <hr>
-        <label> <input type="radio" name="payment" value="stcpay" id="stcpa"><img src="/images/stc.png"> Pay using </label>
-        <hr>
-    
-    </div>
-</div>
+        .discount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
 
-<div class="col-lg-5">
-    <div class="card mb-5" style="border:2px solid gray">
-        <div class="price-info">
-            <div class="rate-per-night">
-                <h4 class="ratepernight" style="margin-left: 2rem; margin-top: 1rem;">255 SAR/night</h4>
-            </div>
-            
-            <div class="total-cost">
-                <h5 style="text-align: center;">Total 3 nights <span style="color: #b3952b; font-size: 2rem;;" id="totalCost">SAR 765</span> including VAT</h5>
-            </div>
-            
-            <div class="separator">
-                <hr style="width:29rem; margin:2rem; height:2px; background-color:#ccc;">
-            </div>
-        </div>
-        
-        <div class="row g-0">
-            <div class="col-md-12">
-                <h6 class=" text-end">You can modify the dates</h6>
-                <div class="card-body">
-                    
-                    <div class="input d-flex justify-content-evenly">
-                        <div class="arrival-date m-1 px-2">
-                            <label class="form-label" for="arrivalDate">Arrival Date</label>
-                            <input class="form-control" type="date" name="arrivalDate" id="arrivalDate" required style="padding: 5px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 10px;" />
+.controls {
+    display: flex;
+    align-items: space-evenly;
+}
+
+    </style>
+    </head>
+    <body class="container-fluid">
+
+        <div class="row container-fluid">
+            <div class="col 10 col-lg-6">
+
+                <div class="revision">
+                    <h1 class="golden-word">Revision</h1>
+                    <hr>
+                    <h3 class="golden-word">Room with Twin Bed..</h3>
+                
+                        <div class="container d-flex flex-column align-items-start flex-lg-row justify-content-between align-items-lg-center">
+                            <p class="gray-word"><i class="fa-solid fa-location-dot text-black-50 "></i> Riyadh - Al-Aziziyah Dist - Al-Shabab Street </p>
+                            <p><i class="fa-solid fa-user icon-color text-black-50"></i>Up to 2 people</p>
+                
                         </div>
+                        <div class="container d-flex flex-column  align-items-start flex-lg-row justify-content-between align-items-lg-center">
+                            <p><i class="fa-solid fa-door-open text-black-50"></i>Unit area 40m</p>
+                
+                            <p><i class="fas fa-clock text-black-50"></i>24-hour room service</p> 
 
-                        <div class="departural-date m-1">
-                            <label class="form-label" for="departuralDate">Departure Date</label>
-                            <input class="form-control" type="date" name="departuralDate" id="departuralDate" required style="padding: 5px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 10px;" />
+                    </div>
+                    <hr>
+
+                    <div class="conditions">
+                        <h1>Conditions</h1>
+                        <p>Booking Requirements (by host)</p>
+                        <p>1- Adhere to the indicated exit time</p>
+                        <p>2- Maximum 3 people allowed to enter </p>
+                        <p>3- No animals</p>
+                        <p>4- hookah is strictly prohibited and smoking is only allowed</p>
+                    </div>
+                    <div class="cancel">
+                        <h1>Cancellation Policy</h1>
+                        <p>Cancellation and Refund Policy</p>
+                        <p>You can cancel or postpone your booking for free before 4/7/2027</p>
+                    </div>
+
+                </div>
+
+                <div class="payment">
+                    <h1 class="golden-word">Payment</h1>
+                    <div class="buttons">
+                        <button type="button"
+                            class="btn goldenbtn">CASHPARK</button>
+                        <button type="button" class="btn whitebtn">Use wallet balance</button>
+                    </div>
+                    <label> <input type="radio" name="payment" value="VISA"
+                            id="VISA"><img src="/images/VISA.jfif">Pay with card
+                    </label>
+                    <hr>
+
+                    <label> <input type="radio" name="payment" value="tabby"
+                            id="tabby"><img src="/images/tabby(1)(1).png">Pay in 4 interest-free installments
+                    </label>
+                    <hr>
+                    <label> <input type="radio" name="payment" value="tamara"
+                            id="tamara"><img src="/images/tamara(1)(1).png">Pay in 3 interest-free installments
+                    </label>
+                    <hr>
+                    <label> <input type="radio" name="payment" value="stcpay"
+                            id="stcpa"><img src="/images/stc.png">Pay With STC Pay
+                    </label>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="card mx-auto col-10 col-lg-5">
+                <div class="price-info mt-4"
+                    style="text-align: start; margin: 0 auto;">
+                    <div class="rate-per-night">
+                        <p class="ratepernight"><span id="night-price">255</span> SAR/night</p>
+                    </div>
+
+                    <div class="total-cost">
+                        <p>Total <span class="nightNumbers">3</span> night/s 
+                            <span style="color: #b3952b; font-size: 2rem; font-weight: 500;" id="totalCost">SAR 765</span>
+                            Inclusive of VAT
+                        </p>
+                    </div>
+                </div>
+
+                <hr class="mx-auto" style="width:90%;">
+                <div class="d-flex flex-column">
+                    <p class="d-flex justify-content-end">You can edit the date</p>
+                    <div class=" input d-flex justify-content-between align-items-center pt-1 mb-2" style="width: 100%;">
+                        <div class="arrival-date px-4" style="width: 40%;">
+                            <label class="form-label" for="arrivalDate" style="display: block; margin-bottom: 5px;">
+                                Arrival Date
+                            </label>
+                            <input class="form-control" type="date" name="arrivalDate" id="arrivalDate" required style="padding: 5px; border-radius: 5px; 
+                                border: 1px solid #ccc; margin-bottom: 10px;" />
                         </div>
-
-                        <div class="nights pt-4">
-                            <span id="nightNumbers">1</span> night
+        
+                        <div class="departural-date px-4" style="width: 40%;">
+                            <label class="form-label" for="departuralDate" style="display: block; margin-bottom: 5px;">
+                                Departure Date
+                            </label>
+                            <input class="form-control" type="date" name="departuralDate" id="departuralDate" required style="padding: 5px; border-radius: 5px; 
+                                border: 1px solid #ccc; margin-bottom: 13px;" />
+                        </div>
+        
+                        <div class="nights" style="width: 10%;">
+                            <span class="nightNumbers">1</span> night/s
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        
-        <div class="card-body" dir="ltr">
-            <h2 class="card-text"></h2>
-        </div>
-        <hr style="width:29rem; margin:2rem; height:2px; background-color:#ccc;">
-        
-        <div class="arrival-departural row" style="display: flex; align-items: center;">
-            <div class="col-2">
-            </div>
-            <div class="col-6">
-                <p>Arrival Time</p>
-                <p>4:00 PM</p>
-            </div>
-            <div class="col-4">
-                <p>Departure Time</p>
-                <p>2:00 PM</p>
-            </div>
-        </div>
-        
-        <hr style="width:29rem; margin:2rem; height:2px; background-color:#ccc;">
-        
-        <h5 style="text-align: center;">You will pay now 255 riyals</h5>
-        <h2 style="text-align: center; color:black;">Booking Summary</h2>
-        
-        <div class="summary-details row">
+                <hr class="mx-auto" style="width:90%;">
 
-            <div class="col-2">
-            </div>
-            <div class="col-5">
-                <p>Nights</p>
-                <p>You will pay now 255 riyals</p>
-                <p>Promo Code</p>
-                <p>Will be paid upon arrival</p>
-            </div>
-            <div class="col-5">
-                <p id="nightNumbers">3</p>
-                <p class="text-success" id="advancedPayment">-255 SAR</p>
-                <p class="text-success" id="promoCode">-100 SAR</p>
-                <p id="complementary">410 SAR</p>
-            </div>
-            
-            <hr style="width:29rem; margin:2rem; height:2px; background-color:#ccc;">
-            
-            <div class="row">
-                <div class="col-2">
-                </div>
-                <div class="col-5">
-                    <p style="margin-right: 20px; color: black; font-weight: bold;">Total</p>
-                </div>
-                <div class="col-5">
-                    <p style="font-weight: bold;" id="net">665 SAR</p>
-                </div>
-            </div>
-            
-            <hr style="width:29rem; margin:2rem; height:2px; background-color:#ccc;">
-            
-            <div class="d-flex justify-content-center align-items-center" style="margin-bottom: 2rem;">
-                <div class="row w-100">
-                    <div class="col-md-6">
-                        <p>Promo Code</p>
-                    </div>
-                    <div class="col-md-3">
-                        <input type="text" class="form-control" style="background-color: #f1f5f8;">
-                    </div>
-                    <div class="col-md-3">
-                        <button type="button" class="btn btn-success">Apply</button>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</div>
+                <div class="arrival-departural mx-5">
 
-    <script src="/js/index.js"></script>
-<script src="/js/all.min.js"></script>
-<script src="/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p>Arrival Time</p>
+                        <p>Departure Time</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p style="color:black;">4:00 pm</p>
+                        <p style="color:black;">2:00 pm</p>
+
+                    </div>
+
+                </div>
+                <hr class="mx-auto" style="width:90%;">
+
+                <p class="text-center">You will pay now <span class="advanced-payment">255</span> SAR</p>
+                <p class="text-center text-black" style="font-size: 1.5rem;">Booking Summary</p>
+
+                <div class="summary-details mx-5">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p>night/s</p>
+                        <p class="nightNumbers">3</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p>You will pay now <span class="advanced-payment">255</span> SAR</p>
+                        <p class="text-success">-<span class="advanced-payment">255</span>
+                            SAR</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p>Discount Value</p>
+                        <p class="text-success">-<span id="discount-value">100</span> SAR</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p>You will pay on arrival</p>
+                        <p><span id="complementary">100</span> SAR</p>
+
+                    </div>
+
+                </div>
+
+                <hr class="mx-auto" style="width:100%;">
+
+                <div class="total d-flex justify-content-between align-items-center mx-5">
+                    <p class="text-black">Total</p>
+                    <p><span id="net">689</span> SAR</p>
+                </div>
+
+                <hr class="mx-auto" style="width:100%;">
+
+
+                    <div class="discount d-flex justify-content-between align-items-center mx-5 mb-4 py-3">
+                        <p class="text-black">Discount Code</p>
+
+                        <div class="controls d-flex justify-content-center gap-2">
+                            <input type="text"
+                                class="form-control text-success text-center"
+                                style="background-color: #f1f5f8; width:50%; border: none;">
+                            <button type="button"
+                                class="btn text-success">Apply</button>
+                        </div>
+                    </div>
+
+
+            </div>
+        </div>
+
+            <!-- <script src="/js/resorts.js"></script> -->
+            <script src="/js//payment-revision.js"></script>
+            <script src="/js/all.min.js"></script>
+            <script src="/js/bootstrap.bundle.min.js"></script>
+        </body>
+    </html>
