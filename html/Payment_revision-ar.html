@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>المراجعة و الدفع</title>
+        <link rel="stylesheet" href="/css/all.min.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="/css/style.css"> -->
+        <link rel="stylesheet" href="/css/Payment_revision.css">
+        <link rel="stylesheet" href="/css/card.css">
+
+        <style>
+        .with-navbar
+        {
+            display: flex;
+
+        }
+        .accordion{
+            border: none;
+            box-shadow: none;
+            margin: 0;
+            padding: 0;
+        }
+        @media(max-width:450){
+            .with-navbar{
+            display: none;
+            }
+            .accordion{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .discount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.controls {
+    display: flex;
+    align-items: space-evenly;
+}
+
+    </style>
+    </head>
+    <body dir="rtl" class="container-fluid">
+
+        <div class="row container-fluid text-center">
+            <div class="col 10 col-lg-6">
+
+                <div class="revision">
+                    <h1 class="golden-word">المراجعة</h1>
+                    <hr>
+                    <h3 class="golden-word">..غرفة بسرير مزدوج</h3>
+                    <!-- <div class="content-container d-block "> -->
+                        <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                            <p class="gray-word"><i class="fa-solid fa-location-dot text-black-50 "></i> الرياض-حى العزيزية -شارع الشباب </p>
+                
+                            <p><i class="fa-solid fa-user icon-color text-black-50"></i>  تتسع لشخصين</p>
+                
+                        </div>
+                        <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                            <p><i class="fa-solid fa-door-open text-black-50"></i> مساحة الوحدة 40م</p>
+                
+                            <p><i class="fas fa-clock text-black-50"></i> خدمة الغرف على مدار 24 ساعة </p> 
+                
+                        </div>
+                    <hr>
+
+                    <div class="conditions">
+                        <h1>الشروط</h1>
+                        <p> شروط الحجز(من قبل المضيف) </p>
+                        <p>١- الالتزام بوقت الخروج الموضح </p>
+                        <p>٢- العدد المسموح به للدخول ٣ أشخاص بحد أقصى </p>
+                        <p>٣- ممنوع اصطحاب أى نوع من الحيوانات </p>
+                        <p>٤- يمنع الشيشه منعاً باتاً و يسمح بالتدخين و يوجد
+                            طفاية للدخان</p>
+                    </div>
+                    <div class="cancel">
+
+                        <h1>سياسة الإلغاء </h1>
+                        <p>سياسة الإلغاء و الاسترجاع</p>
+                        <p>بإمكانك إلغاء او تأجيل الحجز مجاناً قبل تاريخ
+                            ٠٤/٠٧/٢٠٢٤</p>
+                    </div>
+
+                </div>
+
+                <div class="payment">
+                    <h1 class="golden-word">الدفع</h1>
+                    <div class="buttons">
+                        <button type="button"
+                            class="btn goldenbtn">CASHPARK</button>
+                        <button type="button" class="btn whitebtn">استخدام رصيد
+                            المحفظة</button>
+                    </div>
+                    <label> <input type="radio" name="payment" value="VISA"
+                            id="VISA" placeholder="الدفع بالبطاقة"><img
+                            src="/images/VISA.jfif"> الدفع بالبطاقة</label>
+                    <hr>
+
+                    <label> <input type="radio" name="payment" value="tabby"
+                            id="tabby"><img src="/images/tabby(1)(1).png"> قسمها
+                        على 4 دفعات أى فوائد او رسوم</label>
+                    <hr>
+                    <label> <input type="radio" name="payment" value="tamara"
+                            id="tamara"><img src="/images/tamara(1)(1).png">
+                        ادفع على 3 دفعات بدون فوائد او رسوم</label>
+                    <hr>
+                    <label> <input type="radio" name="payment" value="stcpay"
+                            id="stcpa"><img src="/images/stc.png"> دفع بإستخدام
+                    </label>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="card mx-auto col-10 col-lg-5">
+                <div class="price-info mt-4"
+                    style="text-align: start; margin: 0 auto;">
+                    <div class="rate-per-night">
+                        <p class="ratepernight">255 SAR/ليلة</p>
+                    </div>
+
+                    <div class="total-cost">
+                        <p>إجمالي ٣ ليالى <span
+                                style="color: #b3952b; font-size: 2rem; font-weight: 500;"
+                                id="totalCost">SAR 765</span> شامل ضريبة القيمة
+                            المضافة</p>
+                    </div>
+                </div>
+
+                    <hr class="mx-auto" style="width:90%;">
+
+                <!-- <div class="row g-0">
+                    <div class="col-md-12"> -->
+                    <div class="d-flex flex-column">
+                        <p>بإمكانك تعديل التاريخ</p>
+                        <div class="card-body">
+                            <div class="input d-flex justify-content-evenly">
+                                <div class="arrival-date m-1 px-2">
+                                    <label class="form-label"
+                                        for="arrivalDate">موعد الوصول</label>
+                                        <input class="form-control" type="date"
+                                        name="arrivalDate" id="arrivalDate"
+                                        required
+                                        style="padding: 5px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 10px;" />
+                                </div>
+                                
+                                <div class="departural-date m-1">
+                                    <label class="form-label"
+                                    for="departuralDate">موعد
+                                    المغادرة</label>
+                                    <input class="form-control" type="date"
+                                    name="departuralDate"
+                                    id="departuralDate" required
+                                    style="padding: 5px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 10px;" />
+                                </div>
+                                
+                                <div class="nights pt-4">
+                                    <span id="nightNumbers">1</span> ليلة
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <!-- </div>
+                </div> -->
+                <hr class="mx-auto" style="width:90%;">
+
+                <div class="arrival-departural mx-5">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p>وقت الوصول</p>
+                        <p>وقت المغادرة</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p style="color:black;">4:00 مساءً</p>
+                        <p style="color:black;">2:00 مساءً</p>
+
+                    </div>
+
+                </div>
+                <hr class="mx-auto" style="width:90%;">
+
+                <p class="text-center">ستدفع الان 255 ريال</p>
+                <p class="text-center text-black" style="font-size: 1.5rem;">ملخص الحجز</p>
+
+                <div class="summary-details mx-5">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p>ليالى</p>
+                        <p id="nightNumbers">3</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p>ستدفع الان 255ريال</p>
+                        <p class="text-success" id="advancedPayment">-255
+                            SAR</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p>كود الخصم</p>
+                        <p class="text-success" id="promoCode">-100 SAR</p>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p>ستدفع عند الوصول</p>
+                        <p id="complementary">410 SAR</p>
+
+                    </div>
+
+                </div>
+
+                <hr class="mx-auto" style="width:100%;">
+
+                <div class="total d-flex justify-content-between align-items-center mx-5">
+                    <p class="text-black">المجموع</p>
+                    <p id="net">665 SAR</p>
+
+                </div>
+
+                <hr class="mx-auto" style="width:100%;">
+
+
+                    <div class="discount d-flex justify-content-between align-items-center mx-5 mb-4 py-3">
+                        <p class="text-black">كود الخصم</p>
+
+                        <div class="controls d-flex justify-content-center gap-3">
+                            <input type="text"
+                                class="form-control text-success text-center"
+                                style="background-color: #f1f5f8; width:50%; border: none;">
+                            <button type="button"
+                                class="btn text-success">تطبيق</button>
+                        </div>
+                    </div>
+
+
+            </div>
+        </div>
+
+            <script src="/js/index.js"></script>
+            <script src="/js/all.min.js"></script>
+            <script src="/js/bootstrap.bundle.min.js"></script>
+        </body>
+    </html>
