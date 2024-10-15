@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المراجعة و الدفع</title>
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/Payment_revision.css">
+    <link rel="stylesheet" href="/css/card.css">
+
+</head>
+<body  class="container-fluid " style="padding-top: 50px;">
+    <div class="row" >
+    <div class="col-6">
+
+    <div class="revision">
+        <h1 class="golden-word">Revision</h1>
+        <hr>
+        <h3 class="golden-word">Double bed room..</h3>
+        <div class="content-container">
+            <div class="right-div">
+                <p class="gray-word"><i class="fa-solid fa-location-dot text-black-50 "></i> Riyadh - Al-Aziziya District - Youth Street</p>
+                <p><i class="fa-solid fa-door-open text-black-50"></i> Unit area 40m²</p>
+            </div>
+            <div class="left-div">
+                <p><i class="fa-solid fa-user icon-color text-black-50"></i> Accommodates two people</p>
+                <p><i class="fas fa-clock text-black-50"></i> Room service available 24 hours</p> 
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="conditions">
+        <h1>Conditions</h1>
+        <p> Booking Conditions (Host's Terms) </p>
+        <p>1. Adherence to the departure time shown </p>
+        <p>2. Maximum number allowed for entry: 3 people </p>
+        <p>3. Prohibition of bringing any kind of animals </p>
+        <p>4. Smoking is strictly prohibited, but smoking is permitted, and there is a smoke detector</p> 
+    </div>
+    <div class="cancel">
+        <h1>Cancellation Policy</h1>
+        <p>Cancellation and Refund Policy</p>
+        <p>You can cancel or postpone your reservation for free until July 04, 2024</p>
+    </div>
+    
+    <div class="payment">
+        <h1 class="golden-word">Payment</h1>
+        <div class="buttons"> 
+            <button type="button" class="btn goldenbtn">CASHPARK</button>
+            <button type="button" class="btn whitebtn">Use Wallet Balance</button>
+        </div>
+        <label>    
+            <input type="radio" name="payment" value="VISA" id="VISA" placeholder="Pay by card"><img src="/images/VISA.jfif"> Pay by Card</label>
+        <hr>
+    
+        <label> <input type="radio" name="payment" value="tabby" id="tabby"><img src="/images/tabby(1)(1).png"> Split into 4 installments Any interest or fees</label>
+        <hr>
+        <label>    <input type="radio" name="payment" value="tamara" id="tamara"><img src="/images/tamara(1)(1).png"> Pay in 3 installments without any interest or fees</label>
+        <hr>
+        <label> <input type="radio" name="payment" value="stcpay" id="stcpa"><img src="/images/stc.png"> Pay using </label>
+        <hr>
+    
+    </div>
+</div>
+
+<div class="col-lg-5">
+    <div class="card mb-5" style="border:2px solid gray">
+        <div class="price-info">
+            <div class="rate-per-night">
+                <h4 class="ratepernight" style="margin-left: 2rem; margin-top: 1rem;">255 SAR/night</h4>
+            </div>
+            
+            <div class="total-cost">
+                <h5 style="text-align: center;">Total 3 nights <span style="color: #b3952b; font-size: 2rem;;" id="totalCost">SAR 765</span> including VAT</h5>
+            </div>
+            
+            <div class="separator">
+                <hr style="width:29rem; margin:2rem; height:2px; background-color:#ccc;">
+            </div>
+        </div>
+        
+        <div class="row g-0">
+            <div class="col-md-12">
+                <h6 class=" text-end">You can modify the dates</h6>
+                <div class="card-body">
+                    
+                    <div class="input d-flex justify-content-evenly">
+                        <div class="arrival-date m-1 px-2">
+                            <label class="form-label" for="arrivalDate">Arrival Date</label>
+                            <input class="form-control" type="date" name="arrivalDate" id="arrivalDate" required style="padding: 5px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 10px;" />
+                        </div>
+
+                        <div class="departural-date m-1">
+                            <label class="form-label" for="departuralDate">Departure Date</label>
+                            <input class="form-control" type="date" name="departuralDate" id="departuralDate" required style="padding: 5px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 10px;" />
+                        </div>
+
+                        <div class="nights pt-4">
+                            <span id="nightNumbers">1</span> night
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-body" dir="ltr">
+            <h2 class="card-text"></h2>
+        </div>
+        <hr style="width:29rem; margin:2rem; height:2px; background-color:#ccc;">
+        
+        <div class="arrival-departural row" style="display: flex; align-items: center;">
+            <div class="col-2">
+            </div>
+            <div class="col-6">
+                <p>Arrival Time</p>
+                <p>4:00 PM</p>
+            </div>
+            <div class="col-4">
+                <p>Departure Time</p>
+                <p>2:00 PM</p>
+            </div>
+        </div>
+        
+        <hr style="width:29rem; margin:2rem; height:2px; background-color:#ccc;">
+        
+        <h5 style="text-align: center;">You will pay now 255 riyals</h5>
+        <h2 style="text-align: center; color:black;">Booking Summary</h2>
+        
+        <div class="summary-details row">
+
+            <div class="col-2">
+            </div>
+            <div class="col-5">
+                <p>Nights</p>
+                <p>You will pay now 255 riyals</p>
+                <p>Promo Code</p>
+                <p>Will be paid upon arrival</p>
+            </div>
+            <div class="col-5">
+                <p id="nightNumbers">3</p>
+                <p class="text-success" id="advancedPayment">-255 SAR</p>
+                <p class="text-success" id="promoCode">-100 SAR</p>
+                <p id="complementary">410 SAR</p>
+            </div>
+            
+            <hr style="width:29rem; margin:2rem; height:2px; background-color:#ccc;">
+            
+            <div class="row">
+                <div class="col-2">
+                </div>
+                <div class="col-5">
+                    <p style="margin-right: 20px; color: black; font-weight: bold;">Total</p>
+                </div>
+                <div class="col-5">
+                    <p style="font-weight: bold;" id="net">665 SAR</p>
+                </div>
+            </div>
+            
+            <hr style="width:29rem; margin:2rem; height:2px; background-color:#ccc;">
+            
+            <div class="d-flex justify-content-center align-items-center" style="margin-bottom: 2rem;">
+                <div class="row w-100">
+                    <div class="col-md-6">
+                        <p>Promo Code</p>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" style="background-color: #f1f5f8;">
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-success">Apply</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+    <script src="/js/index.js"></script>
+<script src="/js/all.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

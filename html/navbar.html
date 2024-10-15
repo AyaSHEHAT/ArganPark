@@ -9,39 +9,41 @@
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/naav.css">
+
 </head>
 
 <body dir="rtl" class="container-fluid">
 
   <nav class="navbar mainNav navbar-expand-lg navbar-light bg-light">
-     <!-- Toggler for small screens -->
-     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Toggler for small screens -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-        <!-- Logo -->
+    <!-- Logo -->
 
-     <div class="">
-       <a class="navbar-brand " href="#">
-         <img src="/images/web-icon.png" alt="Logo" class="img-fluid">
-        </a>
-      </div>
+    <div class="">
+      <a class="navbar-brand " href="#">
+        <img src="/images/web-icon.png" alt="Logo" class="img-fluid">
+      </a>
+    </div>
 
-   
+
     <!-- <div class="user-logo">
       <i class="fa-regular fa-circle-user fa-2x"></i>
     </div> -->
 
     <!-- Visible only on mobile -->
-    <div class="user-container d-lg-none"> 
+    <div class="user-container d-lg-none">
       <div class="user-logo" id="userLogo">
-        <i class="fa-regular fa-circle-user fa-2x"></i> 
+        <i class="fa-regular fa-circle-user fa-2x"></i>
       </div>
       <!-- Default User Icon -->
-    
+
       <div class="dropdown-menu-user" id="userMenu">
         <div class="user-info d-flex align-items-center">
           <div class="user-logo2 mb-2" id="userLogo">
-            <i class="fa-regular fa-circle-user fa-2x"></i> 
+            <i class="fa-regular fa-circle-user fa-2x"></i>
           </div>
           <div class="welcomediv">
             <h5> <span class="welcome">مرحبا بك</span> محمد الشمري</h5>
@@ -55,17 +57,19 @@
           <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-credit-card mx-1"></i> طرق الدفع</a></li>
           <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-gift mx-1"></i> كابونات</a></li>
           <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-headphones mx-1"></i> تواصل معنا</a></li>
-          <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-sign-out-alt mx-1"></i> تسجيل الخروج</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-sign-out-alt mx-1"></i> تسجيل الخروج</a>
+          </li>
         </ul>
       </div>
     </div>
-    
+
 
     <!-- Navbar Links -->
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav mainNav me-auto mb-2 mb-lg-0 d-flex gap-4">
         <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
-          <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownResorts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownResorts" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
             منتجعات
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownResorts">
@@ -75,7 +79,8 @@
           </ul>
         </li>
         <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
-          <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownHotels" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownHotels" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
             فنادق
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownHotels">
@@ -85,7 +90,8 @@
           </ul>
         </li>
         <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
-          <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownHalls" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownHalls" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
             قاعة مناسبات
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownHalls">
@@ -95,7 +101,8 @@
           </ul>
         </li>
         <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
-          <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownOffers" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownOffers" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
             العروض
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownOffers">
@@ -108,7 +115,8 @@
 
       <!-- Browse in English and Sign-up Button -->
       <div class="d-flex align-items-center me-auto justify-content-between">
-        <button type="button" class="btn btn-primary ms-3">الدخول او إنشاء حساب جديد</button>
+        <button type="button" class="btn ms-3" data-bs-toggle="modal" data-bs-target="#loginModal">الدخول او إنشاء حساب
+          جديد</button>
         <div class="d-flex align-items-center text-black-50">
           <div id="change-lang-to-en">
             <p class="mb-0">Browse in <br><span class="text-decoration-underline">English</span></p>
@@ -122,6 +130,130 @@
     </div>
   </nav>
 
+
+  <!-- Modal Structure -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header d-flex justify-content-between">
+          <div class="modal-title fs-5">
+            <h1 id="loginModalLabel">أهلاً وسهلاً بك</h1>
+            <p>سجل دخول لإدارة حجزك والحصول على الكاش باك</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <div class="row">
+            <!-- Form -->
+            <div class="col-md-6  form-container">
+              <form>
+                <div class="mb-3 text-center">
+                  <label for="loginMethod" class="form-label">الدخول بواسطة</label>
+                  <div class="modalBtns d-flex">
+                    <button type="button" class="btn btn-outline-primary me-2 active loginWithPhone">رقم الجوال</button>
+                    <button type="button" class="btn btn-outline-primary loginWithMail">البريد الإلكتروني</button>
+                  </div>
+                </div>
+
+                <!-- First Name & Last Name -->
+                <div class="row mb-3">
+                  <div class="col">
+                    <label for="firstName" class="form-label">الاسم الأول</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="حسين">
+                  </div>
+                  <div class="col">
+                    <label for="lastName" class="form-label">الاسم الأخير</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="محمد">
+                  </div>
+                </div>
+
+                <div class="row mb-3 phoneDiv">
+
+                  <div class="col">
+                    <label for="countryCode" class="form-label">رمز البلد</label>
+                    <select name="countryCode" id="countryCode" class="form-select">
+                      <option value="+966">+966</option>
+                      <option value="+966">+966</option>
+                      <option value="+966">+966</option>
+                      <option value="+966">+966</option>
+                      <option value="+966">+966</option>
+                      <option value="+966">+966</option>
+                    </select>
+                  </div>
+
+                  <div class="col">
+                    <label for="phone" class="form-label">رقم الهاتف</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="0500077659">
+                  </div>
+                </div>
+
+               
+
+                <!-- email -->
+                <div class="mb-3 emailDiv d-none">
+                  <label for="email" class="form-label">البريد الالكتروني</label>
+                  <input type="email" class="form-control" id="email" placeholder="example@example.com">
+                </div>
+
+                <!-- Password -->
+                <div class="mb-3">
+                  <label for="password" class="form-label">كلمة المرور</label>
+                  <input type="password" class="form-control" id="password" placeholder="••••••••">
+                </div>
+                <div class="modal-footer justify-content-start">
+                  <button type="button" class="btn signup active">تسجيل</button>
+                  <button type="button" class="btn login active">دخول</button>
+                </div>
+              </form>
+            </div>
+            <!-- Carousel (Slider) -->
+            <div class="col-md-6">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/images/shalehat.jpg" class="d-block w-100" alt="Slide 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/main-slider-3.webp" class="d-block w-100" alt="Slide 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/main-slider-2.jpg" class="d-block w-100" alt="Slide 3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <!-- Modal Footer -->
+        
+      </div>
+    </div>
+  </div>
   <script src="/js/all.min.js"></script>
   <script src="/js/bootstrap.bundle.min.js"></script>
   <script src="/js/navbar.js"></script>
