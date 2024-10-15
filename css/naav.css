@@ -76,6 +76,21 @@ nav ul li a.active {
     margin-left: 0.5rem;
 }
 
+#change-lang-to-ar:hover {
+    cursor: pointer;
+}
+#change-lang-to-ar span {
+    font-size: 1.3rem;
+    color: #b3952b;
+}
+#change-lang-to-ar:hover span {
+    color: #d4b131;
+}
+#change-lang-to-ar {
+    height: 3.8rem;
+    margin-left: 0.5rem;
+}
+
 .dropdown-toggle::after {
     content: none !important;
 }
