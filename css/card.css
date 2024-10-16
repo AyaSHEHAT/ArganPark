@@ -1,0 +1,21 @@
+.revision-card
+{
+display: flex;
+}
+
+.card {
+  border-radius: 2.3rem;
+  border: 1px solid #838DB1;
+  color: #838DB1 !important;
+  height: max-content;
+}
+
+.input, .form-select, input[type='date']{
+  border: none;
+  background-color: #F3F5FC !important;
+  border-radius: 10px;
+}
+.arrival-date{
+ border-left: 1px solid lightgray;
+
+} 
