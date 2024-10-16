@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-  let changeLangToEnglishDeclartion = document.getElementById('change-lang-to-en');
-  let changeLangToEnglish = changeLangToEnglishDeclartion?changeLangToEnglishDeclartion:document.getElementById('change-lang-to-ar');
-  // Change language to English on click
-  changeLangToEnglish.addEventListener('click', function () {
-      window.location.href = 'confirmation.html';
-  });
+  // let changeLangToEnglishDeclartion = document.getElementById('change-lang-to-en');
+  // let changeLangToEnglish = changeLangToEnglishDeclartion?changeLangToEnglishDeclartion:document.getElementById('change-lang-to-ar');
+  // // Change language to English on click
+  // changeLangToEnglish.addEventListener('click', function () {
+  //     window.location.href = 'confirmation.html';
+  // });
 
   const loginEmailBtn = document.querySelector('.loginWithMail');
   const loginPhoneBtn = document.querySelector('.loginWithPhone');
@@ -92,4 +92,22 @@ btnLogin.addEventListener('click', function () {
           userLogo.innerHTML = '<i class="fa-regular fa-circle-user fa-2x"></i>';  // Reset to user icon
       }
   });
+
+  if (document.body.hasAttribute("dir") && document.body.getAttribute("dir") === "rtl") {
+    let toEnglish = document.getElementById('change-lang-to-en');
+  
+    toEnglish.addEventListener('click', function () {
+        let currentUrl = window.location.href;
+        let newUrl = currentUrl.replace('-ar', '-en');
+        window.location.href = newUrl;
+    });
+  } else {
+    let toArabic = document.getElementById('change-lang-to-ar');
+    toArabic.addEventListener('click', function () {
+        let currentUrl = window.location.href;
+        let newUrl = currentUrl.replace('-en', '-ar');
+        window.location.href = newUrl;
+    });
+  }
+
 });
