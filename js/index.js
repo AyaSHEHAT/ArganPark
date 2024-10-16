@@ -104,7 +104,13 @@ document.addEventListener("DOMContentLoaded", function () {
     //toggle between slider and search criteria form in small screens + fill the search input with the selected values
     const slider = document.getElementById("carouselExampleAutoplaying");
     const searchDiv = document.getElementById("search-div");
-    const searchInputField = document.getElementById("search-input");
+
+    var searchInputField = document.getElementById("search-input");
+    // if (document.body.hasAttribute("dir") && document.body.getAttribute("dir") === "rtl") {
+    // } else {
+    //     var searchInputField = document.getElementById("search-input-en");
+    // }
+    //const searchInputFieldEn = document.getElementById("search-input-en");
 
     //on change the screen size hide the search input and show the slider beside the search criteria form
     window.addEventListener("resize", function () {
@@ -141,7 +147,12 @@ document.addEventListener("DOMContentLoaded", function () {
         let departuralDateValue = document.getElementById('departuralDate').value;
         let numberGuestsValue = document.getElementById('numberGuests').innerText;
         let numberRoomsValue = document.getElementById('numberRooms').innerText;
-        searchInputField.value = `${hotelOrLocationValue}, موعد الوصول ${arrivalDateValue}, موعد المغادرة ${departuralDateValue}, ${numberGuestsValue} نزلاء, ${numberRoomsValue} غرفة`;
+        //check if body is in arabic (contains dir attribute and its value is rtl) to change the text direction
+        if (document.body.hasAttribute("dir") && document.body.getAttribute("dir") === "rtl") {
+            searchInputField.value = `${hotelOrLocationValue}, موعد الوصول ${arrivalDateValue}, موعد المغادرة ${departuralDateValue}, ${numberGuestsValue} نزلاء, ${numberRoomsValue} غرفة`;
+        } else {
+            searchInputField.value = `${hotelOrLocationValue}, Arrival Date ${arrivalDateValue}, Departure Date ${departuralDateValue}, ${numberGuestsValue} Guests, ${numberRoomsValue} Rooms`;
+        }
         searchInputField.classList.add("text-black-50");
     }
 
@@ -207,4 +218,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     updateBackground();
+
 });

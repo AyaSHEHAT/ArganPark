@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="/css/all.min.css">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/naav.css">
+  <link rel="stylesheet" href="/css/navbar.css">
 
 </head>
 
 <body dir="rtl" class="container-fluid">
 
+  <!-- Navbar -->
   <nav class="navbar mainNav navbar-expand-lg navbar-light bg-light">
     <!-- Toggler for small screens -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -27,11 +28,6 @@
         <img src="/images/web-icon.png" alt="Logo" class="img-fluid">
       </a>
     </div>
-
-
-    <!-- <div class="user-logo">
-      <i class="fa-regular fa-circle-user fa-2x"></i>
-    </div> -->
 
     <!-- Visible only on mobile -->
     <div class="user-container d-lg-none">
@@ -132,7 +128,6 @@
     </div>
   </nav>
 
-
   <!-- Modal Structure -->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -155,7 +150,7 @@
               <form action="" method="" class="signUpForm">
                 <div class="mb-3 text-center">
                   <label for="loginMethod" class="form-label">الدخول بواسطة</label>
-                  <div class="modalBtns d-flex">
+                  <div class="modalBtns d-flex justify-content-evenly">
                     <button type="button" class="btn btn-outline-primary me-2 active signWithPhone">رقم الجوال</button>
                     <button type="button" class="btn btn-outline-primary signWithMail">البريد الإلكتروني</button>
                   </div>
@@ -249,7 +244,7 @@
                   </div>
                 </div>
 
-                <div class="modal-footer justify-content-start">
+                <div class="modal-footer d-flex">
                   <button type="button" class="btn signup active px-5">تسجيل</button>
                   <input type="submit" class="btn login px-5" value="دخول"/>
                 </div>
@@ -301,6 +296,8 @@
       </div>
     </div>
   </div>
+
+  
   <script src="/js/all.min.js"></script>
   <script src="/js/bootstrap.bundle.min.js"></script>
   <script src="/js/navbar.js"></script>

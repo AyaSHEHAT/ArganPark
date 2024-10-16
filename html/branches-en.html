@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الفروع</title>
+    <title>Branches</title>
     <link rel="stylesheet" href="/css/all.min.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/branches.css">
 
+
 </head>
 
-<body dir="rtl" class="container-fluid">
+<body class="container-fluid">
     <!-- Navbar -->
     <nav class="navbar mainNav navbar-expand-lg navbar-light bg-light mb-3">
         <!-- Toggler for small screens -->
@@ -24,7 +25,7 @@
         <!-- Logo -->
 
         <div class="">
-            <a class="navbar-brand " href="#">
+            <a class="navbar-brand" href="#">
                 <img src="/images/web-icon.png" alt="Logo" class="img-fluid">
             </a>
         </div>
@@ -44,24 +45,23 @@
                         <i class="fa-regular fa-circle-user fa-2x"></i>
                     </div>
                     <div class="welcomediv">
-                        <h5> <span class="welcome">مرحبا بك</span> محمد الشمري</h5>
+                        <h5> <span class="welcome">Welcome</span> Mohamed Elshemary</h5>
                         <p>muhammed1@gmail.com</p>
                     </div>
                 </div>
                 <ul class="navbar-nav">
-                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-user mx-1"></i> الملف الشخصي</a>
+                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-user mx-1"></i> Profile</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-calendar mx-1"></i>
+                            Reservations</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-wallet mx-1"></i> Wallet</a>
                     </li>
-                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-calendar mx-1"></i> حجوزاتي</a>
-                    </li>
-                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-wallet mx-1"></i> المحفظة</a>
-                    </li>
-                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-credit-card mx-1"></i> طرق
-                            الدفع</a></li>
-                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-gift mx-1"></i> كابونات</a></li>
-                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-headphones mx-1"></i> تواصل
-                            معنا</a></li>
-                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-sign-out-alt mx-1"></i> تسجيل
-                            الخروج</a>
+                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-credit-card mx-1"></i> Payment
+                            methods</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-gift mx-1"></i> Coupons</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-headphones mx-1"></i> Contact
+                            Us</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-sign-out-alt mx-1"></i> Log
+                            out</a>
                     </li>
                 </ul>
             </div>
@@ -70,11 +70,11 @@
 
         <!-- Navbar Links -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mainNav me-auto mb-2 mb-lg-0 d-flex gap-4">
+            <ul class="navbar-nav mainNav mx-auto mb-2 mb-lg-0 d-flex gap-4">
                 <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
                     <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownResorts" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        منتجعات
+                        Resorts
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownResorts">
                         <li><a class="dropdown-item" href="#">1</a></li>
@@ -85,7 +85,7 @@
                 <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
                     <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownHotels" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        فنادق
+                        Hotels
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownHotels">
                         <li><a class="dropdown-item" href="#">1</a></li>
@@ -96,7 +96,7 @@
                 <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
                     <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownHalls" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        قاعة مناسبات
+                        Event Halls
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownHalls">
                         <li><a class="dropdown-item" href="#">1</a></li>
@@ -107,7 +107,7 @@
                 <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
                     <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownOffers" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        العروض
+                        Offers
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownOffers">
                         <li><a class="dropdown-item" href="#">1</a></li>
@@ -118,13 +118,12 @@
             </ul>
 
             <!-- Browse in English and Sign-up Button -->
-            <div class="d-flex align-items-center me-auto justify-content-between gap-4">
-                <button type="button" class="btn ms-3" data-bs-toggle="modal" data-bs-target="#loginModal">الدخول او
-                    إنشاء حساب
-                    جديد</button>
+            <div class="d-flex align-items-center mx-auto justify-content-between gap-4">
+                <button type="button" class="btn ms-3" data-bs-toggle="modal" data-bs-target="#loginModal">Login or
+                    create a new account</button>
                 <div class="d-flex align-items-center text-black-50">
-                    <div id="change-lang-to-en">
-                        <p class="mb-0">Browse in <br><span class="text-decoration-underline">English</span></p>
+                    <div id="change-lang-to-ar">
+                        <p class="mb-0">التصفح باللغة <br><span class="text-decoration-underline">العربية</span></p>
                     </div>
                     <div>
                         <i class="fa-solid fa-earth-americas fa-2x mx-2 icon"></i>
@@ -134,7 +133,6 @@
             </div>
         </div>
     </nav>
-
     <!-- Modal Structure -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -142,48 +140,42 @@
                 <!-- Modal Header -->
                 <div class="modal-header d-flex justify-content-between">
                     <div class="modal-title fs-5">
-                        <h1 id="loginModalLabel">أهلاً وسهلاً بك</h1>
-                        <p>سجل دخول لإدارة حجزك والحصول على الكاش باك</p>
+                        <h1 id="loginModalLabel">Welcome</h1>
+                        <p>Log in to manage your booking and get cashback</p>
                     </div>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-
                 <!-- Modal Body -->
                 <div class="modal-body">
                     <div class="row">
                         <!-- Form -->
                         <div class="col-md-6  form-container">
-
                             <form action="" method="" class="signUpForm">
                                 <div class="mb-3 text-center">
-                                    <label for="loginMethod" class="form-label">الدخول بواسطة</label>
+                                    <label for="loginMethod" class="form-label">Login by</label>
                                     <div class="modalBtns d-flex justify-content-evenly">
                                         <button type="button"
-                                            class="btn btn-outline-primary me-2 active signWithPhone">رقم
-                                            الجوال</button>
-                                        <button type="button" class="btn btn-outline-primary signWithMail">البريد
-                                            الإلكتروني</button>
+                                            class="btn btn-outline-primary me-2 active signWithPhone">Mobile</button>
+                                        <button type="button"
+                                            class="btn btn-outline-primary signWithMail">email</button>
                                     </div>
                                 </div>
-
                                 <!-- First Name & Last Name -->
                                 <div class="row mb-3">
                                     <div class="col">
-                                        <label for="firstName" class="form-label">الاسم الأول</label>
+                                        <label for="firstName" class="form-label">First Name</label>
                                         <input type="text" class="form-control" id="firstName" name="firstName"
-                                            placeholder="حسين" required>
+                                            placeholder="Hussien" required>
                                     </div>
                                     <div class="col">
-                                        <label for="lastName" class="form-label">الاسم الأخير</label>
+                                        <label for="lastName" class="form-label">Last Name</label>
                                         <input type="text" class="form-control" id="lastName" name="lastName"
-                                            placeholder="محمد" required>
+                                            placeholder="Mohamed" required>
                                     </div>
                                 </div>
-
                                 <div class="row mb-3 phoneDiv">
-
                                     <div class="col">
-                                        <label for="countryCode" class="form-label">رمز البلد</label>
+                                        <label for="countryCode" class="form-label">Country Code</label>
                                         <select name="countryCode" id="countryCode" class="form-select" required>
                                             <option value="+966">+966</option>
                                             <option value="+966">+966</option>
@@ -194,57 +186,49 @@
                                             <option value="+966">+966</option>
                                         </select>
                                     </div>
-
                                     <div class="col">
-                                        <label for="phone" class="form-label">رقم الهاتف</label>
+                                        <label for="phone" class="form-label">Mobile Number</label>
                                         <input type="tel" class="form-control" id="phone" name="phone"
                                             placeholder="0500077659" required>
                                     </div>
                                 </div>
-
-
-
                                 <!-- email -->
                                 <div class="row mb-3">
                                     <div class="col emailDiv d-none">
-                                        <label for="email" class="form-label">البريد الالكتروني</label>
+                                        <label for="email" class="form-label">email</label>
                                         <input type="email" class="form-control" name="email" id="email"
                                             placeholder="example@example.com" required>
                                     </div>
                                     <!-- Password -->
                                     <div class="col">
-                                        <label for="password" class="form-label">كلمة المرور</label>
+                                        <label for="password" class="form-label">Password</label>
                                         <input type="password" class="form-control" id="password" name="password"
                                             placeholder="••••••••" required>
                                     </div>
                                 </div>
                                 <div class="modal-footer justify-content-start">
-                                    <input type="submit" class="btn signup px-5" value="تسجيل" />
-                                    <button type="button" class="btn login active px-5">دخول</button>
+                                    <input type="submit" class="btn signup px-5" value="Sign Up" />
+                                    <button type="button" class="btn login active px-5">Login</button>
                                 </div>
                             </form> <!-- signUp -->
-
                             <form action="" method="" class="logInForm d-none">
                                 <div class="mb-3 text-center">
-                                    <label for="loginMethod" class="form-label">الدخول بواسطة</label>
+                                    <label for="loginMethod" class="form-label">Login By</label>
                                     <div class="modalBtns d-flex">
                                         <button type="button"
-                                            class="btn btn-outline-primary me-2 active loginWithPhone">رقم
-                                            الجوال</button>
-                                        <button type="button" class="btn btn-outline-primary loginWithMail">البريد
-                                            الإلكتروني</button>
+                                            class="btn btn-outline-primary me-2 active loginWithPhone">Mobile</button>
+                                        <button type="button"
+                                            class="btn btn-outline-primary loginWithMail">email</button>
                                     </div>
                                 </div>
-
                                 <div class="mb-3 loginDivWithPhone">
-
                                     <div class="col mb-3">
-                                        <label for="userPhone" class="form-label">رقم الهاتف</label>
+                                        <label for="userPhone" class="form-label">Mobile Number</label>
                                         <input type="tel" class="form-control" id="userPhone" name="userPhone"
                                             placeholder="0500077659" required>
                                     </div>
                                     <div class="col mb-3">
-                                        <label for="userOTP" class="form-label">الرقم السري (OTP)</label>
+                                        <label for="userOTP" class="form-label">Secret Code (OTP)</label>
                                         <input type="number" class="form-control" id="userOTP" name="userOTP"
                                             placeholder="OTP" required>
                                     </div>
@@ -254,21 +238,21 @@
 
                                 <div class="d-none loginDivWithEmail">
                                     <div class="col mb-3">
-                                        <label for="userEmail" class="form-label">البريد الالكتروني</label>
+                                        <label for="userEmail" class="form-label">email</label>
                                         <input type="email" class="form-control" id="userEmail" name="userEmail"
                                             placeholder="example@example.com" required>
                                     </div>
                                     <!-- Password -->
                                     <div class="col mb-3">
-                                        <label for="userPassword" class="form-label">كلمة المرور</label>
+                                        <label for="userPassword" class="form-label">Password</label>
                                         <input type="password" class="form-control" id="userPassword"
                                             name="userPassword" placeholder="••••••••" required>
                                     </div>
                                 </div>
 
                                 <div class="modal-footer d-flex">
-                                    <button type="button" class="btn signup active px-5">تسجيل</button>
-                                    <input type="submit" class="btn login px-5" value="دخول" />
+                                    <button type="button" class="btn signup active px-5">Sign Up</button>
+                                    <input type="submit" class="btn login px-5" value="Login" />
                                 </div>
                             </form>
 
@@ -308,19 +292,26 @@
                                 </button>
                             </div>
                         </div>
+
+
+
                     </div>
                 </div>
+
                 <!-- Modal Footer -->
+
             </div>
         </div>
     </div>
+
+
     <!-- Switch -->
     <div id="switch-controls"
         class="form-check form-switch d-flex justify-content-between align-items-baseline mb-3 mx-5">
-        <h1>فروعنا</h1>
+        <h1>Our branches</h1>
         <div class="d-flex justify-content-center align-items-baseline gap-5 ">
             <input class="form-check-input" type="checkbox" id="switch-branches">
-            <label class="form-check-label fs-3 mx-2" for="switch-branches">عرض الخريطة</label>
+            <label class="form-check-label fs-3 mx-2" for="switch-branches">Display map</label>
         </div>
     </div>
 
@@ -332,35 +323,39 @@
         <div id="branches-list-container" class="col-10 col-lg-7">
             <div class="branch text-center d-flex justify-content-start align-items-center p-1 mb-3 active"
                 style="color: #b3952b;">
-                <p>فندق ارجان بارك العزيزية</p>
-                <address class="d-none">الرياض - حي العزيزية - شارع الشباب</address>
-                <phone class="d-none">0555089637</phone>
+                <p>Arjaan Park Al-Aziziyah Hotel</p>
+                <titleEn class="d-none">Arjaan Park Al-Aziziyah Hotel</titleEn>
+                <addressEn class="d-none">Riyadh - Al-Aziziyah Dist - Al-Shabab Street</addressEn>
+                <phoneEn class="d-none">0555089637</phoneEn>
             </div>
             <div class="branch text-center d-flex justify-content-start align-items-center p-1 mb-3">
-                <p>فندق ارجان بارك الشفاء</p>
-                <address class="d-none">الرياض - حي الشفاء - شارع الشفاء</address>
-                <phone class="d-none">0555089638</phone>
+                <p>Arjaan Park Al-Shabab Hotel</p>
+                <titleEn class="d-none">Arjaan Park Al-Shabab Hotel</titleEn>
+                <addressEn class="d-none">Riyadh - Al-Shifaa Dist - Al-Shabab Street</addressEn>
+                <phoneEn class="d-none">0555089638</phoneEn>
             </div>
             <div class="branch text-center d-flex justify-content-start align-items-center p-1 mb-3">
-                <p>فندق ارجان بارك الرياض</p>
-                <address class="d-none">الرياض - حي الرياض - شارع الرياض</address>
-                <phone class="d-none">0555089639</phone>
+                <p>Arjaan Park Riyadh Hotel</p>
+                <titleEn class="d-none">Arjaan Park Riyadh Hotel</titleEn>
+                <addressEn class="d-none">Riyadh - Riyadh Dist - Riyadh Street</addressEn>
+                <phoneEn class="d-none">0555089639</phoneEn>
             </div>
             <div class="branch text-center d-flex justify-content-start align-items-center p-1 mb-3">
-                <p>فندق ارجان بارك جدة</p>
-                <address class="d-none">جدة - حي الجنوب - شارع الجنوب</address>
-                <phone class="d-none">0555089640</phone>
+                <p>Arjaan Park Jeddah Hotel</p>
+                <titleEn class="d-none">Arjaan Park Jeddah Hotel</titleEn>
+                <addressEn class="d-none">Jeddah - Al-Janoub Dist - Al-Janoub Street</addressEn>
+                <phoneEn class="d-none">0555089640</phoneEn>
             </div>
         </div>
         <div id="location-details" class="col-8 col-lg-4">
             <div class="mb-5 mt-3">
-                <h4 id="branch-name" class="fw-light">فندق ارجان بارك العزيزية</h4>
+                <h4 id="branch-name" class="fw-light">Arjaan Park Al-Aziziyah Hotel</h4>
                 <hr class="m-auto w-50">
             </div>
             <div class="mb-4">
                 <div class="d-flex gap-4 align-items-start">
                     <i class="fa-solid fa-diamond-turn-right fa-flip-horizontal fa-2x"></i>
-                    <p id="branch-address">الرياض - حي العزيزية - شارع الشباب</p>
+                    <p id="branch-address">Riyadh - Al-Shifa Dist - Al-Shabab Street</p>
                 </div>
                 <hr class="m-auto">
             </div>
@@ -374,14 +369,14 @@
             <div class="mb-4">
                 <div class="d-flex gap-4 align-items-start mb-2">
                     <i class="fa-regular fa-calendar-check fa-2x"></i>
-                    <p class="text-decoration-underline">حجز جديد</p>
+                    <p class="text-decoration-underline">New Booking</p>
                 </div>
                 <hr class="m-auto">
             </div>
             <div class="mb-4">
                 <div class="d-flex gap-4 align-items-start mb-2">
                     <i class="fa-regular fa-newspaper fa-2x"></i>
-                    <p class="text-decoration-underline">تفاصيل</p>
+                    <p class="text-decoration-underline">Details</p>
                 </div>
                 <hr class="m-auto">
             </div>
@@ -392,9 +387,9 @@
     <hr class="m-auto my-5" style="width: 40%;">
 
     <!-- SPONSORS SLIDER -->
-    <h2 class="text-center mb-3 text-black fw-lighter">الحجز من خلال مواقع اخرى</h2>
+    <h2 class="text-center mb-3 text-black fw-lighter">Booking through other sites</h2>
     <div id="sponsors" class="d-flex justify-content-evenly   align-items-center">
-        <button id="next" class="btn btn-outline-secondary"><i class="fas fa-chevron-right"></i></button>
+        <button id="prev" class="btn btn-outline-secondary"><i class="fas fa-chevron-left"></i></button>
         <div id="sponsors-container" class="d-flex justify-content-between">
             <div class="sponsor-item">
                 <a href="">
@@ -427,7 +422,8 @@
                 </a>
             </div>
         </div>
-        <button id="prev" class="btn btn-outline-secondary"><i class="fas fa-chevron-left"></i></button>
+        <button id="next" class="btn btn-outline-secondary"><i class="fas fa-chevron-right"></i></button>
+
     </div>
 
 
