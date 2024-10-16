@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="/css/all.min.css">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/naav.css">
+  <link rel="stylesheet" href="/css/navbar.css">
   <link rel="stylesheet" href="/css/footer-ar.css">
   <link rel="stylesheet" href="/css/resorts.css">
   <link rel="stylesheet" href="/css/resortDetails.css">
 </head>
 
 <body dir="rtl">
+  <!-- Navbar -->
   <nav class="navbar mainNav navbar-expand-lg navbar-light bg-light">
     <!-- Toggler for small screens -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -36,7 +37,9 @@
       </div>
       <!-- Default User Icon -->
 
-      <div class="dropdown-menu-user" id="userMenu">
+      <div class="dropdown-menu-user arabic" id="userMenu" style="position: absolute;
+      top: 50px;
+      left: 0 !important;">
         <div class="user-info d-flex align-items-center">
           <div class="user-logo2 mb-2" id="userLogo">
             <i class="fa-regular fa-circle-user fa-2x"></i>
@@ -110,8 +113,9 @@
       </ul>
 
       <!-- Browse in English and Sign-up Button -->
-      <div class="d-flex align-items-center me-auto justify-content-between">
-        <button type="button" class="btn btn-primary ms-3">الدخول او إنشاء حساب جديد</button>
+      <div class="d-flex align-items-center me-auto justify-content-between gap-4">
+        <button type="button" class="btn ms-3" data-bs-toggle="modal" data-bs-target="#loginModal">الدخول او إنشاء حساب
+          جديد</button>
         <div class="d-flex align-items-center text-black-50">
           <div id="change-lang-to-en">
             <p class="mb-0">Browse in <br><span class="text-decoration-underline">English</span></p>
@@ -124,6 +128,175 @@
       </div>
     </div>
   </nav>
+
+  <!-- Modal Structure -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header d-flex justify-content-between">
+          <div class="modal-title fs-5">
+            <h1 id="loginModalLabel">أهلاً وسهلاً بك</h1>
+            <p>سجل دخول لإدارة حجزك والحصول على الكاش باك</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <div class="row">
+            <!-- Form -->
+            <div class="col-md-6  form-container">
+
+              <form action="" method="" class="signUpForm">
+                <div class="mb-3 text-center">
+                  <label for="loginMethod" class="form-label">الدخول بواسطة</label>
+                  <div class="modalBtns d-flex justify-content-evenly">
+                    <button type="button" class="btn btn-outline-primary me-2 active signWithPhone">رقم الجوال</button>
+                    <button type="button" class="btn btn-outline-primary signWithMail">البريد الإلكتروني</button>
+                  </div>
+                </div>
+
+                <!-- First Name & Last Name -->
+                <div class="row mb-3">
+                  <div class="col">
+                    <label for="firstName" class="form-label">الاسم الأول</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="حسين" required>
+                  </div>
+                  <div class="col">
+                    <label for="lastName" class="form-label">الاسم الأخير</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="محمد" required>
+                  </div>
+                </div>
+
+                <div class="row mb-3 phoneDiv">
+
+                  <div class="col">
+                    <label for="countryCode" class="form-label">رمز البلد</label>
+                    <select name="countryCode" id="countryCode" class="form-select" required>
+                      <option value="+966">+966</option>
+                      <option value="+966">+966</option>
+                      <option value="+966">+966</option>
+                      <option value="+966">+966</option>
+                      <option value="+966">+966</option>
+                      <option value="+966">+966</option>
+                      <option value="+966">+966</option>
+                    </select>
+                  </div>
+
+                  <div class="col">
+                    <label for="phone" class="form-label">رقم الهاتف</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="0500077659" required>
+                  </div>
+                </div>
+
+
+
+                <!-- email -->
+                <div class="row mb-3">
+                  <div class="col emailDiv d-none">
+                    <label for="email" class="form-label">البريد الالكتروني</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="example@example.com" required>
+                  </div>
+                  <!-- Password -->
+                  <div class="col">
+                    <label for="password" class="form-label">كلمة المرور</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="••••••••" required>
+                  </div>
+                </div>
+                <div class="modal-footer justify-content-start">
+                  <input type="submit" class="btn signup px-5" value="تسجيل"/>
+                  <button type="button" class="btn login active px-5">دخول</button>
+                </div>
+              </form> <!-- signUp -->
+
+              <form action="" method="" class="logInForm d-none">
+                <div class="mb-3 text-center">
+                  <label for="loginMethod" class="form-label">الدخول بواسطة</label>
+                  <div class="modalBtns d-flex">
+                    <button type="button" class="btn btn-outline-primary me-2 active loginWithPhone">رقم الجوال</button>
+                    <button type="button" class="btn btn-outline-primary loginWithMail">البريد الإلكتروني</button>
+                  </div>
+                </div>
+
+                <div class="mb-3 loginDivWithPhone">
+                  
+                  <div class="col mb-3">
+                    <label for="userPhone" class="form-label">رقم الهاتف</label>
+                    <input type="tel" class="form-control" id="userPhone" name="userPhone" placeholder="0500077659" required>
+                  </div>
+                  <div class="col mb-3">
+                    <label for="userOTP" class="form-label">الرقم السري (OTP)</label>
+                    <input type="number" class="form-control" id="userOTP" name="userOTP" placeholder="OTP" required>
+                  </div>
+                </div> 
+
+
+
+                <div class="d-none loginDivWithEmail">
+                  <div class="col mb-3">
+                    <label for="userEmail" class="form-label">البريد الالكتروني</label>
+                    <input type="email" class="form-control" id="userEmail" name="userEmail" placeholder="example@example.com" required>
+                  </div>
+                  <!-- Password -->
+                  <div class="col mb-3">
+                    <label for="userPassword" class="form-label">كلمة المرور</label>
+                    <input type="password" class="form-control" id="userPassword" name="userPassword" placeholder="••••••••" required>
+                  </div>
+                </div>
+
+                <div class="modal-footer d-flex">
+                  <button type="button" class="btn signup active px-5">تسجيل</button>
+                  <input type="submit" class="btn login px-5" value="دخول"/>
+                </div>
+              </form>
+
+            </div>
+            <!-- Carousel (Slider) -->
+            <div class="col-md-6">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/images/shalehat.jpg" class="d-block w-100" alt="Slide 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/main-slider-3.webp" class="d-block w-100" alt="Slide 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/main-slider-2.jpg" class="d-block w-100" alt="Slide 3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <!-- Modal Footer -->
+
+      </div>
+    </div>
+  </div>
 
   <section>
     <div class="container header-imgs">
