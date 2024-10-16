@@ -17,112 +17,113 @@
 <body dir="rtl">
   <nav class="navbar mainNav navbar-expand-lg navbar-light bg-light">
     <!-- Toggler for small screens -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-     <span class="navbar-toggler-icon"></span>
-   </button>
-       <!-- Logo -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Logo -->
 
     <div class="">
       <a class="navbar-brand " href="#">
         <img src="/images/web-icon.png" alt="Logo" class="img-fluid">
-       </a>
-     </div>
+      </a>
+    </div>
 
-  
-   <!-- <div class="user-logo">
-     <i class="fa-regular fa-circle-user fa-2x"></i>
-   </div> -->
+    <!-- Visible only on mobile -->
+    <div class="user-container d-lg-none">
+      <div class="user-logo" id="userLogo">
+        <i class="fa-regular fa-circle-user fa-2x"></i>
+      </div>
+      <!-- Default User Icon -->
 
-   <!-- Visible only on mobile -->
-   <div class="user-container d-lg-none"> 
-     <div class="user-logo" id="userLogo">
-       <i class="fa-regular fa-circle-user fa-2x"></i> 
-     </div>
-     <!-- Default User Icon -->
-   
-     <div class="dropdown-menu-user" id="userMenu">
-       <div class="user-info d-flex align-items-center">
-         <div class="user-logo2 mb-2" id="userLogo">
-           <i class="fa-regular fa-circle-user fa-2x"></i> 
-         </div>
-         <div class="welcomediv">
-           <h5> <span class="welcome">مرحبا بك</span> محمد الشمري</h5>
-           <p>muhammed1@gmail.com</p>
-         </div>
-       </div>
-       <ul class="navbar-nav">
-         <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-user mx-1"></i> الملف الشخصي</a></li>
-         <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-calendar mx-1"></i> حجوزاتي</a></li>
-         <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-wallet mx-1"></i> المحفظة</a></li>
-         <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-credit-card mx-1"></i> طرق الدفع</a></li>
-         <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-gift mx-1"></i> كابونات</a></li>
-         <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-headphones mx-1"></i> تواصل معنا</a></li>
-         <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-sign-out-alt mx-1"></i> تسجيل الخروج</a></li>
-       </ul>
-     </div>
-   </div>
-   
+      <div class="dropdown-menu-user" id="userMenu">
+        <div class="user-info d-flex align-items-center">
+          <div class="user-logo2 mb-2" id="userLogo">
+            <i class="fa-regular fa-circle-user fa-2x"></i>
+          </div>
+          <div class="welcomediv">
+            <h5> <span class="welcome">مرحبا بك</span> محمد الشمري</h5>
+            <p>muhammed1@gmail.com</p>
+          </div>
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-user mx-1"></i> الملف الشخصي</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-calendar mx-1"></i> حجوزاتي</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-wallet mx-1"></i> المحفظة</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-credit-card mx-1"></i> طرق الدفع</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-gift mx-1"></i> كابونات</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-headphones mx-1"></i> تواصل معنا</a></li>
+          <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-sign-out-alt mx-1"></i> تسجيل الخروج</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-   <!-- Navbar Links -->
-   <div class="collapse navbar-collapse" id="navbarNavDropdown">
-     <ul class="navbar-nav mainNav me-auto mb-2 mb-lg-0 d-flex gap-4">
-       <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
-         <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownResorts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           منتجعات
-         </a>
-         <ul class="dropdown-menu" aria-labelledby="navbarDropdownResorts">
-           <li><a class="dropdown-item" href="#">1</a></li>
-           <li><a class="dropdown-item" href="#">2</a></li>
-           <li><a class="dropdown-item" href="#">3</a></li>
-         </ul>
-       </li>
-       <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
-         <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownHotels" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           فنادق
-         </a>
-         <ul class="dropdown-menu" aria-labelledby="navbarDropdownHotels">
-           <li><a class="dropdown-item" href="#">1</a></li>
-           <li><a class="dropdown-item" href="#">2</a></li>
-           <li><a class="dropdown-item" href="#">3</a></li>
-         </ul>
-       </li>
-       <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
-         <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownHalls" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           قاعة مناسبات
-         </a>
-         <ul class="dropdown-menu" aria-labelledby="navbarDropdownHalls">
-           <li><a class="dropdown-item" href="#">1</a></li>
-           <li><a class="dropdown-item" href="#">2</a></li>
-           <li><a class="dropdown-item" href="#">3</a></li>
-         </ul>
-       </li>
-       <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
-         <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownOffers" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           العروض
-         </a>
-         <ul class="dropdown-menu" aria-labelledby="navbarDropdownOffers">
-           <li><a class="dropdown-item" href="#">1</a></li>
-           <li><a class="dropdown-item" href="#">2</a></li>
-           <li><a class="dropdown-item" href="#">3</a></li>
-         </ul>
-       </li>
-     </ul>
 
-     <!-- Browse in English and Sign-up Button -->
-     <div class="d-flex align-items-center me-auto justify-content-between">
-       <button type="button" class="btn btn-primary ms-3">الدخول او إنشاء حساب جديد</button>
-       <div class="d-flex align-items-center text-black-50">
-         <div id="change-lang-to-en">
-           <p class="mb-0">Browse in <br><span class="text-decoration-underline">English</span></p>
-         </div>
-         <div>
-           <i class="fa-solid fa-earth-americas fa-2x mx-2 icon"></i>
-         </div>
-       </div>
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mainNav me-auto mb-2 mb-lg-0 d-flex gap-4">
+        <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
+          <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownResorts" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            منتجعات
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownResorts">
+            <li><a class="dropdown-item" href="#">1</a></li>
+            <li><a class="dropdown-item" href="#">2</a></li>
+            <li><a class="dropdown-item" href="#">3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
+          <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownHotels" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            فنادق
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownHotels">
+            <li><a class="dropdown-item" href="#">1</a></li>
+            <li><a class="dropdown-item" href="#">2</a></li>
+            <li><a class="dropdown-item" href="#">3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
+          <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownHalls" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            قاعة مناسبات
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownHalls">
+            <li><a class="dropdown-item" href="#">1</a></li>
+            <li><a class="dropdown-item" href="#">2</a></li>
+            <li><a class="dropdown-item" href="#">3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
+          <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownOffers" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            العروض
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownOffers">
+            <li><a class="dropdown-item" href="#">1</a></li>
+            <li><a class="dropdown-item" href="#">2</a></li>
+            <li><a class="dropdown-item" href="#">3</a></li>
+          </ul>
+        </li>
+      </ul>
 
-     </div>
-   </div>
- </nav>
+      <!-- Browse in English and Sign-up Button -->
+      <div class="d-flex align-items-center me-auto justify-content-between">
+        <button type="button" class="btn btn-primary ms-3">الدخول او إنشاء حساب جديد</button>
+        <div class="d-flex align-items-center text-black-50">
+          <div id="change-lang-to-en">
+            <p class="mb-0">Browse in <br><span class="text-decoration-underline">English</span></p>
+          </div>
+          <div>
+            <i class="fa-solid fa-earth-americas fa-2x mx-2 icon"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
 
   <section>
     <div class="container header-imgs">
@@ -188,13 +189,17 @@
             </span>
           </div>
           <div>
-            <i class="fa-solid fa-wheelchair"></i> <br> <span>مواقف خاصة</span></div>
+            <i class="fa-solid fa-wheelchair"></i> <br> <span>مواقف خاصة</span>
+          </div>
           <div>
-            <i class="fa-solid fa-cart-flatbed-suitcase"></i> <br> <span>تخزين الأمتعة</span></div>
+            <i class="fa-solid fa-cart-flatbed-suitcase"></i> <br> <span>تخزين الأمتعة</span>
+          </div>
           <div>
-            <i class="fa-solid fa-bell-concierge"></i> <br> <span> خدمة الغرف</span></div>
+            <i class="fa-solid fa-bell-concierge"></i> <br> <span> خدمة الغرف</span>
+          </div>
           <div>
-            <i class="fa-solid fa-person-shelter"></i> <br> <span> استقبال 24 ساعة</span></div>
+            <i class="fa-solid fa-person-shelter"></i> <br> <span> استقبال 24 ساعة</span>
+          </div>
         </div>
       </div> <!-- end of services -->
 
@@ -206,20 +211,20 @@
         <i class="fa-regular fa-share-from-square"></i>
       </div> <!-- end of hotel-name -->
 
-      <div class="container-fluid my-4"  style="max-width: 1200px;">
+      <div class="container-fluid my-4" style="max-width: 1200px;">
 
 
-        <div class="search mb-5 m-4" >
+        <div class="search mb-5 m-4">
           <form action="resortDetails-ar.html">
             <div class="row g-4 align-items-center">
-      
+
               <div class="col-md">
                 <div class="input p-3">
                   <label for="floatingSelectGrid">
                     الموقع او الفندق
                   </label>
                   <div class="d-flex justify-content-between">
-      
+
                     <select class="form-select" id="floatingSelectGrid">
                       <option selected value="الرياض"> الرياض </option>
                       <option value="القصيم">القصيم</option>
@@ -228,10 +233,10 @@
                     </select>
                     <div><i class="fa-solid fa-location-dot"></i></div>
                   </div>
-      
+
                 </div>
               </div>
-      
+
               <div class="col-md">
                 <div class="input d-flex justify-content-evenly">
                   <div class="arrival-date m-1 px-2">
@@ -241,7 +246,7 @@
                     <input class="form-control" type="date" name="arrivalDate" id="arrivalDate" required style="padding: 5px; border-radius: 5px; 
                     border: 1px solid #ccc; margin-bottom: 10px;" />
                   </div>
-      
+
                   <div class="departural-date m-1">
                     <label class="form-label" for="departuralDate" style="display: block; margin-bottom: 10px;">
                       موعد المغادرة
@@ -249,58 +254,58 @@
                     <input class="form-control" type="date" name="departuralDate" id="departuralDate" required style="padding: 5px; border-radius: 5px; 
                     border: 1px solid #ccc; margin-bottom: 10px;" />
                   </div>
-      
+
                   <div class="nights pt-4">
                     <span id="nightNumbers">1</span> ليلة
                   </div>
                 </div>
-      
+
               </div>
-      
+
               <div class="col-md">
-      
+
                 <div class="input clickable-div text-center">
                   <div class="guests-div py-4">
-                    <span id="numberGuests">2</span> نزلاء . <span id="numberRooms">1</span> غرفة 
+                    <span id="numberGuests">2</span> نزلاء . <span id="numberRooms">1</span> غرفة
                   </div>
-                    <div class="numbersDiv" style="display: none;">
-      
+                  <div class="numbersDiv" style="display: none;">
+
                     <div class="form-floating col-xl-4 col-lg-4 col-md-12">
                       <input type="number" min="1" class="form-control" name="inputNumAdult" id="inputNumAdult"
                         placeholder="عدد البالغين" value="1" />
                       <label for="inputNumAdult">عدد البالغين</label>
                     </div>
-      
+
                     <div class="form-floating col-xl-4 col-lg-4 col-md-12">
                       <input type="number" min="0" class="form-control" name="inputNumChildren" id="inputNumChildren"
                         placeholder="عدد الاطفال" value="1" />
                       <label for="inputNumChildren">عدد الاطفال</label>
                     </div>
-      
+
                     <div class="form-floating col-xl-4 col-lg-4 col-md-12">
                       <input type="number" min="1" class="form-control" name="inputNumRooms" id="inputNumRooms"
                         placeholder="عدد الغرف" value="1" />
                       <label for="inputNumRooms">عدد الغرف</label>
                     </div>
-      
+
                   </div>
                 </div>
-      
-      
+
+
               </div>
-      
+
               <div class="col-auto">
                 <button type="submit" class="btn py-2"><i class="fas fa-search fa-2x"></i></button>
-      
+
               </div>
-      
+
             </div>
           </form>
         </div> <!-- search -->
-      
-      
+
+
         <div class="resorts-card m-4">
-          <div class="card mb-5" >
+          <div class="card mb-5">
             <div class="row g-0">
               <div class="col-md-4 text-center">
                 <img src="/images/roomdetails.jpg" class="img-fluid rounded-start" alt="...">
@@ -311,76 +316,81 @@
                   <p class="card-text"><small class="text-black-50"><i class="fa-solid fa-route"></i> 6كم من
                       مركز مدينة الرياض</small></p>
                   <p class="card-text pt-3">الرياض-حي العزيزية-شارع الشباب1424</p>
-                  <p class="card-text d-flex justify-content-between pt-3"><i
-                        class="fa-solid fa-wifi"></i> <i class="fa-solid fa-p"></i> <i class="fa-solid fa-elevator"></i> <i
-                        class="fa-solid fa-wheelchair"></i> <i class="fa-solid fa-cart-flatbed-suitcase"></i> <i
-                        class="fa-solid fa-bell-concierge"></i> <i class="fa-solid fa-person-shelter"></i></p>
+                  <p class="card-text d-flex justify-content-between pt-3"><i class="fa-solid fa-wifi"></i> <i
+                      class="fa-solid fa-p"></i> <i class="fa-solid fa-elevator"></i> <i
+                      class="fa-solid fa-wheelchair"></i> <i class="fa-solid fa-cart-flatbed-suitcase"></i> <i
+                      class="fa-solid fa-bell-concierge"></i> <i class="fa-solid fa-person-shelter"></i></p>
                 </div>
                 <div class="card-body" dir="ltr">
                   <!-- <h3 class="card-title">ف.</h3> -->
                   <p class="card-text"> متاح بالاقساط <i class="fa-regular fa-circle-check text-success"></i></p>
                   <h2 class="card-text">SAR 355</h2>
                   <button class="btn px-5 mb-3">احجز الان</button>
-                  <p class="card-text"><small class="text-body-secondary text-muted" style="font-size: .85em;">إجمالي ليلة
+                  <p class="card-text"><small class="text-body-secondary text-muted" style="font-size: .85em;">إجمالي
+                      ليلة
                       واحدة شاملا ضريبة القيمة المضافة</small></p>
                 </div>
               </div>
-      
+
             </div>
           </div> <!-- card1 -->
         </div> <!-- resorts-card -->
 
         <div class="side-links">
-          <nav class="sideLink text-center">           
-        
-           <!-- Navbar Links -->
-           <div class="" id="navbarNavDropdown">
-             <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-between w-100">
-               <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
-                 <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownResorts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   المواصفات
-                 </a>
-                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownResorts">
-                   <li><a class="dropdown-item" href="#">1</a></li>
-                   <li><a class="dropdown-item" href="#">2</a></li>
-                   <li><a class="dropdown-item" href="#">3</a></li>
-                 </ul>
-               </li>
-               <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
-                 <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownHotels" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   مرافق
-                 </a>
-                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownHotels">
-                   <li><a class="dropdown-item" href="#">1</a></li>
-                   <li><a class="dropdown-item" href="#">2</a></li>
-                   <li><a class="dropdown-item" href="#">3</a></li>
-                 </ul>
-               </li>
-               <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
-                 <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownHalls" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  سياسة الالغاء
-                 </a>
-                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownHalls">
-                   <li><a class="dropdown-item" href="#">1</a></li>
-                   <li><a class="dropdown-item" href="#">2</a></li>
-                   <li><a class="dropdown-item" href="#">3</a></li>
-                 </ul>
-               </li>
-               <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
-                 <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownOffers" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   الشروط
-                 </a>
-                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownOffers">
-                   <li><a class="dropdown-item" href="#">1</a></li>
-                   <li><a class="dropdown-item" href="#">2</a></li>
-                   <li><a class="dropdown-item" href="#">3</a></li>
-                 </ul>
-               </li>
-             </ul>
-        
-             <!-- Browse in English and Sign-up Button -->
-             
-             <!-- <div class="d-flex align-items-center me-auto justify-content-between">
+          <nav class="sideLink text-center">
+
+            <!-- Navbar Links -->
+            <div class="" id="navbarNavDropdown">
+              <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-between w-100">
+                <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
+                  <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownResorts" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    المواصفات
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownResorts">
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                    <li><a class="dropdown-item" href="#">2</a></li>
+                    <li><a class="dropdown-item" href="#">3</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
+                  <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownHotels" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    مرافق
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownHotels">
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                    <li><a class="dropdown-item" href="#">2</a></li>
+                    <li><a class="dropdown-item" href="#">3</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
+                  <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownHalls" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    سياسة الالغاء
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownHalls">
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                    <li><a class="dropdown-item" href="#">2</a></li>
+                    <li><a class="dropdown-item" href="#">3</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
+                  <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownOffers" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    الشروط
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownOffers">
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                    <li><a class="dropdown-item" href="#">2</a></li>
+                    <li><a class="dropdown-item" href="#">3</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <!-- Browse in English and Sign-up Button -->
+
+              <!-- <div class="d-flex align-items-center me-auto justify-content-between">
                <button type="button" class="btn btn-primary ms-3">الدخول او إنشاء حساب جديد</button>
                <div class="d-flex align-items-center text-black-50">
                  <div id="change-lang-to-en">
@@ -392,9 +402,9 @@
                 </div>
              </div> -->
 
-           </div>
+            </div>
 
-         </nav>
+          </nav>
 
 
         </div>
