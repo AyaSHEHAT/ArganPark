@@ -124,10 +124,8 @@
       </div>
     </div>
   </nav>
-
-
-  <!-- Modal Structure -->
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+   <!-- Modal Structure -->
+   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <!-- Modal Header -->
@@ -144,12 +142,13 @@
           <div class="row">
             <!-- Form -->
             <div class="col-md-6  form-container">
-              <form>
+
+              <form action="" method="" class="signUpForm">
                 <div class="mb-3 text-center">
                   <label for="loginMethod" class="form-label">الدخول بواسطة</label>
                   <div class="modalBtns d-flex">
-                    <button type="button" class="btn btn-outline-primary me-2 active loginWithPhone">رقم الجوال</button>
-                    <button type="button" class="btn btn-outline-primary loginWithMail">البريد الإلكتروني</button>
+                    <button type="button" class="btn btn-outline-primary me-2 active signWithPhone">رقم الجوال</button>
+                    <button type="button" class="btn btn-outline-primary signWithMail">البريد الإلكتروني</button>
                   </div>
                 </div>
 
@@ -157,11 +156,11 @@
                 <div class="row mb-3">
                   <div class="col">
                     <label for="firstName" class="form-label">الاسم الأول</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="حسين">
+                    <input type="text" class="form-control" id="firstName" name="firstName" placeholder="حسين" required>
                   </div>
                   <div class="col">
                     <label for="lastName" class="form-label">الاسم الأخير</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="محمد">
+                    <input type="text" class="form-control" id="lastName" name="lastName" placeholder="محمد" required>
                   </div>
                 </div>
 
@@ -169,7 +168,8 @@
 
                   <div class="col">
                     <label for="countryCode" class="form-label">رمز البلد</label>
-                    <select name="countryCode" id="countryCode" class="form-select">
+                    <select name="countryCode" id="countryCode" class="form-select" required>
+                      <option value="+966">+966</option>
                       <option value="+966">+966</option>
                       <option value="+966">+966</option>
                       <option value="+966">+966</option>
@@ -181,28 +181,71 @@
 
                   <div class="col">
                     <label for="phone" class="form-label">رقم الهاتف</label>
-                    <input type="tel" class="form-control" id="phone" placeholder="0500077659">
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="0500077659" required>
                   </div>
                 </div>
 
 
 
                 <!-- email -->
-                <div class="mb-3 emailDiv d-none">
-                  <label for="email" class="form-label">البريد الالكتروني</label>
-                  <input type="email" class="form-control" id="email" placeholder="example@example.com">
-                </div>
-
-                <!-- Password -->
-                <div class="mb-3">
-                  <label for="password" class="form-label">كلمة المرور</label>
-                  <input type="password" class="form-control" id="password" placeholder="••••••••">
+                <div class="row mb-3">
+                  <div class="col emailDiv d-none">
+                    <label for="email" class="form-label">البريد الالكتروني</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="example@example.com" required>
+                  </div>
+                  <!-- Password -->
+                  <div class="col">
+                    <label for="password" class="form-label">كلمة المرور</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="••••••••" required>
+                  </div>
                 </div>
                 <div class="modal-footer justify-content-start">
-                  <button type="button" class="btn signup active">تسجيل</button>
-                  <button type="button" class="btn login active">دخول</button>
+                  <input type="submit" class="btn signup px-5" value="تسجيل"/>
+                  <button type="button" class="btn login active px-5">دخول</button>
+                </div>
+              </form> <!-- signUp -->
+
+              <form action="" method="" class="logInForm d-none">
+                <div class="mb-3 text-center">
+                  <label for="loginMethod" class="form-label">الدخول بواسطة</label>
+                  <div class="modalBtns d-flex">
+                    <button type="button" class="btn btn-outline-primary me-2 active loginWithPhone">رقم الجوال</button>
+                    <button type="button" class="btn btn-outline-primary loginWithMail">البريد الإلكتروني</button>
+                  </div>
+                </div>
+
+                <div class="mb-3 loginDivWithPhone">
+                  
+                  <div class="col mb-3">
+                    <label for="userPhone" class="form-label">رقم الهاتف</label>
+                    <input type="tel" class="form-control" id="userPhone" name="userPhone" placeholder="0500077659" required>
+                  </div>
+                  <div class="col mb-3">
+                    <label for="userOTP" class="form-label">الرقم السري (OTP)</label>
+                    <input type="number" class="form-control" id="userOTP" name="userOTP" placeholder="OTP" required>
+                  </div>
+                </div> 
+
+
+
+                <div class="d-none loginDivWithEmail">
+                  <div class="col mb-3">
+                    <label for="userEmail" class="form-label">البريد الالكتروني</label>
+                    <input type="email" class="form-control" id="userEmail" name="userEmail" placeholder="example@example.com" required>
+                  </div>
+                  <!-- Password -->
+                  <div class="col mb-3">
+                    <label for="userPassword" class="form-label">كلمة المرور</label>
+                    <input type="password" class="form-control" id="userPassword" name="userPassword" placeholder="••••••••" required>
+                  </div>
+                </div>
+
+                <div class="modal-footer justify-content-start">
+                  <button type="button" class="btn signup active px-5">تسجيل</button>
+                  <input type="submit" class="btn login px-5" value="دخول"/>
                 </div>
               </form>
+
             </div>
             <!-- Carousel (Slider) -->
             <div class="col-md-6">
@@ -249,6 +292,8 @@
       </div>
     </div>
   </div>
+
+  
   <script src="/js/all.min.js"></script>
   <script src="/js/bootstrap.bundle.min.js"></script>
   <script src="/js/navbar.js"></script>
