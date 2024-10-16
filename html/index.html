@@ -82,7 +82,9 @@
         </nav>
 
     
-
+        <div class="d-lg-none d-flex mx-auto my-2" style="width: 100%; height: 3rem;">
+            <input id="search-input" class="form-control-plaintext px-3" type="search" placeholder="Find a place suitable for your guests" style="border-radius: 35px; background-color: #f2f2f2;">
+        </div>
     <!-- MAIN CONTAINER -->
     <div id="main-container" class="d-flex justify-content-between mb-5">
 
@@ -106,10 +108,10 @@
                         <div class="d-flex justify-content-center gap-4 align-items-baseline">
                             <div class="d-flex justify-content-between align-items-baseline">
                                 <select class="form-select" id="floatingSelectGrid">
-                                    <option selected value="الرياض">Riyadh</option>
-                                    <option value="القصيم">Al-Qassim</option>
-                                    <option value="مكة">Mecca</option>
-                                    <option value="العزيزية">Al-Aziziyah</option>
+                                    <option selected value="Riyadh">Riyadh</option>
+                                    <option value="Al-Qassim">Al-Qassim</option>
+                                    <option value="Mecca">Mecca</option>
+                                    <option value="Al-Aziziyah">Al-Aziziyah</option>
                                 </select>
                             </div>
                             <div><i class="fa-solid fa-location-dot"></i></div>
@@ -140,8 +142,9 @@
                 </div>
 
                 <div class="input clickable-div text-center p-lg-3 mb-2" style="width: 100%; height: auto;">
-
+                    <div class="guests-div py-4">
                         <span id="numberGuests">2</span> Guests . <span id="numberRooms">1</span> Room 
+                    </div>
                     
                     <div class="numbersDiv " style="display: none;">
 
@@ -342,6 +345,6 @@
 <script src="/js/all.min.js"></script>
 <script src="/js/bootstrap.bundle.min.js"></script>
 <script src="/js/index.js"></script>
-<script src="/js/resorts.js"></script>
+<!-- <script src="/js/resorts.js"></script> -->
 </body>
 </html>
