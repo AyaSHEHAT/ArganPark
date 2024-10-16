@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="/css/footer-ar.css">
   <link rel="stylesheet" href="/css/resorts.css">
   <link rel="stylesheet" href="/css/resortDetails.css">
+
+ 
 </head>
 
 <body dir="rtl">
@@ -131,7 +133,7 @@
         <img class="m-2" src="/images/img1.jpg" alt="">
       </div>
 
-      <div class="Sliderimgs mx-5">
+      <div class="Sliderimgs  mx-4 mx-sm-4 mx-md-5 mx-xl-5">
 
         <div class="photobanner__wrap">
           <div class="photobanner">
@@ -171,34 +173,42 @@
         </div>
       </div> <!-- end of Sliderimgs -->
 
-      <div class="services m-2 mx-5 py-4 ">
-        <div class="d-flex justify-content-between">
-          <div>
+     
+       <div class="services m-2 mx-lg-5 py-4">
+        <div class="row text-center">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-1 mb-3">
             <i class="fa-solid fa-wifi"></i> <br>
             <span>Wi-Fi</span>
           </div>
-          <div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
             <i class="fa-solid fa-p"></i> <br>
             <span>مواقف</span>
           </div>
-          <div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-1 mb-3">
             <i class="fa-solid fa-elevator"></i> <br>
-            <span>
-              مصعد
-            </span>
+            <span>مصعد</span>
           </div>
-          <div>
-            <i class="fa-solid fa-wheelchair"></i> <br> <span>مواقف خاصة</span></div>
-          <div>
-            <i class="fa-solid fa-cart-flatbed-suitcase"></i> <br> <span>تخزين الأمتعة</span></div>
-          <div>
-            <i class="fa-solid fa-bell-concierge"></i> <br> <span> خدمة الغرف</span></div>
-          <div>
-            <i class="fa-solid fa-person-shelter"></i> <br> <span> استقبال 24 ساعة</span></div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <i class="fa-solid fa-wheelchair"></i> <br>
+            <span>مواقف خاصة</span>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <i class="fa-solid fa-cart-flatbed-suitcase"></i> <br>
+            <span>تخزين الأمتعة</span>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <i class="fa-solid fa-bell-concierge"></i> <br>
+            <span>خدمة الغرف</span>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <i class="fa-solid fa-person-shelter"></i> <br>
+            <span>استقبال 24 ساعة</span>
+          </div>
         </div>
       </div> <!-- end of services -->
+      
 
-      <div class="hotel-name  mb-3 d-flex justify-content-between mx-5 align-items-center">
+      <div class="hotel-name  mb-3 d-flex justify-content-between mx-lg-5 align-items-center">
         <div>
           <h1>فندق أرجان بارك العزيزية...</h1>
           <p class="pt-3">الرياض-حي العزيزية-شارع الشباب1424</p>
@@ -297,7 +307,14 @@
             </div>
           </form>
         </div> <!-- search -->
-      
+        <div class="responsiveSearch container mt-5">
+          <div class="search-container">
+              <input type="text" class="form-control" placeholder="جنوب الرياض, موعد الوصول 16 موعد المغادرة 17, 1 غرفة">
+              <button>
+                  <i class="fas fa-search"></i> <!-- FontAwesome Search Icon -->
+              </button>
+          </div>
+      </div>
       
         <div class="resorts-card m-4">
           <div class="card mb-5" >
@@ -330,11 +347,11 @@
           </div> <!-- card1 -->
         </div> <!-- resorts-card -->
 
-        <div class="side-links">
-          <nav class="sideLink text-center">           
+        <div class="side-links ">
+          <nav class="navbar sideLink text-center  navbar-expand-lg">           
         
            <!-- Navbar Links -->
-           <div class="" id="navbarNavDropdown">
+           <div class="collapse navbar-collapse" id="navbarNavDropdown">
              <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-between w-100">
                <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
                  <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownResorts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
