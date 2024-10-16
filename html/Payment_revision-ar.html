@@ -7,6 +7,7 @@
     <title>المراجعة و الدفع</title>
     <link rel="stylesheet" href="/css/all.min.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/flatpickr.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/Payment_revision.css">
     <link rel="stylesheet" href="/css/card.css">
@@ -435,14 +436,14 @@
                         <label class="form-label" for="arrivalDate" style="display: block; margin-bottom: 5px;">
                             موعد الوصول
                         </label>
-                        <input class="form-control" type="date" name="arrivalDate" id="arrivalDate" required style="padding: 5px; border-radius: 5px; 
+                        <input class="form-control text-center" type="date" name="arrivalDate" id="arrivalDate" required style="padding: 5px; border-radius: 5px; 
                                 border: 1px solid #ccc; margin-bottom: 10px;" />
                     </div>
                     <div class="departural-date px-4" style="width: 40%;">
                         <label class="form-label" for="departuralDate" style="display: block; margin-bottom: 5px;">
                             موعد المغادرة
                         </label>
-                        <input class="form-control" type="date" name="departuralDate" id="departuralDate" required
+                        <input class="form-control text-center" type="date" name="departuralDate" id="departuralDate" required
                             style="padding: 5px; border-radius: 5px; 
                                 border: 1px solid #ccc; margin-bottom: 13px;" />
                     </div>
@@ -495,15 +496,26 @@
                 <div class="controls d-flex justify-content-center gap-2">
                     <input type="text" class="form-control text-success text-center"
                         style="background-color: #f1f5f8; width:50%; border: none;">
-                    <button type="button" class="btn text-success" style="background-color: white; border: none; ">تطبيق</button>
+                    <button type="button" class="btn text-success"
+                        style="background-color: white; border: none; ">تطبيق</button>
                 </div>
             </div>
         </div>
     </div>
     <script src="/js/all.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/flatpickr.js"></script>
     <script src="/js//payment-revision.js"></script>
     <script src="/js/navbar.js"></script>
+    <script>
+        // Initialize flatpickr for arrival and departure dates
+        flatpickr("#arrivalDate", {
+            dateFormat: "Y-m-d",
+        });
+        flatpickr("#departuralDate", {
+            dateFormat: "Y-m-d",
+        });
+    </script>
 </body>
 
 </html>

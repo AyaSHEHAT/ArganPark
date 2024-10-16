@@ -7,6 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="/css/all.min.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/flatpickr.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/index-ar.css">
     <link rel="stylesheet" href="/css/footer-ar.css">
@@ -347,16 +348,20 @@
                     <label class="form-label" for="arrivalDate" style="display: block; margin-bottom: 5px;">
                         Arrival Date
                     </label>
-                    <input class="form-control" type="date" name="arrivalDate" id="arrivalDate" required style="padding: 5px; border-radius: 5px; 
-                        border: 1px solid #ccc; margin-bottom: 10px;" />
+
+                    <input class="form-control flatpickr text-center" type="text" id="arrivalDate" placeholder="Choose Arrival Date"
+                        required />
+
                 </div>
 
                 <div class="departural-date px-4" style="width: 40%;">
                     <label class="form-label" for="departuralDate" style="display: block; margin-bottom: 5px;">
                         Departural Date
                     </label>
-                    <input class="form-control" type="date" name="departuralDate" id="departuralDate" required style="padding: 5px; border-radius: 5px; 
-                        border: 1px solid #ccc; margin-bottom: 13px;" />
+
+                    <input class="form-control flatpickr text-center" type="text" id="departuralDate"
+                        placeholder="Choose Departure Date" required />
+
                 </div>
 
                 <div class="nights" style="width: 10%;">
@@ -583,8 +588,18 @@
 
     <script src="/js/all.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/flatpickr.js"></script>
     <script src="/js/index.js"></script>
     <script src="/js/navbar.js"></script>
+    <script>
+        // Initialize flatpickr for arrival and departure dates
+        flatpickr("#arrivalDate", {
+            dateFormat: "Y-m-d",
+        });
+        flatpickr("#departuralDate", {
+            dateFormat: "Y-m-d",
+        });
+    </script>
 </body>
 
 </html>
