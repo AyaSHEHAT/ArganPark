@@ -13,17 +13,21 @@
     background-color: #F3F5FC !important;
     border-radius: 10px;
 }
- .arrival-date{
-   border-left: 1px solid lightgray;
+ .departural-date{
+   border-right: 1px solid #F3F5FC;
+
 
 } 
 .form-floating>label{
     color: #838DB1;
     right: 0 !important;
     left: auto !important;
+    /* background-color: #F3F5FC !important; */
+
 }
 .form-floating>input{
     height: auto !important;
+
     /* left: auto !important; */
 }
 .numbersDiv{
@@ -43,4 +47,15 @@
 }
 .guests-div{
     cursor: pointer;
+}
+
+input.form-control{
+    background-color: #F3F5FC !important;
+    border-color: #F3F5FC !important;
+}
+.resorts-card .card-text{
+    color: #838DB1;
+}
+.resorts-card .card-text>small{
+    color: #B9BFD5;
 }

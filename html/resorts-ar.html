@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/navbar.css">
   <link rel="stylesheet" href="/css/footer-ar.css">
+  <!-- <link rel="stylesheet" href="/css/index.css"> -->
   <link rel="stylesheet" href="/css/resorts.css">
 </head>
 
@@ -65,7 +66,7 @@
 
 
     <!-- Navbar Links -->
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <div class="collapse navbar-collapse mt-4 mt-sm-4 mt-md-4 mt-lg-0" id="navbarNavDropdown">
       <ul class="navbar-nav mainNav me-auto mb-2 mb-lg-0 d-flex gap-4">
         <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
           <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownResorts" role="button"
@@ -197,16 +198,18 @@
                 <div class="row mb-3">
                   <div class="col emailDiv d-none">
                     <label for="email" class="form-label">البريد الالكتروني</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="example@example.com" required>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="example@example.com"
+                      required>
                   </div>
                   <!-- Password -->
                   <div class="col">
                     <label for="password" class="form-label">كلمة المرور</label>
-                    <input type="password" class="form-control" id="password" name="password" placeholder="••••••••" required>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="••••••••"
+                      required>
                   </div>
                 </div>
                 <div class="modal-footer justify-content-start">
-                  <input type="submit" class="btn signup px-5" value="تسجيل"/>
+                  <input type="submit" class="btn signup px-5" value="تسجيل" />
                   <button type="button" class="btn login active px-5">دخول</button>
                 </div>
               </form> <!-- signUp -->
@@ -221,34 +224,37 @@
                 </div>
 
                 <div class="mb-3 loginDivWithPhone">
-                  
+
                   <div class="col mb-3">
                     <label for="userPhone" class="form-label">رقم الهاتف</label>
-                    <input type="tel" class="form-control" id="userPhone" name="userPhone" placeholder="0500077659" required>
+                    <input type="tel" class="form-control" id="userPhone" name="userPhone" placeholder="0500077659"
+                      required>
                   </div>
                   <div class="col mb-3">
                     <label for="userOTP" class="form-label">الرقم السري (OTP)</label>
                     <input type="number" class="form-control" id="userOTP" name="userOTP" placeholder="OTP" required>
                   </div>
-                </div> 
+                </div>
 
 
 
                 <div class="d-none loginDivWithEmail">
                   <div class="col mb-3">
                     <label for="userEmail" class="form-label">البريد الالكتروني</label>
-                    <input type="email" class="form-control" id="userEmail" name="userEmail" placeholder="example@example.com" required>
+                    <input type="email" class="form-control" id="userEmail" name="userEmail"
+                      placeholder="example@example.com" required>
                   </div>
                   <!-- Password -->
                   <div class="col mb-3">
                     <label for="userPassword" class="form-label">كلمة المرور</label>
-                    <input type="password" class="form-control" id="userPassword" name="userPassword" placeholder="••••••••" required>
+                    <input type="password" class="form-control" id="userPassword" name="userPassword"
+                      placeholder="••••••••" required>
                   </div>
                 </div>
 
                 <div class="modal-footer d-flex">
                   <button type="button" class="btn signup active px-5">تسجيل</button>
-                  <input type="submit" class="btn login px-5" value="دخول"/>
+                  <input type="submit" class="btn login px-5" value="دخول" />
                 </div>
               </form>
 
@@ -299,165 +305,253 @@
     </div>
   </div>
 
+<!-- SEARCH BAR -->
+<div class="d-lg-none d-flex mx-auto my-2" style="width: 100%; height: 3rem;">
+  <input id="search-input" class="form-control-plaintext px-3" type="search"
+      placeholder="ابحث عن مكان يليق بضيوفك" style="border-radius: 2rem; background-color: #f2f2f2;">
+</div>
+  <section class="container-fluid my-4" style="max-width: 1300px;">
 
-<section class="container-fluid my-4"  style="max-width: 1300px;">
+    <div id="search-div" class="row g-4 p-2 d-none d-lg-flex align-items-center flex-md-column text-md-center flex-lg-row text-lg-center" style="height: max-content;">
+  
+       <div class="col-md">
 
-
-  <div class="search mb-5 m-4" >
-    <form action="resortDetails-ar.html">
-      <div class="row g-4 align-items-center">
-
-        <div class="col-md">
-          <div class="input p-3">
-            <label for="floatingSelectGrid">
-              الموقع او الفندق
+         <div class="input p-3 mb-1">
+           <label for="floatingSelectGrid">
+             الموقع او الفندق
             </label>
-            <div class="d-flex justify-content-between">
-
-              <select class="form-select" id="floatingSelectGrid">
-                <option selected value="الرياض"> الرياض </option>
-                <option value="القصيم">القصيم</option>
-                <option value="مكة">مكة</option>
-                <option value="العزيزية">العزيزية</option>
-              </select>
-              <div><i class="fa-solid fa-location-dot"></i></div>
+            <!-- <div class="d-flex justify-content-center"> -->
+              <div class="d-flex justify-content-between ">
+                <select class="form-select" id="floatingSelectGrid">
+                  <option selected value="الرياض"> الرياض</option>
+                  <option value="القصيم">القصيم</option>
+                  <option value="مكة">مكة</option>
+                  <option value="العزيزية">العزيزية</option>
+                </select>
+                <div><i class="fa-solid fa-location-dot"></i></div>
+              </div>
             </div>
+       
+      </div>
 
-          </div>
+      <!-- Date & Number of nights -->
+       <div class="col-md">
+      <div class=" input p-3 d-flex justify-content-between align-items-center pt-1 mb-2" style="width: 100%;">
+        <div class="arrival-date" style="width: 40%;">
+          <label class="form-label" for="arrivalDate" style="display: block; margin-bottom: 5px;">
+            موعد الوصول
+          </label>
+
+          <input class="form-control flatpickr text-center" type="date" id="arrivalDate" placeholder="اختر تاريخ الوصول"
+            required />
         </div>
 
-        <div class="col-md">
-          <div class="input d-flex justify-content-evenly">
-            <div class="arrival-date m-1 px-2">
-              <label class="form-label" for="arrivalDate" style="display: block; margin-bottom: 10px;">
-                موعد الوصول
-              </label>
-              <input class="form-control text-center" type="date" name="arrivalDate" id="arrivalDate" required style="padding: 5px; border-radius: 5px; 
-              border: 1px solid #ccc; margin-bottom: 10px;" />
-              <!-- <input class="form-control flatpickr" type="text" id="arrivalDate" placeholder="اختر تاريخ الوصول" required /> -->
-            </div>
+        <div class="departural-date pe-2" style="width: 40%;">
+          <label class="form-label" for="departuralDate" style="display: block; margin-bottom: 5px;">
+            موعد المغادرة
+          </label>
 
-            <div class="departural-date m-1">
-              <label class="form-label" for="departuralDate" style="display: block; margin-bottom: 10px;">
-                موعد المغادرة
-              </label>
-              <input class="form-control text-center" type="date" name="departuralDate" id="departuralDate" required style="padding: 5px; border-radius: 5px; 
-              border: 1px solid #ccc; margin-bottom: 10px;" />
-              <!-- <input class="form-control flatpickr" type="text" id="departuralDate" placeholder="اختر تاريخ المغادرة" required /> -->
-            </div>
-
-            <div class="nights pt-4">
-              <span id="nightNumbers">1</span> ليلة
-            </div>
-          </div>
+          <input class="form-control flatpickr text-center" type="date" id="departuralDate"
+            placeholder="اختر تاريخ المغادرة" required />
 
         </div>
 
-        <div class="col-md">
+        <div class="nights" style="width: 15%;">
+          <span id="nightNumbers">1</span> ليلة
+        </div>
+      </div>
+    </div>
+      <div class="col-md">
+      <div class="input clickable-div text-center p-lg-2 mb-2" style="width: 100%; height: auto;">
+        <div class="guests-div py-4">
+          <span id="numberGuests">2</span> نزلاء . <span id="numberRooms">1</span> غرفة
+        </div>
+        <div class="numbersDiv " style="display: none;">
+          <div class="form-floating">
+            <input type="number" min="1" class="form-control" name="inputNumAdult" id="inputNumAdult"
+              placeholder="عدد البالغين" value="1" />
+            <label for="inputNumAdult">عدد البالغين</label>
+          </div>
+          <div class="form-floating">
+            <input type="number" min="0" class="form-control" name="inputNumChildren" id="inputNumChildren"
+              placeholder="عدد الاطفال" value="1" />
+            <label for="inputNumChildren">عدد الاطفال</label>
+          </div>
+          <div class="form-floating">
+            <input type="number" min="1" class="form-control" name="inputNumRooms" id="inputNumRooms"
+              placeholder="عدد الغرف" value="1" />
+            <label for="inputNumRooms">عدد الغرف</label>
+          </div>
+        </div>
+      </div>
 
-          <div class="input clickable-div text-center">
-            <div class="guests-div py-4">
-              <span id="numberGuests">2</span> نزلاء . <span id="numberRooms">1</span> غرفة 
+    </div>
+      <!-- Search Button -->
+      <div class="col-auto">
+        <button type="submit" class="btn py-2"><i class="fas fa-search fa-2x"></i></button>
+
+      </div>
+
+    </div>
+
+
+    <!-- <div class="search mb-5 m-4">
+      <form action="resortDetails-ar.html">
+        <div class="row g-4 align-items-center">
+
+          <div class="col-md">
+            <div class="input p-3">
+              <label for="floatingSelectGrid">
+                الموقع او الفندق
+              </label>
+              <div class="d-flex justify-content-between">
+
+                <select class="form-select" id="floatingSelectGrid">
+                  <option selected value="الرياض"> الرياض </option>
+                  <option value="القصيم">القصيم</option>
+                  <option value="مكة">مكة</option>
+                  <option value="العزيزية">العزيزية</option>
+                </select>
+                <div><i class="fa-solid fa-location-dot"></i></div>
+              </div>
+
             </div>
+          </div>
+
+          <div class="col-md">
+            <div class="input d-flex justify-content-evenly">
+              <div class="arrival-date m-1 px-2">
+                <label class="form-label" for="arrivalDate" style="display: block; margin-bottom: 10px;">
+                  موعد الوصول
+                </label>
+                <input class="form-control text-center" type="date" name="arrivalDate" id="arrivalDate" required style="padding: 5px; border-radius: 5px; 
+              border: 1px solid #ccc; margin-bottom: 10px;" />
+                <!-- <input class="form-control flatpickr" type="text" id="arrivalDate" placeholder="اختر تاريخ الوصول" required /> --
+              </div>
+
+              <div class="departural-date m-1">
+                <label class="form-label" for="departuralDate" style="display: block; margin-bottom: 10px;">
+                  موعد المغادرة
+                </label>
+                <input class="form-control text-center" type="date" name="departuralDate" id="departuralDate" required
+                  style="padding: 5px; border-radius: 5px; 
+              border: 1px solid #ccc; margin-bottom: 10px;" />
+                <input class="form-control flatpickr" type="text" id="departuralDate" placeholder="اختر تاريخ المغادرة" required /> 
+              </div>
+
+              <div class="nights pt-4">
+                <span id="nightNumbers">1</span> ليلة
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md">
+
+            <div class="input clickable-div text-center">
+              <div class="guests-div py-4">
+                <span id="numberGuests">2</span> نزلاء . <span id="numberRooms">1</span> غرفة
+              </div>
               <div class="numbersDiv" style="display: none;">
 
-              <div class="form-floating col-xl-4 col-lg-4 col-md-12">
-                <input type="number" min="1" class="form-control" name="inputNumAdult" id="inputNumAdult"
-                  placeholder="عدد البالغين" value="1" />
-                <label for="inputNumAdult">عدد البالغين</label>
-              </div>
+                <div class="form-floating col-xl-4 col-lg-4 col-md-12">
+                  <input type="number" min="1" class="form-control" name="inputNumAdult" id="inputNumAdult"
+                    placeholder="عدد البالغين" value="1" />
+                  <label for="inputNumAdult">عدد البالغين</label>
+                </div>
 
-              <div class="form-floating col-xl-4 col-lg-4 col-md-12">
-                <input type="number" min="0" class="form-control" name="inputNumChildren" id="inputNumChildren"
-                  placeholder="عدد الاطفال" value="1" />
-                <label for="inputNumChildren">عدد الاطفال</label>
-              </div>
+                <div class="form-floating col-xl-4 col-lg-4 col-md-12">
+                  <input type="number" min="0" class="form-control" name="inputNumChildren" id="inputNumChildren"
+                    placeholder="عدد الاطفال" value="1" />
+                  <label for="inputNumChildren">عدد الاطفال</label>
+                </div>
 
-              <div class="form-floating col-xl-4 col-lg-4 col-md-12">
-                <input type="number" min="1" class="form-control" name="inputNumRooms" id="inputNumRooms"
-                  placeholder="عدد الغرف" value="1" />
-                <label for="inputNumRooms">عدد الغرف</label>
-              </div>
+                <div class="form-floating col-xl-4 col-lg-4 col-md-12">
+                  <input type="number" min="1" class="form-control" name="inputNumRooms" id="inputNumRooms"
+                    placeholder="عدد الغرف" value="1" />
+                  <label for="inputNumRooms">عدد الغرف</label>
+                </div>
 
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="col-auto">
+            <button type="submit" class="btn py-2"><i class="fas fa-search fa-2x"></i></button>
+
+          </div>
+
+        </div>
+      </form>
+    </div>  -->
+    <!-- search -->
+
+
+    <div class="resorts-card m-4">
+      <div class="card mb-5">
+        <div class="row g-0">
+          <div class="col-md-4 text-center p-3">
+            <img src="/images/El'azizia.jpg" class="img-fluid rounded-2" alt="...">
+          </div>
+          <div class="col-md-8 d-flex justify-content-between">
+            <div class="card-body">
+              <h3 class="card-title">فندق أرجان بارك العزيزية...</h3>
+              <p class="card-text"><small><i class="fa-solid fa-route"></i> 6كم من
+                  مركز مدينة الرياض</small></p>
+              <p class="card-text pt-4">الرياض-حي العزيزية-شارع الشباب1424</p>
+              <p class="card-text d-flex justify-content-between pt-4"><i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-p"></i> <i class="fa-solid fa-elevator"></i> <i
+                  class="fa-solid fa-wheelchair"></i> <i class="fa-solid fa-cart-flatbed-suitcase"></i> <i
+                  class="fa-solid fa-bell-concierge"></i> <i class="fa-solid fa-person-shelter"></i></p>
+            </div>
+            <div class="card-body p-3 pt-4 mt-3" dir="ltr">
+              <!-- <h3 class="card-title">ف.</h3> -->
+              <p class="card-text"> متاح بالاقساط <i class="fa-regular fa-circle-check text-success"></i></p>
+              <h2 class="card-text">SAR 355</h2>
+              <button class="btn px-5 mb-3">احجز الان</button>
+              <p class="card-text"><small style="font-size: .85em; color: #838DB1;">إجمالي ليلة
+                  واحدة شاملا ضريبة القيمة المضافة</small></p>
             </div>
           </div>
 
-
         </div>
+      </div> <!-- card1 -->
 
-        <div class="col-auto">
-          <button type="submit" class="btn py-2"><i class="fas fa-search fa-2x"></i></button>
-
-        </div>
-
-      </div>
-    </form>
-  </div> <!-- search -->
-
-
-  <div class="resorts-card m-4">
-    <div class="card mb-5" >
-      <div class="row g-0">
-        <div class="col-md-4 text-center">
-          <img src="/images/El'azizia.jpg" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8 d-flex justify-content-between">
-          <div class="card-body">
-            <h3 class="card-title">فندق أرجان بارك العزيزية...</h3>
-            <p class="card-text"><small class="text-black-50"><i class="fa-solid fa-route"></i> 6كم من
-                مركز مدينة الرياض</small></p>
-            <p class="card-text text-body-secondary pt-3">الرياض-حي العزيزية-شارع الشباب1424</p>
-            <p class="card-text text-body-secondary d-flex justify-content-between"><i
-                  class="fa-solid fa-wifi"></i> <i class="fa-solid fa-p"></i> <i class="fa-solid fa-elevator"></i> <i
+      <div class="card mb-5">
+        <div class="row g-0">
+          <div class="col-md-4 text-center p-3">
+            <img src="/images/Elshefaa.jpg" class="img-fluid rounded-2" alt="...">
+          </div>
+          <div class="col-md-8 d-flex justify-content-between">
+            <div class="card-body">
+              <h3 class="card-title">فندق أرجان بارك الشفاء</h3>
+              <p class="card-text"><small><i class="fa-solid fa-route"></i> 12كم من
+                  مركز مدينة الرياض</small></p>
+              <p class="card-text pt-4">الرياض-حي الشفاء-شارع نجران1424</p>
+              <p class="card-text d-flex justify-content-between pt-4"><i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-p"></i> <i class="fa-solid fa-elevator"></i> <i
                   class="fa-solid fa-wheelchair"></i> <i class="fa-solid fa-cart-flatbed-suitcase"></i> <i
                   class="fa-solid fa-bell-concierge"></i> <i class="fa-solid fa-person-shelter"></i></p>
+            </div>
+            <div class="card-body p-3 pt-4 mt-3" dir="ltr">
+              <p class="card-text"> متاح بالاقساط <i class="fa-regular fa-circle-check text-success"></i></p>
+              <h2 class="card-text">SAR 255</h2>
+              <button class="btn px-5 mb-3">احجز الان</button>
+              <p class="card-text"><small style="font-size: .85em; color: #838DB1;">إجمالي ليلة
+                  واحدة شاملا ضريبة القيمة المضافة</small></p>
+            </div>
           </div>
-          <div class="card-body" dir="ltr">
-            <!-- <h3 class="card-title">ف.</h3> -->
-            <p class="card-text"> متاح بالاقساط <i class="fa-regular fa-circle-check text-success"></i></p>
-            <h2 class="card-text">SAR 355</h2>
-            <button class="btn px-5 mb-3">احجز الان</button>
-            <p class="card-text"><small class="text-body-secondary text-muted" style="font-size: .85em;">إجمالي ليلة
-                واحدة شاملا ضريبة القيمة المضافة</small></p>
-          </div>
+
         </div>
+      </div> <!-- card2 -->
+    </div> <!-- resorts-card -->
+  </section>
+  <div class="text-center m-5">
+    <hr style="width: 20%; margin-bottom: 2px; color: gray;  width: 50%; margin: auto;">
 
-      </div>
-    </div> <!-- card1 -->
-
-    <div class="card mb-5">
-      <div class="row g-0">
-        <div class="col-md-4 text-center">
-          <img src="/images/Elshefaa.jpg" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8 d-flex justify-content-between">
-          <div class="card-body">
-            <h3 class="card-title">فندق أرجان بارك الشفاء</h3>
-            <p class="card-text"><small class="text-black-50"><i class="fa-solid fa-route"></i> 12كم من
-                مركز مدينة الرياض</small></p>
-            <p class="card-text text-body-secondary pt-3">الرياض-حي الشفاء-شارع نجران1424</p>
-            <p class="card-text text-body-secondary d-flex justify-content-between"><i
-                  class="fa-solid fa-wifi"></i> <i class="fa-solid fa-p"></i> <i class="fa-solid fa-elevator"></i> <i
-                  class="fa-solid fa-wheelchair"></i> <i class="fa-solid fa-cart-flatbed-suitcase"></i> <i
-                  class="fa-solid fa-bell-concierge"></i> <i class="fa-solid fa-person-shelter"></i></p>
-          </div>
-          <div class="card-body" dir="ltr">
-            <p class="card-text"> متاح بالاقساط <i class="fa-regular fa-circle-check text-success"></i></p>
-            <h2 class="card-text">SAR 255</h2>
-            <button class="btn px-5 mb-3">احجز الان</button>
-            <p class="card-text"><small class="text-body-secondary text-muted" style="font-size: .85em;">إجمالي ليلة
-                واحدة شاملا ضريبة القيمة المضافة</small></p>
-          </div>
-        </div>
-
-      </div>
-    </div> <!-- card2 -->
-  </div> <!-- resorts-card -->
-</section>
-<div class="text-center m-5">
-  <hr style="width: 20%; margin-bottom: 2px; color: gray;  width: 50%; margin: auto;">
-
-</div>
+  </div>
 
   <!-- FOOTER -->
   <footer class="pt-2">
@@ -502,7 +596,6 @@
   <script src="/js/bootstrap.bundle.min.js"></script>
   <script src="/js/navbar.js"></script>
   <script src="/js/flatpickr.js"></script>
-  <script src="/js/resorts.js"></script>
   <script>
     // Initialize flatpickr for arrival and departure dates
     flatpickr("#arrivalDate", {
@@ -511,7 +604,8 @@
     flatpickr("#departuralDate", {
       dateFormat: "Y-m-d",
     });
-  </script>
+    </script>
+    <script src="/js/resorts.js"></script>
 </body>
 
 </html>
