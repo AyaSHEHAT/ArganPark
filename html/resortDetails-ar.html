@@ -13,7 +13,18 @@
   <link rel="stylesheet" href="/css/resorts.css">
   <link rel="stylesheet" href="/css/resortDetails.css">
 
- 
+  <style>
+    .new-nav a:active,
+    .new-nav a:hover {
+      color: #b3952b;
+      ;
+    }
+
+    .new-nav a {
+      color: gray;
+    }
+  </style>
+
 </head>
 
 <body dir="rtl">
@@ -127,9 +138,9 @@
           </div>
         </div>
 
-     </div>
-   </div>
- </nav>
+      </div>
+    </div>
+  </nav>
 
   <section>
     <div class="container header-imgs">
@@ -178,8 +189,8 @@
         </div>
       </div> <!-- end of Sliderimgs -->
 
-     
-       <div class="services m-2 mx-lg-5 py-4">
+
+      <div class="services m-2 mx-lg-5 py-4">
         <div class="row text-center">
           <div class="col-6 col-sm-4 col-md-3 col-lg-1 mb-3">
             <i class="fa-solid fa-wifi"></i> <br>
@@ -211,7 +222,7 @@
           </div>
         </div>
       </div> <!-- end of services -->
-      
+
 
       <div class="hotel-name  mb-3 d-flex justify-content-between mx-lg-5 align-items-center">
         <div>
@@ -314,13 +325,13 @@
         </div> <!-- search -->
         <div class="responsiveSearch container mt-5">
           <div class="search-container">
-              <input type="text" class="form-control" placeholder="جنوب الرياض, موعد الوصول 16 موعد المغادرة 17, 1 غرفة">
-              <button>
-                  <i class="fas fa-search"></i> <!-- FontAwesome Search Icon -->
-              </button>
+            <input type="text" class="form-control" placeholder="جنوب الرياض, موعد الوصول 16 موعد المغادرة 17, 1 غرفة">
+            <button>
+              <i class="fas fa-search"></i> <!-- FontAwesome Search Icon -->
+            </button>
           </div>
-      </div>
-      
+        </div>
+
         <div class="resorts-card m-4">
           <div class="card mb-5">
             <div class="row g-0">
@@ -353,76 +364,113 @@
           </div> <!-- card1 -->
         </div> <!-- resorts-card -->
 
-        <div class="side-links ">
-          <nav class="navbar sideLink text-center  navbar-expand-lg">           
-        
-           <!-- Navbar Links -->
-           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-             <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-between w-100">
-               <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
-                 <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownResorts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   المواصفات
-                 </a>
-                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownResorts">
-                   <li><a class="dropdown-item" href="#">1</a></li>
-                   <li><a class="dropdown-item" href="#">2</a></li>
-                   <li><a class="dropdown-item" href="#">3</a></li>
-                 </ul>
-               </li>
-               <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
-                 <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownHotels" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   مرافق
-                 </a>
-                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownHotels">
-                   <li><a class="dropdown-item" href="#">1</a></li>
-                   <li><a class="dropdown-item" href="#">2</a></li>
-                   <li><a class="dropdown-item" href="#">3</a></li>
-                 </ul>
-               </li>
-               <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
-                 <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownHalls" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  سياسة الالغاء
-                 </a>
-                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownHalls">
-                   <li><a class="dropdown-item" href="#">1</a></li>
-                   <li><a class="dropdown-item" href="#">2</a></li>
-                   <li><a class="dropdown-item" href="#">3</a></li>
-                 </ul>
-               </li>
-               <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
-                 <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownOffers" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   الشروط
-                 </a>
-                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownOffers">
-                   <li><a class="dropdown-item" href="#">1</a></li>
-                   <li><a class="dropdown-item" href="#">2</a></li>
-                   <li><a class="dropdown-item" href="#">3</a></li>
-                 </ul>
-               </li>
-             </ul>
-        
-             <!-- Browse in English and Sign-up Button -->
-             
-             <!-- <div class="d-flex align-items-center me-auto justify-content-between">
-               <button type="button" class="btn btn-primary ms-3">الدخول او إنشاء حساب جديد</button>
-               <div class="d-flex align-items-center text-black-50">
-                 <div id="change-lang-to-en">
-                   <p class="mb-0">Browse in <br><span class="text-decoration-underline">English</span></p>
-                 </div>
-                 <div>
-                   <i class="fa-solid fa-earth-americas fa-2x mx-2 icon"></i>
-                 </div>
-                </div>
-             </div> -->
+        <div class="side-links">
+          
+        <div class="accordion accordion-flush d-lg-none" id="accordionFlushExample">
+        <div class="accordion-item" >
+            <div class="left-toggle" >
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+             مواصفات
+            </button>
+        </div>
+          <h2 class="accordion-header" id="flush-headingOne">
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
 
+                <p> -غرفة نوم كبيرة بسرير مزدوج و جلسة جانبية مرفقة بدورة مياه</p>
+            <p>تفاصيل الشقة</p>
+            <p> -غرفة نوم بسرير مزدوج مزودة بالمناشف و مجهزه بجلسة جانبيه</p>
+            <p> -دورة مياه مجهزة بمستلزمات العناية الشخصية</p>
+            <p> -جميع الغرف مكتملة بالديكورات و الآثاث الفاخر</p>
             </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        سياسة الالغاء
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <div class="cancel">
 
-          </nav>
+                    <h1>سياسة الإلغاء </h1>
+                    <p>سياسة الإلغاء و الاسترجاع</p>
+                    <p>بإمكانك إلغاء او تأجيل الحجز مجاناً قبل تاريخ ٠٤/٠٧/٢٠٢٤</p>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            مرافق
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              الشروط
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <div class="conditions">
+                    <h1>الشروط</h1>
+                    <p> شروط الحجز(من قبل المضيف)  </p>
+                    <p>١- الالتزام بوقت الخروج الموضح </p>
+                    <p>٢- العدد المسموح به للدخول ٣ أشخاص بحد أقصى </p>
+                    <p>٣- ممنوع اصطحاب أى نوع من الحيوانات </p>
+                    <p>٤- يمنع الشيشه منعاً باتاً و يسمح بالتدخين و  يوجد طفاية للدخان</p>     
+                </div>
+           </div>
+            </div>
+          </div>
+      </div>
+      </div>
 
+      
 
+      <nav class="navbar navbar-expand-lg new-nav d-s-none d-lg-flex " style="box-shadow: none ;">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar- nav nav-fill w-100">
+            <li class="nav-item">
+              <a class="nav-link" href="#">المواصفات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#revision">مرافق</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cancel">سياسة الالغاء</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#conditions" >الشروط</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="describtion d-sm-none d-md-none d-lg-block m-4 px-5" id="describtion">
+        
+        <h5>تفاصيل الشقة</h5>
+        <p> -غرفة نوم كبيرة بسرير مزدوج و جلسة جانبية مرفقة بدورة مياه</p>
+        <p> -غرفة نوم بسرير مزدوج مزودة بالمناشف و مجهزه بجلسة جانبيه</p>
+        <p> -دورة مياه مجهزة بمستلزمات العناية الشخصية</p>
+        <p> -جميع الغرف مكتملة بالديكورات و الآثاث الفاخر</p>
+      </div>
         </div>
 
       </div>
+
+    </div>
 
   </section>
 
