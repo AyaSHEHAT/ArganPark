@@ -3,26 +3,35 @@ const arrivalDateInput = document.getElementById('arrivalDate');
 const departuralDateInput = document.getElementById('departuralDate');
 const nightNumbers = document.getElementById('nightNumbers');
 
-// Function to format a date to YYYY-MM-DD
-function formatDate(date) {
-  const d = new Date(date);
-  const year = d.getFullYear();
-  const month = String(d.getMonth() + 1).padStart(2, '0');
-  const day = String(d.getDate()).padStart(2, '0');
-  return `${year}-${month}-${day}`;
-}
+// Initialize flatpickr with options
+flatpickr(arrivalDateInput, {
+  dateFormat: 'Y-m-d',
+  defaultDate: new Date(),
+  minDate: 'today',
+  onChange: function(selectedDates, dateStr, instance) {
+    updateDepartureDate(dateStr);
+  }
+});
 
-// Set the default values for arrival and departure
-function setDefaultDates() {
-  const today = new Date();
-  const tomorrow = new Date();
-  tomorrow.setDate(today.getDate() + 1);
+flatpickr(departuralDateInput, {
+  dateFormat: 'Y-m-d',
+  defaultDate: new Date(Date.now() + 86400000), // Tomorrow
+  minDate: new Date(Date.now() + 86400000) // Tomorrow
+});
 
-  arrivalDateInput.value = formatDate(today);
-  departuralDateInput.value = formatDate(tomorrow);
+// Function to update the departure date and enforce validation
+function updateDepartureDate(arrivalDate) {
+  const arrival = new Date(arrivalDate);
+  const minDeparture = new Date(arrival);
+  minDeparture.setDate(arrival.getDate() + 1);
 
-  arrivalDateInput.setAttribute('min', formatDate(today));
-  departuralDateInput.setAttribute('min', formatDate(tomorrow));
+  // Update the minimum date for departure
+  departuralDateInput._flatpickr.set('minDate', minDeparture);
+  const currentDepartureDate = new Date(departuralDateInput.value);
+
+  if (currentDepartureDate <= arrival) {
+    departuralDateInput._flatpickr.setDate(minDeparture);
+  }
 
   calculateNights();
 }
@@ -35,25 +44,25 @@ function calculateNights() {
   const differenceInTime = departuralDate - arrivalDate;
   const differenceInDays = differenceInTime / (1000 * 3600 * 24);
 
-  nightNumbers.innerText = differenceInDays;
+  // Update the displayed number of nights
+  nightNumbers.innerText = differenceInDays > 0 ? differenceInDays : 1;
 }
 
-// Event listener for when the arrival date changes
-arrivalDateInput.addEventListener('change', () => {
-  const arrivalDate = new Date(arrivalDateInput.value);
-  const minDepartureDate = new Date(arrivalDate);
-  minDepartureDate.setDate(arrivalDate.getDate() + 1);
-  departuralDateInput.setAttribute('min', formatDate(minDepartureDate));
-  if (new Date(departuralDateInput.value) <= arrivalDate) {
-    departuralDateInput.value = formatDate(minDepartureDate);
-  }
+// Set the default dates and calculate nights on load
+function setDefaultDates() {
+  const today = new Date();
+  const tomorrow = new Date(today.getTime() + 86400000); // Tomorrow
 
+  arrivalDateInput._flatpickr.setDate(today);
+  departuralDateInput._flatpickr.setDate(tomorrow);
   calculateNights();
-});
-
-departuralDateInput.addEventListener('change', calculateNights);
+}
 
 setDefaultDates();
+
+// Event listener to recalculate nights when departure date changes
+departuralDateInput.addEventListener('change', calculateNights);
+
 
 
 const clickableDiv = document.querySelector('.clickable-div');
@@ -82,6 +91,29 @@ guestsDiv.addEventListener('click', () => {
 
   }
 });
+const searchDiv = document.getElementById("search-div");
+
+    var searchInputField = document.getElementById("search-input");
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 992) {
+            searchDiv.classList.remove("d-none");
+        } else {
+            searchDiv.classList.add("d-none");
+        }
+    });
+    searchInputField.addEventListener("focus", function (e) {
+        e.preventDefault();
+        searchInputField.blur(); // remove focus
+        //slider.classList.add("d-none");
+        searchDiv.classList.remove("d-none");
+    });
+    document.addEventListener("click", function (e) {
+        if (!searchDiv.contains(e.target) && !searchInputField.contains(e.target)) {
+            searchDiv.classList.add("d-none");
+        } else {
+            updateSearchInputField();
+        }
+    });
 
 // Function to update the values of guests and rooms
 function updateValues() {
@@ -101,3 +133,20 @@ inputNumRooms.addEventListener('input', updateValues);
 
 // Initialize with default values
 updateValues();
+arrivalDateInput.addEventListener("change", updateSearchInputField);
+departuralDateInput.addEventListener("change", updateSearchInputField);
+
+function updateSearchInputField() {
+    let hotelOrLocationValue = document.getElementById('floatingSelectGrid').value;
+    let arrivalDateValue = document.getElementById('arrivalDate').value;
+    let departuralDateValue = document.getElementById('departuralDate').value;
+    let numberGuestsValue = document.getElementById('numberGuests').innerText;
+    let numberRoomsValue = document.getElementById('numberRooms').innerText;
+    //check if body is in arabic (contains dir attribute and its value is rtl) to change the text direction
+    if (document.body.hasAttribute("dir") && document.body.getAttribute("dir") === "rtl") {
+        searchInputField.value = `${hotelOrLocationValue}, موعد الوصول ${arrivalDateValue}, موعد المغادرة ${departuralDateValue}, ${numberGuestsValue} نزلاء, ${numberRoomsValue} غرفة`;
+    } else {
+        searchInputField.value = `${hotelOrLocationValue}, Arrival Date ${arrivalDateValue}, Departure Date ${departuralDateValue}, ${numberGuestsValue} Guests, ${numberRoomsValue} Rooms`;
+    }
+    searchInputField.classList.add("text-black-50");
+}
