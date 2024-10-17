@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/flatpickr.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/index-ar.css">
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/footer-ar.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/resorts.css">
@@ -367,8 +367,8 @@
                         موعد الوصول
                     </label>
 
-                    <input class="form-control flatpickr text-center" type="text" id="arrivalDate" placeholder="اختر تاريخ الوصول"
-                        required />
+                    <input class="form-control flatpickr text-center" type="text" id="arrivalDate"
+                        placeholder="اختر تاريخ الوصول" required />
                 </div>
 
                 <div class="departural-date px-4" style="width: 40%;">
@@ -510,7 +510,7 @@
         </div>
     </div>
 
-    <!-- SERVICES -->
+    <!-----------------------------------------SERVICES------------------------------------------------>
     <div id="services" class="mb-5">
         <div id="services-header" class="mb-3">
             <h3>وش نوفرلك؟</h3>
@@ -552,6 +552,125 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-----------------------------------------BRANCHES------------------------------------------------->
+    <!-- Switch -->
+    <div class="container-fluid d-flex justify-content-between align-items-center mb-3">
+        <h1>فروعنا</h1>
+        <div class="d-flex justify-content-end align-items-center" style="color: #848eb2;">
+            <span class="switch-label left">عرض القائمة</span>
+            <div class="switch" id="switch">
+                <div class="switch-ball"></div>
+            </div>
+            <span class="switch-label right">عرض الخريطة</span>
+        </div>
+    </div>
+    <!-- Branches -->
+    <div id="branches-container" class="row d-flex justify-content-evenly align-items-center">
+        <div id="branches-map" style="width: 60%;">
+            <img src="../images/new-map.png" alt="" class="d-block mx-auto" style="width: 100%;">
+        </div>
+        <div id="branches-details" class="row d-flex justify-content-center align-items-center d-none">
+            <div id="branches-list-container" class="col-10 col-lg-7">
+                <div class="branch text-center d-flex justify-content-start align-items-center p-1 mb-3 active"
+                    style="color: #b3952b;">
+                    <p>فندق ارجان بارك العزيزية</p>
+                    <address class="d-none">الرياض - حي العزيزية - شارع الشباب</address>
+                    <phone class="d-none">0555089637</phone>
+                </div>
+                <div class="branch text-center d-flex justify-content-start align-items-center p-1 mb-3">
+                    <p>فندق ارجان بارك الشفاء</p>
+                    <address class="d-none">الرياض - حي الشفاء - شارع الشفاء</address>
+                    <phone class="d-none">0555089638</phone>
+                </div>
+                <div class="branch text-center d-flex justify-content-start align-items-center p-1 mb-3">
+                    <p>فندق ارجان بارك الرياض</p>
+                    <address class="d-none">الرياض - حي الرياض - شارع الرياض</address>
+                    <phone class="d-none">0555089639</phone>
+                </div>
+                <div class="branch text-center d-flex justify-content-start align-items-center p-1 mb-3">
+                    <p>فندق ارجان بارك جدة</p>
+                    <address class="d-none">جدة - حي الجنوب - شارع الجنوب</address>
+                    <phone class="d-none">0555089640</phone>
+                </div>
+            </div>
+            <div id="location-details" class="col-8 col-lg-4">
+                <div class="mb-5 mt-3">
+                    <h4 id="branch-name" class="fw-light">فندق ارجان بارك العزيزية</h4>
+                    <hr class="m-auto w-50">
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex gap-4 align-items-start">
+                        <i class="fa-solid fa-diamond-turn-right fa-flip-horizontal fa-2x"></i>
+                        <p id="branch-address">الرياض - حي العزيزية - شارع الشباب</p>
+                    </div>
+                    <hr class="m-auto">
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex gap-4 align-items-start mb-2">
+                        <i class="fa-solid fa-headphones-simple fa-2x"></i>
+                        <p id="branch-phone">0555089637</p>
+                    </div>
+                    <hr class="m-auto">
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex gap-4 align-items-start mb-2">
+                        <i class="fa-regular fa-calendar-check fa-2x"></i>
+                        <p class="text-decoration-underline">حجز جديد</p>
+                    </div>
+                    <hr class="m-auto">
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex gap-4 align-items-start mb-2">
+                        <i class="fa-regular fa-newspaper fa-2x"></i>
+                        <p class="text-decoration-underline">تفاصيل</p>
+                    </div>
+                    <hr class="m-auto">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <hr class="m-auto my-5" style="width: 40%;">
+
+    <!-- SPONSORS SLIDER -->
+    <!-- Consider Animation is Required -->
+    <h2 class="text-center mb-3 text-black fw-lighter">الحجز من خلال مواقع اخرى</h2>
+    <div id="sponsors" class="d-flex justify-content-evenly align-items-center">
+        <div id="sponsors-container" class="d-flex justify-content-between" style="border: 1px solid red;">
+            <div class="sponsor-item">
+                <a href="">
+                    <img src="../images/booking-com.png" alt="">
+                </a>
+            </div>
+            <div class="sponsor-item">
+                <a href="">
+                    <img src="../images/gather-crop.png" alt="">
+                </a>
+            </div>
+            <div class="sponsor-item">
+                <a href="">
+                    <img src="../images/almatar-crop.png" alt="">
+                </a>
+            </div>
+            <!-- <div class="sponsor-item">
+                <a href="">
+                    <img src="../images/booking-com.png" alt="">
+                </a>
+            </div>
+            <div class="sponsor-item">
+                <a href="">
+                    <img src="../images/gather-crop.png" alt="">
+                </a>
+            </div>
+            <div class="sponsor-item">
+                <a href="">
+                    <img src="../images/almatar-crop.png" alt="">
+                </a>
+            </div> -->
         </div>
     </div>
 

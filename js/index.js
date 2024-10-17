@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+
     // Get the input elements
     const arrivalDateInput = document.getElementById("arrivalDate");
     const departuralDateInput = document.getElementById("departuralDate");
@@ -227,4 +229,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
     updateBackground();
 
+    //----------------------------------------Branches Section -------------------------------------------------
+
+    //switch
+    const switchElement = document.getElementById('switch');
+
+    switchElement.addEventListener('click', function () {
+        switchElement.classList.toggle('active');
+    });
+
+    //branches
+    let branchesMap = document.getElementById('branches-map');
+    let branchesDetails = document.getElementById('branches-details');
+
+    switchElement.addEventListener('click', function () {
+        if (switchElement.classList.contains('active')) {
+            branchesMap.classList.add('d-none');
+            branchesDetails.classList.remove('d-none');
+        } else {
+            branchesMap.classList.remove('d-none');
+            branchesDetails.classList.add('d-none');
+        }
+    });
+
+    //display data in branches details
+    let branches = document.querySelectorAll('.branch');
+    branches.forEach(branch => {
+        branch.addEventListener('click', function () {
+            branches.forEach(branch => {
+                branch.classList.remove('active');
+                branch.style.backgroundColor = 'white';
+                branch.style.color = 'black';
+            });
+            this.classList.add('active');
+            this.style.color = '#b3952b';
+            if (document.body.getAttribute('dir') === 'rtl') {
+                document.querySelector('#branch-name').innerText = this.querySelector('p').innerText;
+                document.querySelector('#branch-address').innerText = this.querySelector('address').innerText;
+                document.querySelector('#branch-phone').innerText = this.querySelector('phone').innerText;
+            } else {
+                document.querySelector('#branch-name').innerText = this.querySelector('titleEn').innerText;
+                document.querySelector('#branch-address').innerText = this.querySelector('addressEn').innerText;
+                document.querySelector('#branch-phone').innerText = this.querySelector('phoneEn').innerText;
+            }
+
+        });
+    });
+
+    
 });
