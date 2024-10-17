@@ -106,13 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const searchDiv = document.getElementById("search-div");
 
     var searchInputField = document.getElementById("search-input");
-    // if (document.body.hasAttribute("dir") && document.body.getAttribute("dir") === "rtl") {
-    // } else {
-    //     var searchInputField = document.getElementById("search-input-en");
-    // }
-    //const searchInputFieldEn = document.getElementById("search-input-en");
-
-    //on change the screen size hide the search input and show the slider beside the search criteria form
     window.addEventListener("resize", function () {
         if (window.innerWidth > 992) {
             slider.classList.remove("d-none");
@@ -156,9 +149,11 @@ document.addEventListener("DOMContentLoaded", function () {
         searchInputField.classList.add("text-black-50");
     }
 
-    const container = document.getElementById("offers-container");
-    const cards = Array.from(container.children);
-    // console.log(cards);
+
+
+    //////////////////
+    const offersContainer = document.getElementById("offers-container");
+    const cards = Array.from(offersContainer.children);
     const visibleCards = 4; // Number of cards to show at once
     let currentPosition = 0; // Index of the first visible card
     let nextBtn = document.getElementById("next");
@@ -197,6 +192,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     updateSlider();
 
+
+    //make Offer Card clickable
+    let offerCard = document.querySelectorAll(".offer-card");
+    offerCard.forEach((card) => {
+        card.addEventListener("click", function () {
+            window.location.href = "#";
+        });
+        card.addEventListener("mouseover", function () {
+            card.style.cursor = "pointer";
+        });
+    });
+
+    //////////////////////
     const radioButtons = document.querySelectorAll(".btn-check");
     const labels = document.querySelectorAll(".btn-outline");
 
