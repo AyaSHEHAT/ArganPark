@@ -1,200 +1,690 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>المراجعة و الدفع</title>
-        <link rel="stylesheet" href="/css/all.min.css">
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <!-- <link rel="stylesheet" href="/css/style.css"> -->
-        <link rel="stylesheet" href="/css/navbar.css">
-        <link rel="stylesheet" href="/css/footer-ar.css">
-        <link rel="stylesheet" href="/css/Payment_revision.css">
-        <link rel="stylesheet" href="/css/card.css">
 
-        <style>
-        .with-navbar
-        {
-            display: flex;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المراجعة و الدفع</title>
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/flatpickr.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer-ar.css">
+    <link rel="stylesheet" href="/css/Payment_revision.css">
+    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="/css/resorts.css">
+    <link rel="stylesheet" href="/css/resortDetails.css">
+    <link rel="stylesheet" href="/css/roomDetails.css">
+</head>
 
-        }
-        
-        .accordion{
-            border: none;
-            box-shadow: none;
-            margin: 0;
-            padding: 0;
-        }
-        @media(max-width:450){
-            .with-navbar{
-            display: none;
-            }
-            .accordion{
-                display: flex;
-                flex-direction: column;
-            }
-        }
+<body dir="rtl" class="container-fluid">
 
-        .discount {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-}
+    <!-- Navbar -->
+    <nav class="navbar mainNav navbar-expand-lg navbar-light bg-light">
+        <!-- Toggler for small screens -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Logo -->
 
-.controls {
-    display: flex;
-    align-items: space-evenly;
-}
+        <div class="">
+            <a class="navbar-brand " href="#">
+                <img src="/images/web-icon.png" alt="Logo" class="img-fluid">
+            </a>
+        </div>
 
-    </style>
-    </head>
-    <body dir="rtl" class="container-fluid">
-        <div class="row container-fluid">
-            <div class="col 10 col-lg-6">
-                <div class="revision">
-                    <h1 class="golden-word">المراجعة</h1>
-                    <hr>
-                    <h3 class="golden-word">..غرفة بسرير مزدوج</h3>
-                        <div class="container d-flex flex-column align-items-start flex-lg-row justify-content-between align-items-lg-center">
-                            <p class="gray-word"><i class="fa-solid fa-location-dot text-black-50 "></i> الرياض-حى العزيزية -شارع الشباب </p>
-                            <p><i class="fa-solid fa-user icon-color text-black-50"></i>  تتسع لشخصين</p>
-                        </div>
-                        <div class="container d-flex flex-column  align-items-start flex-lg-row justify-content-between align-items-lg-center">
-                            <p><i class="fa-solid fa-door-open text-black-50"></i> مساحة الوحدة 40م</p>
-                            <p><i class="fas fa-clock text-black-50"></i> خدمة الغرف على مدار 24 ساعة </p> 
-                    </div>
-                    <hr>
-                    <div class="conditions">
-                        <h1>الشروط</h1>
-                        <p> شروط الحجز(من قبل المضيف) </p>
-                        <p>١- الالتزام بوقت الخروج الموضح </p>
-                        <p>٢- العدد المسموح به للدخول ٣ أشخاص بحد أقصى </p>
-                        <p>٣- ممنوع اصطحاب أى نوع من الحيوانات </p>
-                        <p>٤- يمنع الشيشه منعاً باتاً و يسمح بالتدخين و يوجد طفاية للدخان</p>
-                    </div>
-                    <div class="cancel">
-                        <h1>سياسة الإلغاء </h1>
-                        <p>سياسة الإلغاء و الاسترجاع</p>
-                        <p>بإمكانك إلغاء او تأجيل الحجز مجاناً قبل تاريخ ٠٤/٠٧/٢٠٢٤</p>
-                    </div>
-                </div>
-
-                <div class="payment">
-                    <h1 class="golden-word">الدفع</h1>
-                    <div class="buttons">
-                        <button type="button"
-                            class="btn goldenbtn">CASHPARK</button>
-                        <button type="button" class="btn whitebtn">استخدام رصيد
-                            المحفظة</button>
-                    </div>
-                    <label> <input type="radio" name="payment" value="VISA"
-                            id="VISA" placeholder="الدفع بالبطاقة"><img
-                            src="/images/VISA.jfif"> الدفع بالبطاقة</label>
-                    <hr>
-                    <label> <input type="radio" name="payment" value="tabby"
-                            id="tabby"><img src="/images/tabby(1)(1).png"> قسمها
-                        على 4 دفعات أى فوائد او رسوم</label>
-                    <hr>
-                    <label> <input type="radio" name="payment" value="tamara"
-                            id="tamara"><img src="/images/tamara(1)(1).png">
-                        ادفع على 3 دفعات بدون فوائد او رسوم</label>
-                    <hr>
-                    <label> <input type="radio" name="payment" value="stcpay"
-                            id="stcpa"><img src="/images/stc.png"> دفع بإستخدام
-                    </label>
-                    <hr>
-                </div>
+        <!-- Visible only on mobile -->
+        <div class="user-container d-lg-none">
+            <div class="user-logo" id="userLogo">
+                <i class="fa-regular fa-circle-user fa-2x"></i>
             </div>
-            <div class="card mx-auto col-10 col-lg-5">
-                <div class="price-info mt-4"
-                    style="text-align: start; margin: 0 auto;">
-                    <div class="rate-per-night">
-                        <p class="ratepernight"><span id="night-price">255</span> SAR/ليلة</p>
+            <!-- Default User Icon -->
+
+            <div class="dropdown-menu-user arabic" id="userMenu" style="position: absolute;
+        top: 50px;
+        left: 0 !important;">
+                <div class="user-info d-flex align-items-center">
+                    <div class="user-logo2 mb-2" id="userLogo">
+                        <i class="fa-regular fa-circle-user fa-2x"></i>
                     </div>
-                    <div class="total-cost">
-                        <p>إجمالي <span class="nightNumbers">٣</span> ليلة 
-                            <span style="color: #b3952b; font-size: 2rem; font-weight: 500;" id="totalCost">SAR 765</span>
-                                شامل ضريبة القيمة المضافة
-                        </p>
-                    </div>
-                </div>
-                <hr class="mx-auto" style="width:90%;">
-                <div class="d-flex flex-column">
-                    <p class="d-flex justify-content-end">بإمكانك تعديل التاريخ</p>
-                    <div class=" input d-flex justify-content-between align-items-center pt-1 mb-2" style="width: 100%;">
-                        <div class="arrival-date px-4" style="width: 40%;">
-                            <label class="form-label" for="arrivalDate" style="display: block; margin-bottom: 5px;">
-                                موعد الوصول
-                            </label>
-                            <input class="form-control" type="date" name="arrivalDate" id="arrivalDate" required style="padding: 5px; border-radius: 5px; 
-                                border: 1px solid #ccc; margin-bottom: 10px;" />
-                        </div>
-                        <div class="departural-date px-4" style="width: 40%;">
-                            <label class="form-label" for="departuralDate" style="display: block; margin-bottom: 5px;">
-                                موعد المغادرة
-                            </label>
-                            <input class="form-control" type="date" name="departuralDate" id="departuralDate" required style="padding: 5px; border-radius: 5px; 
-                                border: 1px solid #ccc; margin-bottom: 13px;" />
-                        </div>
-                        <div class="nights" style="width: 10%;">
-                            <span class="nightNumbers">1</span> ليلة
-                        </div>
+                    <div class="welcomediv">
+                        <h5> <span class="welcome">مرحبا بك</span> محمد الشمري</h5>
+                        <p>muhammed1@gmail.com</p>
                     </div>
                 </div>
-                <hr class="mx-auto" style="width:90%;">
-                <div class="arrival-departural mx-5">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p>وقت الوصول</p>
-                        <p>وقت المغادرة</p>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p style="color:black;">4:00 مساءً</p>
-                        <p style="color:black;">2:00 مساءً</p>
-                    </div>
-                </div>
-                <hr class="mx-auto" style="width:90%;">
-                <p class="text-center">ستدفع الان <span class="advanced-payment">255</span> ريال</p>
-                <p class="text-center text-black" style="font-size: 1.5rem;">ملخص الحجز</p>
-                <div class="summary-details mx-5">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p>ليالى</p>
-                        <p class="nightNumbers">3</p>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p>ستدفع الان <span class="advanced-payment">255</span> ريال سعودي</p>
-                        <p class="text-success">-<span class="advanced-payment">255</span>
-                            SAR</p>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p>قيمة الخصم</p>
-                        <p class="text-success">-<span id="discount-value">100</span> SAR</p>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p>ستدفع عند الوصول</p>
-                        <p><span id="complementary">100</span> SAR</p>
-                    </div>
-                </div>
-                <hr class="mx-auto" style="width:100%;">
-                <div class="total d-flex justify-content-between align-items-center mx-5">
-                    <p class="text-black">المجموع</p>
-                    <p><span id="net">689</span> SAR</p>
-                </div>
-                <hr class="mx-auto" style="width:100%;">
-                    <div class="discount d-flex justify-content-between align-items-center mx-5 mb-4 py-3">
-                        <p class="text-black">كود الخصم</p>
-                        <div class="controls d-flex justify-content-center gap-2">
-                            <input type="text"
-                                class="form-control text-success text-center"
-                                style="background-color: #f1f5f8; width:50%; border: none;">
-                            <button type="button"
-                                class="btn text-success">تطبيق</button>
-                        </div>
-                    </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-user mx-1"></i> الملف الشخصي</a>
+                    </li>
+                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-calendar mx-1"></i> حجوزاتي</a>
+                    </li>
+                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-wallet mx-1"></i> المحفظة</a>
+                    </li>
+                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-credit-card mx-1"></i> طرق
+                            الدفع</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-gift mx-1"></i> كابونات</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-headphones mx-1"></i> تواصل
+                            معنا</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link"> <i class="fa fa-sign-out-alt mx-1"></i> تسجيل
+                            الخروج</a>
+                    </li>
+                </ul>
             </div>
         </div>
 
-        <!-- FOOTER AR -->
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse mt-4 mt-sm-4 mt-md-4 mt-lg-0" id="navbarNavDropdown">
+            <ul class="navbar-nav mainNav me-auto mb-2 mb-lg-0 d-flex gap-4">
+                <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
+                    <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownResorts" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        منتجعات
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownResorts">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
+                    <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownHotels" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        فنادق
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownHotels">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
+                    <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownHalls" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        قاعة مناسبات
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownHalls">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown p-xl-4 p-lg-4 p-md-0 p-sm-0">
+                    <a class="nav-link dropdown-toggle item_active" href="#" id="navbarDropdownOffers" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        العروض
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownOffers">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Browse in English and Sign-up Button -->
+            <div class="d-flex align-items-center me-auto justify-content-between gap-4">
+                <button type="button" class="btn ms-3" data-bs-toggle="modal" data-bs-target="#loginModal">الدخول او
+                    إنشاء حساب
+                    جديد</button>
+                <div class="d-flex align-items-center text-black-50">
+                    <div id="change-lang-to-en">
+                        <p class="mb-0">Browse in <br><span class="text-decoration-underline">English</span></p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-earth-americas fa-2x mx-2 icon"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal Structure -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header d-flex justify-content-between">
+                    <div class="modal-title fs-5">
+                        <h1 id="loginModalLabel">أهلاً وسهلاً بك</h1>
+                        <p>سجل دخول لإدارة حجزك والحصول على الكاش باك</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <!-- Form -->
+                        <div class="col-md-6  form-container">
+
+                            <form action="" method="" class="signUpForm">
+                                <div class="mb-3 text-center">
+                                    <label for="loginMethod" class="form-label">الدخول بواسطة</label>
+                                    <div class="modalBtns d-flex justify-content-evenly">
+                                        <button type="button"
+                                            class="btn btn-outline-primary me-2 active signWithPhone">رقم
+                                            الجوال</button>
+                                        <button type="button" class="btn btn-outline-primary signWithMail">البريد
+                                            الإلكتروني</button>
+                                    </div>
+                                </div>
+
+                                <!-- First Name & Last Name -->
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <label for="firstName" class="form-label">الاسم الأول</label>
+                                        <input type="text" class="form-control" id="firstName" name="firstName"
+                                            placeholder="حسين" required>
+                                    </div>
+                                    <div class="col">
+                                        <label for="lastName" class="form-label">الاسم الأخير</label>
+                                        <input type="text" class="form-control" id="lastName" name="lastName"
+                                            placeholder="محمد" required>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3 phoneDiv">
+
+                                    <div class="col">
+                                        <label for="countryCode" class="form-label">رمز البلد</label>
+                                        <select name="countryCode" id="countryCode" class="form-select" required>
+                                            <option value="+966">+966</option>
+                                            <option value="+966">+966</option>
+                                            <option value="+966">+966</option>
+                                            <option value="+966">+966</option>
+                                            <option value="+966">+966</option>
+                                            <option value="+966">+966</option>
+                                            <option value="+966">+966</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col">
+                                        <label for="phone" class="form-label">رقم الهاتف</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone"
+                                            placeholder="0500077659" required>
+                                    </div>
+                                </div>
+
+
+
+                                <!-- email -->
+                                <div class="row mb-3">
+                                    <div class="col emailDiv d-none">
+                                        <label for="email" class="form-label">البريد الالكتروني</label>
+                                        <input type="email" class="form-control" name="email" id="email"
+                                            placeholder="example@example.com" required>
+                                    </div>
+                                    <!-- Password -->
+                                    <div class="col">
+                                        <label for="password" class="form-label">كلمة المرور</label>
+                                        <input type="password" class="form-control" id="password" name="password"
+                                            placeholder="••••••••" required>
+                                    </div>
+                                </div>
+                                <div class="modal-footer justify-content-start">
+                                    <input type="submit" class="btn signup px-5" value="تسجيل" />
+                                    <button type="button" class="btn login active px-5">دخول</button>
+                                </div>
+                            </form> <!-- signUp -->
+
+                            <form action="" method="" class="logInForm d-none">
+                                <div class="mb-3 text-center">
+                                    <label for="loginMethod" class="form-label">الدخول بواسطة</label>
+                                    <div class="modalBtns d-flex">
+                                        <button type="button"
+                                            class="btn btn-outline-primary me-2 active loginWithPhone">رقم
+                                            الجوال</button>
+                                        <button type="button" class="btn btn-outline-primary loginWithMail">البريد
+                                            الإلكتروني</button>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 loginDivWithPhone">
+
+                                    <div class="col mb-3">
+                                        <label for="userPhone" class="form-label">رقم الهاتف</label>
+                                        <input type="tel" class="form-control" id="userPhone" name="userPhone"
+                                            placeholder="0500077659" required>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <label for="userOTP" class="form-label">الرقم السري (OTP)</label>
+                                        <input type="number" class="form-control" id="userOTP" name="userOTP"
+                                            placeholder="OTP" required>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="d-none loginDivWithEmail">
+                                    <div class="col mb-3">
+                                        <label for="userEmail" class="form-label">البريد الالكتروني</label>
+                                        <input type="email" class="form-control" id="userEmail" name="userEmail"
+                                            placeholder="example@example.com" required>
+                                    </div>
+                                    <!-- Password -->
+                                    <div class="col mb-3">
+                                        <label for="userPassword" class="form-label">كلمة المرور</label>
+                                        <input type="password" class="form-control" id="userPassword"
+                                            name="userPassword" placeholder="••••••••" required>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer d-flex">
+                                    <button type="button" class="btn signup active px-5">تسجيل</button>
+                                    <input type="submit" class="btn login px-5" value="دخول" />
+                                </div>
+                            </form>
+
+                        </div>
+                        <!-- Carousel (Slider) -->
+                        <div class="col-md-6">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/shalehat.jpg" class="d-block w-100" alt="Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/images/main-slider-3.webp" class="d-block w-100" alt="Slide 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/images/main-slider-2.jpg" class="d-block w-100" alt="Slide 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <!-- Modal Footer -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row container-fluid">
+        <div class="col col-lg-6">
+            <div class="revision">
+                <section class="">
+                    <div class="container header-imgs">
+
+                        <div class="imgs d-flex justify-content-center mx-0 mx-sm-0 ">
+                            <img class="ms-2" src="/images/El'azizia.jpg" alt="">
+                            <img class="me-2" src="/images/img1.jpg" alt="">
+                        </div>
+
+                        <div class="Sliderimgs  mx-0 mx-sm-0 mx-md-5">
+                            <div id="sliderOfCards" class="mb-3  position-relative">
+                                <div id="sliderOfCards-container" class="row">
+                                    <div class="col-12 col-lg-3 slider-card">
+                                        <div class="card p-2">
+                                            <img src="../images/hotelDetails1.jpeg" class="card-img-top rounded-2"
+                                                alt="...">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-3 slider-card">
+                                        <div class="card p-2">
+                                            <img src="../images/hotelDetails2.jpg" class="card-img-top rounded-2"
+                                                alt="...">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-3 slider-card">
+                                        <div class="card p-2">
+                                            <img src="../images/hotelDetails3.jpg" class="card-img-top rounded-2"
+                                                alt="...">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-3 slider-card">
+                                        <div class="card p-2 ">
+                                            <img src="../images/hotelDetails1.jpeg" class="card-img-top rounded-2"
+                                                alt="...">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-3 slider-card">
+                                        <div class="card p-2 ">
+                                            <img src="../images/hotelDetails7.jpg" class="card-img-top rounded-2"
+                                                alt="...">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-3 slider-card">
+                                        <div class="card p-2 ">
+                                            <img src="../images/hotelDetails6.jpg" class="card-img-top rounded-2"
+                                                alt="...">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-3 slider-card">
+                                        <div class="card p-2 ">
+                                            <img src="../images/hotelDetails7.jpg" class="card-img-top rounded-2"
+                                                alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="slider-controls">
+                                    <button id="prev" class="btn btn-outline-secondary"><i
+                                            class="fas fa-chevron-right"></i></button>
+                                    <button id="next" class="btn btn-outline-secondary"><i
+                                            class="fas fa-chevron-left"></i></button>
+                                </div>
+                            </div> <!-- end of slider -->
+
+                            <div class="photobanner__wrap text-center">
+                                <div class="photobanner services  w-100">
+
+                                    <div class=" col-lg-1 mb-3">
+                                        <i class="fa-solid fa-wifi"></i> <br>
+                                        <span>Wi-Fi</span>
+                                    </div>
+                                    <div class=" col-2 mb-3">
+                                        <i class="fa-solid fa-p"></i> <br>
+                                        <span>مواقف</span>
+                                    </div>
+                                    <div class=" col-1 mb-3">
+                                        <i class="fa-solid fa-elevator"></i> <br>
+                                        <span>مصعد</span>
+                                    </div>
+                                    <div class=" col-2 mb-3">
+                                        <i class="fa-solid fa-wheelchair"></i> <br>
+                                        <span>مواقف خاصة</span>
+                                    </div>
+                                    <div class=" col-2 mb-3">
+                                        <i class="fa-solid fa-cart-flatbed-suitcase"></i> <br>
+                                        <span>تخزين الأمتعة</span>
+                                    </div>
+                                    <div class=" col-2 mb-3">
+                                        <i class="fa-solid fa-bell-concierge"></i> <br>
+                                        <span>خدمة الغرف</span>
+                                    </div>
+                                    <div class=" col-2 mb-3">
+                                        <i class="fa-solid fa-person-shelter"></i> <br>
+                                        <span>استقبال 24 ساعة</span>
+                                    </div>
+                                    <div class=" col-1 mb-3">
+                                        <i class="fa-solid fa-wifi"></i> <br>
+                                        <span>Wi-Fi</span>
+                                    </div>
+                                    <div class=" col-2 mb-3">
+                                        <i class="fa-solid fa-p"></i> <br>
+                                        <span>مواقف</span>
+                                    </div>
+                                    <div class=" col-1 mb-3">
+                                        <i class="fa-solid fa-elevator"></i> <br>
+                                        <span>مصعد</span>
+                                    </div>
+                                    <div class=" col-2 mb-3">
+                                        <i class="fa-solid fa-wheelchair"></i> <br>
+                                        <span>مواقف خاصة</span>
+                                    </div>
+                                    <div class=" col-2 mb-3">
+                                        <i class="fa-solid fa-cart-flatbed-suitcase"></i> <br>
+                                        <span>تخزين الأمتعة</span>
+                                    </div>
+                                    <div class=" col-2 mb-3 text">
+                                        <i class="fa-solid fa-bell-concierge"></i> <br>
+                                        <span>خدمة الغرف</span>
+                                    </div>
+                                    <div class=" col-2 mb-3">
+                                        <i class="fa-solid fa-person-shelter"></i> <br>
+                                        <span>استقبال 24 ساعة</span>
+                                    </div>
+
+                                </div>
+                            </div> <!-- end of wraper -->
+
+                        </div> <!-- end of Sliderimgs -->
+
+                        <div class="container-fluid my-4" style="max-width: 1200px;">
+                            <div class="sidelinks">
+                                <div class="accordion accordion-flush d-lg-none" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <div class="left-toggle">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                مواصفات
+                                            </button>
+                                        </div>
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+
+                                                <h5>تفاصيل الشقة</h5>
+                                                <p> -غرفة نوم كبيرة بسرير مزدوج و جلسة جانبية مرفقة بدورة مياه</p>
+                                                <p> -غرفة نوم بسرير مزدوج مزودة بالمناشف و مجهزه بجلسة جانبيه</p>
+                                                <p> -دورة مياه مجهزة بمستلزمات العناية الشخصية</p>
+                                                <p> -جميع الغرف مكتملة بالديكورات و الآثاث الفاخر</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                سياسة الالغاء
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <div class="cancel">
+
+                                                    <h5>سياسة الإلغاء</h5>
+                                                    <p> -يمكن إلغاء الحجز بدون تكلفة قبل 24 ساعة من الوصول</p>
+                                                    <p> -إلغاء بعد 24 ساعة يترتب عليه رسوم إلغاء بنسبة 50%</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h1 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                                مرافق
+                                            </button>
+                                        </h1>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingThree"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <h5>مرافق الشقة</h5>
+                                                <p> -بركة سباحة</p>
+                                                <p> -صالة رياضية مجهزة بالكامل</p>
+                                                <p> -مواقف سيارات مجانية</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingFour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                                aria-expanded="false" aria-controls="flush-collapseFour">
+                                                الشروط
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <div class="conditions">
+                                                    <h5>الشروط</h5>
+                                                    <p> -الحيوانات الأليفة غير مسموحة</p>
+                                                    <p> -التدخين ممنوع داخل الشقة</p>
+                                                    <p> -الحد الأدنى للعمر للحجز هو 18 سنة</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <nav class="navbar navbar-expand-lg new-nav d-s-none d-lg-flex"
+                                    style="box-shadow: none;">
+                                    <div class="container-fluid">
+                                        <div class="collapse navbar-collapse" id="navbarNav">
+                                            <ul class="navbar-nav nav-fill w-100">
+                                                <li class="nav-item">
+                                                    <a class="nav-link activeSideLink" href="#">المواصفات</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#revision">مرافق</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#cancel">سياسة الالغاء</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#conditions">الشروط</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+
+                                <div class="describtion d-none d-sm-none d-md-none d-lg-block m-4 px-5"
+                                    id="describtion">
+                                </div> <!-- content -->
+
+                            </div>
+
+                        </div> <!-- end of sidelinks -->
+
+                </section>
+            </div>
+        </div>
+        <div class="card mx-auto col-10 col-lg-5">
+            <div class="price-info mt-4" style="text-align: start; margin: 0 auto;">
+                <div class="rate-per-night">
+                    <p class="ratepernight"><span id="night-price">255</span> SAR/ليلة</p>
+                </div>
+                <div class="total-cost">
+                    <p>إجمالي <span class="nightNumbers">٣</span> ليلة
+                        <span style="color: #b3952b; font-size: 2rem; font-weight: 500;" id="totalCost">SAR 765</span>
+                        شامل ضريبة القيمة المضافة
+                    </p>
+                </div>
+            </div>
+            <hr class="mx-auto" style="width:90%;">
+            <div class="d-flex flex-column">
+                <p class="d-flex justify-content-end">بإمكانك تعديل التاريخ</p>
+                <div class=" input d-flex justify-content-between align-items-center pt-1 mb-2" style="width: 100%;">
+                    <div class="arrival-date px-4" style="width: 40%;">
+                        <label class="form-label" for="arrivalDate" style="display: block; margin-bottom: 5px;">
+                            موعد الوصول
+                        </label>
+                        <input class="form-control" type="date" name="arrivalDate" id="arrivalDate" required style="padding: 5px; border-radius: 5px; 
+                                border: 1px solid #ccc; margin-bottom: 10px;" />
+                    </div>
+                    <div class="departural-date px-4" style="width: 40%;">
+                        <label class="form-label" for="departuralDate" style="display: block; margin-bottom: 5px;">
+                            موعد المغادرة
+                        </label>
+                        <input class="form-control" type="date" name="departuralDate" id="departuralDate" required
+                            style="padding: 5px; border-radius: 5px; 
+                                border: 1px solid #ccc; margin-bottom: 13px;" />
+                    </div>
+                    <div class="nights" style="width: 10%;">
+                        <span class="nightNumbers">1</span> ليلة
+                    </div>
+                </div>
+            </div>
+            <hr class="mx-auto" style="width:90%;">
+            <div class="arrival-departural mx-5">
+                <div class="d-flex justify-content-between align-items-center">
+                    <p>وقت الوصول</p>
+                    <p>وقت المغادرة</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <p style="color:black;">4:00 مساءً</p>
+                    <p style="color:black;">2:00 مساءً</p>
+                </div>
+            </div>
+
+            <hr class="mx-auto" style="width:90%;">
+            <p class="text-black" style="font-size: 1.5rem;">تأكيد الحجز</p>
+            <form method="post" action="/html/Payment_revision-ar.html">
+                <div class="mb-2">
+                    <label> 
+                        <input class="form-check-input" type="radio" name="pay" id="payAll">
+                        <span class="chooseAmount" >دفع كامل المبلغ <span id="totalCost2">30</span> SAR/ليلة</span>
+                    </label>
+                </div>
+                <div class="mb-2">
+                    <label> 
+                        <!-- دفع عربون <span id="night-price2"></span> -->
+                        <input class="form-check-input" type="radio" name="pay" id="payPart">
+                        <span class="chooseAmount" >دفع عربون <span id="night-price2">30</span> SAR/ليلة</span>
+                    </label>
+                </div>
+
+            </form>
+            <hr class="mx-auto" style="width:90%;">
+            <div class="text-center mb-2">
+                <button type="button" class="btn checkoutBtn w-50">احجز </button>
+            </div>
+            <div class="d-flex mx-5 justify-content-center ">
+                <p class="">ستدفع الان</p>
+                <p><span id="chose">689</span> SAR</p>
+            </div>
+            <hr class="mx-auto" style="width:90%;">
+
+            <div class="payment">
+                <h3 class="golden-word">الدفع</h3>
+               
+                <label> <input type="radio" name="payment" value="VISA" id="VISA" placeholder="الدفع بالبطاقة"><img
+                        src="/images/VISA.jfif"> الدفع بالبطاقة</label>
+           
+                <label> <input type="radio" name="payment" value="tabby" id="tabby"><img src="/images/tabby(1)(1).png">
+                    قسمها
+                    على 4 دفعات أى فوائد او رسوم</label>
+               
+                <label> <input type="radio" name="payment" value="tamara" id="tamara"><img
+                        src="/images/tamara(1)(1).png">
+                    ادفع على 3 دفعات بدون فوائد او رسوم</label>
+              
+                <label> <input type="radio" name="payment" value="stcpay" id="stcpa"><img src="/images/stc.png"> دفع
+                    بإستخدام
+                </label>
+               
+            </div>
+            <hr class="mx-auto" style="width:100%;">
+           
+        </div>
+    </div>
+
+    <!-- FOOTER AR -->
     <footer class="pt-2">
         <div id="links" class="d-flex justify-content-between align-items-center mb-3">
             <div class="d-flex flex-column ">
@@ -234,8 +724,21 @@
         </div>
     </footer>
 
-        <script src="/js/all.min.js"></script>
-        <script src="/js/bootstrap.bundle.min.js"></script>
-        <script src="/js//payment-revision.js"></script>
-        </body>
-    </html>
+    <script src="/js/all.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/flatpickr.js"></script>
+    <script>
+        flatpickr("#arrivalDate", {
+            dateFormat: "Y-m-d",
+        });
+        flatpickr("#departuralDate", {
+            dateFormat: "Y-m-d",
+        });
+    </script>
+    <script src="/js/resorts.js"></script>
+    <script src="/js/resortDetails.js"></script>
+    <script src="/js/roomDetails.js"></script>
+</body>
+
+</html>

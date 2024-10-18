@@ -1,0 +1,10 @@
+.chooseAmount{
+    color: black;
+}
+
+ button.checkoutBtn{
+    font-family: TajawalRegular;
+    font-size: 25px;
+    letter-spacing: 2px;
+    border-radius: 50px;
+}
