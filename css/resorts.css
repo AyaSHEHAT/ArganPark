@@ -14,7 +14,7 @@
     border-radius: 10px;
 }
  .departural-date{
-   border-right: 1px solid #F3F5FC;
+   border-right: 1px solid #bdc3d8 ;
 
 
 } 
@@ -22,13 +22,10 @@
     color: #838DB1;
     right: 0 !important;
     left: auto !important;
-    /* background-color: #F3F5FC !important; */
 
 }
 .form-floating>input{
     height: auto !important;
-
-    /* left: auto !important; */
 }
 .numbersDiv{
     display: none;

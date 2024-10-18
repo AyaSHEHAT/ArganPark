@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="/css/resorts.css">
     <link rel="stylesheet" href="/css/resortDetails.css">
     <link rel="stylesheet" href="/css/room-payment-details.css">
+    <style>
+        .accordion-button::after {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+    </style>
 </head>
 
 <body class="container-fluid">
@@ -605,7 +611,8 @@
                         <input class="form-control" type="date" name="arrivalDate" id="arrivalDate" required style="padding: 5px; border-radius: 5px; 
                                 border: 1px solid #ccc; margin-bottom: 10px;" />
                     </div>
-                    <div class="departural-date px-4" style="width: 40%;">
+                    <div class="departural-date px-4" style="width: 40%;   border-left: 1px solid #bdc3d8;
+                    border-right: none;">
                         <label class="form-label" for="departuralDate" style="display: block; margin-bottom: 5px;">
                             Departure Date
                         </label>
@@ -613,7 +620,7 @@
                             style="padding: 5px; border-radius: 5px; 
                                 border: 1px solid #ccc; margin-bottom: 13px;" />
                     </div>
-                    <div class="nights" style="width: 10%;">
+                    <div class="nights" style="width: 15%;">
                         <span class="nightNumbers">1</span> night
                     </div>
                 </div>

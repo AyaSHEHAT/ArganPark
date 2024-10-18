@@ -79,8 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('after:', totalNights);
 
     function updateAllNumbers() {
-        //
-        // dayPriceDiv.innerText = dayPrice + ' ريال سعودي / ليلة';
+        
         nightPriceDiv.innerText = dayPrice;
         //
         totalCost.innerText = totalNights * dayPrice + ' SAR';

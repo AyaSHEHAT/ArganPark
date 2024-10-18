@@ -17,16 +17,7 @@ input:not(:last-child)
     width:100%;
 }
 
-/* #country
-{
-    
-    border: none;
-    outline: none;
-    box-shadow: none;
-    border-bottom: 2px solid var(--main-gray);
-    padding-bottom: 6px; 
-    width:100%;
-} */
+
 #country-code
 {
     border: none;

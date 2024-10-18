@@ -1,14 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // let changeLangToEnglishDeclartion = document.getElementById('change-lang-to-en');
-  // let changeLangToEnglish = changeLangToEnglishDeclartion?changeLangToEnglishDeclartion:document.getElementById('change-lang-to-ar');
-  // // Change language to English on click
-  // changeLangToEnglish.addEventListener('click', function () {
-  //     window.location.href = 'confirmation.html';
-  // });
-
+ 
   const loginEmailBtn = document.querySelector('.loginWithMail');
   const loginPhoneBtn = document.querySelector('.loginWithPhone');
-//   const phoneDiv = document.querySelector('.phoneDiv');
+
   const emailDiv = document.querySelector('.emailDiv');
   const loginDivWithPhone = document.querySelector('.loginDivWithPhone');
   const loginDivWithEmail = document.querySelector('.loginDivWithEmail');
@@ -37,8 +31,8 @@ btnLogin.addEventListener('click', function () {
       if (!signphoneBtn.classList.contains('active')) {
         signphoneBtn.classList.add('active');
         signemailBtn.classList.remove('active');
-         // phoneDiv.classList.remove('d-none');
-          emailDiv.classList.add('d-none');
+
+        emailDiv.classList.add('d-none');
       }
   });
 

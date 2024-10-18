@@ -81,7 +81,7 @@ h6 {
 }
 
 .btn-outline:hover {
-    background-color:#bba142; /*lighter than #b3952b*/
+    background-color:#bba142; 
     color: white;
     cursor: pointer;
 }

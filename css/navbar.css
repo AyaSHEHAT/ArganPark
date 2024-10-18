@@ -98,9 +98,7 @@ nav ul li a.active {
     content: none !important;
 }
 
-/* .dropdown{
-    padding:20px !important;
-} */
+
 nav ul li a {
     color: #333;
     text-decoration: none;

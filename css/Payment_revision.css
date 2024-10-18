@@ -39,13 +39,11 @@
 .payment {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 
 .payment label {
     display: flex;
     align-items: center;
-    /* margin-bottom: 0.5rem; */
     color:gray;
 
 }
@@ -68,8 +66,6 @@ hr{
 }
 
 .whitebtn{
-    /* width:20%; */
-
     width:auto;
     font-weight: bold;
     color: gray;
@@ -78,7 +74,6 @@ hr{
 
 .goldenbtn{
     font-weight: bold;
-    /* width:15%; */
     width:auto;
 color:white;
 background-color: var(--main-color);
