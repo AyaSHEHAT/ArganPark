@@ -312,16 +312,17 @@
     <!-- MAIN CONTAINER -->
     <div id="main-container" class="d-flex justify-content-between mb-5">
 
+        <!-- Search Div -->
         <div id="search-div" class="p-2 d-none col-lg-4 d-lg-flex flex-column text-center mt-2"
             style="height: max-content;">
             <!-- Radio Buttons -->
-            <div id="radio-check" class="d-flex justify-content-center gap-5">
-                <div class="btn-group my-2" role="group" aria-label="Basic radio toggle button group">
+            <div id="radio-check" class="d-flex flex-column justify-content-center gap-3">
+                <div class="btn-group my-2 w-100" role="group" aria-label="Basic radio toggle button group">
                     <input type="radio" class="btn-check" name="btnradio" id="hotels" autocomplete="off" checked>
-                    <label class="btn-outline mx-2" for="hotels">Hotels</label>
+                    <label class="btn-outline w-100 text-center py-2" for="hotels">Hotels</label>
 
                     <input type="radio" class="btn-check" name="btnradio" id="resorts" autocomplete="off">
-                    <label class="btn-outline mx-2" for="resorts">Resorts</label>
+                    <label class="btn-outline w-100 text-center py-2" for="resorts">Resorts</label>
                 </div>
             </div>
 
@@ -370,6 +371,7 @@
                 </div>
             </div>
 
+            <!-- Number of guests -->
             <div class="input clickable-div text-center p-lg-3 mb-2" style="width: 100%; height: auto;">
                 <div class="guests-div py-4">
                     <span id="numberGuests">2</span> Guests . <span id="numberRooms">1</span> Room
@@ -400,10 +402,11 @@
 
             <!-- Search Button -->
             <div>
-                <button id="search-btn" class="btn">Search</button>
+                <button id="search-btn" class="btn w-100">Search</button>
             </div>
         </div>
 
+        <!-- Carousel -->
         <div id="carouselExampleAutoplaying" class="carousel slide col-12 col-lg-7" data-bs-ride="carousel">
             <div class="carousel-inner w-100 h-100">
                 <div class="carousel-item w-100 h-100 active">
@@ -443,8 +446,7 @@
                 <div class="card p-1">
                     <img src="../images/main-slider-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p style="color: black; text-align: center; margin: auto;">Picture Heading</p>
                     </div>
                 </div>
             </div>
@@ -452,8 +454,7 @@
                 <div class="card p-1">
                     <img src="../images/main-slider-2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p style="color: black; text-align: center; margin: auto;">Picture Heading</p>
                     </div>
                 </div>
             </div>
@@ -461,8 +462,7 @@
                 <div class="card p-1">
                     <img src="../images/main-slider-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p style="color: black; text-align: center; margin: auto;">Picture Heading</p>
                     </div>
                 </div>
             </div>
@@ -470,8 +470,7 @@
                 <div class="card p-1">
                     <img src="../images/main-slider-2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p style="color: black; text-align: center; margin: auto;">Picture Heading</p>
                     </div>
                 </div>
             </div>
@@ -479,8 +478,7 @@
                 <div class="card p-1">
                     <img src="../images/main-slider-3.webp" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p style="color: black; text-align: center; margin: auto;">Picture Heading</p>
                     </div>
                 </div>
             </div>
@@ -488,8 +486,7 @@
                 <div class="card p-1">
                     <img src="../images/main-slider-2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p style="color: black; text-align: center; margin: auto;">Picture Heading</p>
                     </div>
                 </div>
             </div>
@@ -497,14 +494,12 @@
                 <div class="card p-1">
                     <img src="../images/main-slider-3.webp" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <p style="color: black; text-align: center; margin: auto;">Picture Heading</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <!-- SERVICES -->
     <div id="services" class="mb-5">
@@ -512,7 +507,7 @@
             <h3>What can we provide you?</h3>
         </div>
         <div id="services-container" class="row">
-            <div class="col-12 col-lg-4">
+            <div class="service-card col-12 col-lg-4">
                 <div class="card">
                     <img src="../images/shalehat.jpg" class="card-img" alt="...">
                     <div class="card-img-overlay reserve-div d-flex justify-content-between mx-4">
@@ -523,27 +518,135 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="service-card col-12 col-lg-4">
                 <div class="card">
                     <img src="../images/hotels.jpeg" class="card-img" alt="...">
                     <div class="card-img-overlay reserve-div d-flex justify-content-between mx-4">
-                        <h5 class="card-title text-light fa-2x">Apartments & Hotels</h5>
+                        <h5 class="card-title text-light fa-2x" style="font-size: 1.8rem">Apartments & Hotels</h5>
                         <button class="reserve-btn">
                             <p>Book Now</p>
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="service-card col-12 col-lg-4">
                 <div class="card">
                     <img src="../images/halls.webp" class="card-img" alt="...">
                     <div class="card-img-overlay reserve-div d-flex justify-content-between mx-4">
-                        <h5 class="card-title text-light fa-2x">Banquet Hall</h5>
+                        <h5 class="card-title text-light fa-2x">Events Hall</h5>
                         <button class="reserve-btn" class="">
                             <p>Book Now</p>
                         </button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+        <!-----------------------------------------BRANCHES------------------------------------------------->
+    <!-- Switch -->
+    <div class="container-fluid d-flex justify-content-between align-items-center mb-3">
+        <h1>Our Branches</h1>
+        <div class="d-flex justify-content-end align-items-center" style="color: #848eb2;">
+            <span class="switch-label left">Show List</span>
+            <div class="switch" id="switch">
+                <div class="switch-ball"></div>
+            </div>
+            <span class="switch-label right">Show Map</span>
+        </div>
+    </div>
+    <!-- Branches -->
+    <div id="branches-container" class="row d-flex justify-content-evenly align-items-center">
+        <div id="branches-map" style="width: 60%;">
+            <img src="../images/new-map.png" alt="" class="d-block mx-auto" style="width: 100%;">
+        </div>
+        <div id="branches-details" class="row d-flex justify-content-center align-items-center d-none">
+            <div id="branches-list-container" class="col-10 col-lg-7">
+                <div class="branch text-center d-flex justify-content-start align-items-center p-1 mb-3 active"
+                    style="color: #b3952b;">
+                    <p>Arjaan Park Al-Aziziyah Hotel</p>
+                    <titleEn class="d-none">Arjaan Park Al-Aziziyah Hotel</titleEn>
+                    <addressEn class="d-none">Riyadh - Al-Aziziyah Dist - Al-Shabab Street</addressEn>
+                    <phoneEn class="d-none">0555089637</phoneEn>
+                </div>
+                <div class="branch text-center d-flex justify-content-start align-items-center p-1 mb-3">
+                    <p>Arjaan Park Al-Shabab Hotel</p>
+                    <titleEn class="d-none">Arjaan Park Al-Shabab Hotel</titleEn>
+                    <addressEn class="d-none">Riyadh - Al-Shifaa Dist - Al-Shabab Street</addressEn>
+                    <phoneEn class="d-none">0555089638</phoneEn>
+                </div>
+                <div class="branch text-center d-flex justify-content-start align-items-center p-1 mb-3">
+                    <p>Arjaan Park Riyadh Hotel</p>
+                    <titleEn class="d-none">Arjaan Park Riyadh Hotel</titleEn>
+                    <addressEn class="d-none">Riyadh - Riyadh Dist - Riyadh Street</addressEn>
+                    <phoneEn class="d-none">0555089639</phoneEn>
+                </div>
+                <div class="branch text-center d-flex justify-content-start align-items-center p-1 mb-3">
+                    <p>Arjaan Park Jeddah Hotel</p>
+                    <titleEn class="d-none">Arjaan Park Jeddah Hotel</titleEn>
+                    <addressEn class="d-none">Jeddah - Al-Janoub Dist - Al-Janoub Street</addressEn>
+                    <phoneEn class="d-none">0555089640</phoneEn>
+                </div>
+            </div>
+            <div id="location-details" class="col-8 col-lg-4">
+                <div class="mb-5 mt-3">
+                    <h4 id="branch-name" class="fw-light">Arjaan Park Al-Aziziyah Hotel</h4>
+                    <hr class="m-auto w-50">
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex gap-4 align-items-start">
+                        <i class="fa-solid fa-diamond-turn-right fa-flip-horizontal fa-2x"></i>
+                        <p id="branch-address">Riyadh - Al-Shifa Dist - Al-Shabab Street</p>
+                    </div>
+                    <hr class="m-auto">
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex gap-4 align-items-start mb-2">
+                        <i class="fa-solid fa-headphones-simple fa-2x"></i>
+                        <p id="branch-phone">0555089637</p>
+                    </div>
+                    <hr class="m-auto">
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex gap-4 align-items-start mb-2">
+                        <i class="fa-regular fa-calendar-check fa-2x"></i>
+                        <p class="text-decoration-underline">New Booking</p>
+                    </div>
+                    <hr class="m-auto">
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex gap-4 align-items-start mb-2">
+                        <i class="fa-regular fa-newspaper fa-2x"></i>
+                        <p class="text-decoration-underline">Details</p>
+                    </div>
+                    <hr class="m-auto">
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <hr class="m-auto my-5" style="width: 40%;">
+
+    <!-- SPONSORS SLIDER -->
+    <!-- Consider Animation is Required -->
+    <h2 class="text-center mb-3 text-black fw-lighter">Available in</h2>
+    <div id="sponsors" class="d-flex justify-content-evenly align-items-center">
+        <div id="sponsors-container" class="d-flex justify-content-between">
+            <div class="sponsor-item animate">
+                <a href="">
+                    <img src="../images/booking-com.png" alt="">
+                </a>
+            </div>
+            <div class="sponsor-item animate">
+                <a href="">
+                    <img src="../images/gather-crop.png" alt="">
+                </a>
+            </div>
+            <div class="sponsor-item animate">
+                <a href="">
+                    <img src="../images/almatar-crop.png" alt="">
+                </a>
             </div>
         </div>
     </div>
