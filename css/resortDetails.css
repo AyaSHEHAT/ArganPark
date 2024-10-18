@@ -69,7 +69,7 @@ header h1 {
 .services {
     color: #848EB2;
     font-weight: lighter;
-    font-size: 100% ;
+    font-size: 100%;
     text-align: center;
     font-weight: 400;
 }
@@ -90,34 +90,38 @@ header h1 {
 
 .hotel-name p {
     color: #848EB2;
-   
+
 }
 
 .hotel-name {
     border-bottom: 1px solid #848EB2;
 
 }
-nav.sideLink{
+
+nav.sideLink {
     box-shadow: none;
 }
+
 nav.sideLink {
     box-shadow: none;
     color: #848EB2;
     font-weight: bolder;
     font-size: 1.5rem;
 }
-.item_active:hover, .item_active.active{
+
+.item_active:hover,
+.item_active.active {
     color: #b3952b;
 }
 
 .search-container {
     display: flex;
     align-items: center;
-    background-color: #F0F0F0; 
+    background-color: #F0F0F0;
     border-radius: 25px;
     padding: 10px 20px;
-    width: 100%; 
-    max-width: 600px; 
+    width: 100%;
+    max-width: 600px;
 }
 
 .search-container input {
@@ -126,11 +130,11 @@ nav.sideLink {
     flex-grow: 1;
     background-color: transparent;
     font-size: 16px;
-    color: #6F7691; 
+    color: #6F7691;
 }
 
 .search-container input::placeholder {
-    color: #6F7691; 
+    color: #6F7691;
 }
 
 .search-container button {
@@ -141,40 +145,42 @@ nav.sideLink {
 }
 
 .search-container button i {
-    font-size: 20px; 
-    color: #6F7691; 
+    font-size: 20px;
+    color: #6F7691;
 }
 
 @media (min-width: 992px) {
-    .Sliderimgs.mx-xl-5{
+    .Sliderimgs.mx-xl-5 {
         margin-right: 5.5rem !important;
         margin-left: 5.5rem !important;
-    
+
     }
 }
 
 
 
-input.form-control{
+input.form-control {
     background-color: #F3F5FC !important;
     border-color: #F3F5FC !important;
 }
-.resorts-card .card-text{
+
+.resorts-card .card-text {
     color: #838DB1;
 }
-.resorts-card .card-text>small{
+
+.resorts-card .card-text>small {
     color: #B9BFD5;
 }
- 
+
 .new-nav a {
-  color: gray;
+    color: gray;
 }
 
 .new-nav a:active,
 .new-nav a:hover,
 a.activeSideLink {
-  color: #b3952b;
-  ;
+    color: #b3952b;
+    ;
 }
 
 #sliderOfCards-container {
@@ -182,36 +188,37 @@ a.activeSideLink {
     overflow: hidden;
     scroll-behavior: smooth;
     position: relative;
-  }
+}
 
-  .slider-card {
-    flex: 0 0 25%; 
+.slider-card {
+    flex: 0 0 25%;
     max-width: 25%;
-    padding: 0 5px; 
+    padding: 0 5px;
     box-sizing: border-box;
     box-shadow: none;
-  }
-  .slider-card .card{
-    border: 1px solid white;
-  }
+}
 
-  .slider-card img {
+.slider-card .card {
+    border: 1px solid white;
+}
+
+.slider-card img {
     width: 100%;
     height: auto;
     object-fit: cover;
-  }
+}
 
-  #slider-controls {
+#slider-controls {
     position: absolute;
     top: 50%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
-    pointer-events: none; 
-  }
+    pointer-events: none;
+}
 
-  #slider-controls button {
+#slider-controls button {
     background-color: rgba(180, 177, 177, 0.8);
     border: none;
     font-size: 24px;
@@ -219,31 +226,33 @@ a.activeSideLink {
     border-radius: 50%;
     width: 40px;
     height: 40px;
-  }
+}
 
-  #slider-controls button:hover {
+#slider-controls button:hover {
     background-color: rgb(153, 149, 149);
-  }
+}
 
-  #slider-controls button {
+#slider-controls button {
     user-select: none;
-  }
+}
 
-  .new-nav a {
+.new-nav a {
     color: gray;
-  }
-  
-  .new-nav a:active,
-  .new-nav a:hover,
-  a.activeSideLink {
+}
+
+.new-nav a:active,
+.new-nav a:hover,
+a.activeSideLink {
     color: #b3952b !important;
     ;
-  }
-  .accordion-button {
+}
+
+.accordion-button {
     color: #b3952b !important;
-  }
-  .accordion-button::after {
+}
+
+.accordion-button::after {
     margin-left: 0 !important;
     margin-right: auto !important;
     color: #b3952b !important;
-  }
+}
