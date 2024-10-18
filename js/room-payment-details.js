@@ -1,19 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    //catch all texts that will be changed
     let totalNights;
     let dayPrice = 255;
     let advancedPayment = dayPrice;
-    
-    
     let totalCost = document.getElementById('totalCost');
     let totalCost2 = document.getElementById('totalCost2');
     let nightPriceDiv = document.getElementById('night-price');
     let nightPriceDiv2 = document.getElementById('night-price2');
-
+    const payAll = document.getElementById('payAll');
+    const payPart = document.getElementById('payPart');
+    const paymentOptions = document.querySelectorAll('.payment input[type="radio"]');
+    const paymentOptionTest = document.querySelectorAll('.payment a');
+    const choseSpan = document.getElementById('chose');
     let advancedPaymentSpan = document.getElementsByClassName('advanced-payment');
     
-    // Get the input elements
     const arrivalDateInput = document.getElementById('arrivalDate');
     const departuralDateInput = document.getElementById('departuralDate');
     const nightNumbers = document.getElementsByClassName('nightNumbers');
@@ -60,7 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
         
     }
     
-    // Event listener for when the arrival date changes
     arrivalDateInput.addEventListener('change', () => {
         const arrivalDate = new Date(arrivalDateInput.value);
         const minDepartureDate = new Date(arrivalDate);
@@ -80,13 +79,12 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('after:', totalNights);
 
     function updateAllNumbers() {
-        //
-        // dayPriceDiv.innerText = dayPrice + ' ريال سعودي / ليلة';
+     
         nightPriceDiv.innerText = dayPrice;
         nightPriceDiv2.innerText = dayPrice;
         //
         totalCost.innerText = totalNights * dayPrice + ' SAR';
-        totalCost2.innerText = totalNights * dayPrice + ' SAR';
+        totalCost2.innerText = totalNights * dayPrice;
         //
         let advancedPaymentArray = Array.from(advancedPaymentSpan);
         advancedPaymentArray.forEach(advancedPaymentSpan => {
@@ -94,7 +92,22 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
     }
-
-
+        function handlePaymentSelection() {
+            if (payPart.checked) {
+                paymentOptionTest.forEach(test => {
+                    (test.id === 'cashback' || test.id === 'stcpay')?test.removeAttribute('disabled'): test.setAttribute('disabled','disabled');
+                })
+                choseSpan.textContent = nightPriceDiv2.textContent;
+            } else if (payAll.checked) {
+                paymentOptionTest.forEach(option => {
+                    option.removeAttribute('disabled')
+                });
+                choseSpan.textContent = totalCost2.textContent;
+            }
+        }
+        departuralDateInput.addEventListener('change', handlePaymentSelection);
+        payAll.addEventListener('change', handlePaymentSelection);
+        payPart.addEventListener('change', handlePaymentSelection);
+        handlePaymentSelection();
 
 });
