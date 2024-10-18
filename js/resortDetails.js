@@ -79,5 +79,47 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+const body = document.querySelector('body');
+if (body.getAttribute('dir') !== 'rtl') {
+  const englishDefaultContent = `
+    <h5>Apartment Details</h5>
+    <p> -Large bedroom with a double bed and a side sitting area attached with a bathroom</p>
+    <p> -Bedroom with a double bed equipped with towels and a side sitting area</p>
+    <p> -Bathroom equipped with personal care items</p>
+    <p> -All rooms are fully decorated with luxurious furniture</p>
+  `;
+
+  describtionDiv.innerHTML = englishDefaultContent;
+  links.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      links.forEach(l => l.classList.remove('activeSideLink'));
+      this.classList.add('activeSideLink');
+      if (this.textContent === 'Specifications') {
+        describtionDiv.innerHTML = englishDefaultContent;
+      } else if (this.textContent === 'Facilities') {
+        describtionDiv.innerHTML = `
+          <h5>Apartment Facilities</h5>
+          <p> -Swimming pool</p>
+          <p> -Fully equipped gym</p>
+          <p> -Free parking</p>
+        `;
+      } else if (this.textContent === 'Cancellation Policy') {
+        describtionDiv.innerHTML = `
+          <h5>Cancellation Policy</h5>
+          <p> -Booking can be canceled without cost 24 hours before arrival</p>
+          <p> -Cancellation after 24 hours will incur a 50% cancellation fee</p>
+        `;
+      } else if (this.textContent === 'Terms') {
+        describtionDiv.innerHTML = `
+          <h5>Terms</h5>
+          <p> -Pets are not allowed</p>
+          <p> -Smoking is prohibited inside the apartment</p>
+          <p> -The minimum age for booking is 18 years</p>
+        `;
+      }
+    });
+  });
+}
 });
 
