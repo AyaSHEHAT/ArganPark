@@ -1,0 +1,75 @@
+
+:root{
+    --main-gray:#848eb2;
+}
+p
+{
+    color:var(--main-gray);
+}
+
+input:not(:last-child)
+{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid var(--main-gray);
+    padding-bottom: 6px; 
+    width:100%;
+}
+
+/* #country
+{
+    
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid var(--main-gray);
+    padding-bottom: 6px; 
+    width:100%;
+} */
+#country-code
+{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid var(--main-gray);
+    padding-bottom: 6px; 
+    margin-right: 2px;
+    width:30%;
+}
+.mobile
+{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid var(--main-gray);
+    padding-bottom: 6px; 
+    margin-right: 20px;
+    width:60%;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 
+        0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+
