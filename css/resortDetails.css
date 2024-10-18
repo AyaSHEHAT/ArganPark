@@ -1,7 +1,6 @@
 .imgs img {
     max-width: 43%;
     object-fit: cover;
-
     border-radius: 10px;
 }
 
@@ -11,7 +10,6 @@
 }
 
 .Sliderimgs {
-    /* width: 540px; */
     overflow: hidden;
     background: white;
 }
@@ -27,9 +25,10 @@ header h1 {
     font: 100 60px/1.5 Helvetica, Verdana, sans-serif;
 }
 
-/*photobanner*/
 .photobanner__wrap {
     display: flex;
+    border-bottom: 1px solid #848EB2;
+
 }
 
 .photobanner__wrap:hover .photobanner {
@@ -66,17 +65,12 @@ header h1 {
     margin-left: 5.5rem !important;
 }
 
-/* .mx-5{
-    margin-right: 1.39rem !important;
-    margin-left: 1.39rem !important;
-    
-} */
+
 .services {
     color: #848EB2;
     font-weight: lighter;
-    font-size: 1.5rem;
+    font-size: 100% ;
     text-align: center;
-    border-bottom: 1px solid #848EB2;
     font-weight: 400;
 }
 
@@ -96,10 +90,7 @@ header h1 {
 
 .hotel-name p {
     color: #848EB2;
-    /* font-weight: lighter;
-    font-size: 1.5rem;
-    text-align: center;
-    font-weight: 400; */
+   
 }
 
 .hotel-name {
@@ -117,17 +108,16 @@ nav.sideLink {
 }
 .item_active:hover, .item_active.active{
     color: #b3952b;
-    /* text-decoration: underline; */
 }
 
 .search-container {
     display: flex;
     align-items: center;
-    background-color: #F0F0F0; /* Light gray background */
+    background-color: #F0F0F0; 
     border-radius: 25px;
     padding: 10px 20px;
-    width: 100%; /* Full width but can be adjusted */
-    max-width: 600px; /* Optional: Limits width on larger screens */
+    width: 100%; 
+    max-width: 600px; 
 }
 
 .search-container input {
@@ -136,11 +126,11 @@ nav.sideLink {
     flex-grow: 1;
     background-color: transparent;
     font-size: 16px;
-    color: #6F7691; /* Same color as the text in the image */
+    color: #6F7691; 
 }
 
 .search-container input::placeholder {
-    color: #6F7691; /* Placeholder color */
+    color: #6F7691; 
 }
 
 .search-container button {
@@ -151,8 +141,8 @@ nav.sideLink {
 }
 
 .search-container button i {
-    font-size: 20px; /* Adjust size of the FontAwesome icon */
-    color: #6F7691; /* Same color as the text in the image */
+    font-size: 20px; 
+    color: #6F7691; 
 }
 
 @media (min-width: 992px) {
@@ -162,15 +152,98 @@ nav.sideLink {
     
     }
 }
-.responsiveSearch{
-    display: none;
+
+
+
+input.form-control{
+    background-color: #F3F5FC !important;
+    border-color: #F3F5FC !important;
 }
-@media (max-width: 991px) {
-    .search{
-        display: none;
-    }
-    .responsiveSearch{
-        display: block;
-    }
+.resorts-card .card-text{
+    color: #838DB1;
+}
+.resorts-card .card-text>small{
+    color: #B9BFD5;
+}
+ 
+.new-nav a {
+  color: gray;
 }
 
+.new-nav a:active,
+.new-nav a:hover,
+a.activeSideLink {
+  color: #b3952b;
+  ;
+}
+
+#sliderOfCards-container {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+  }
+
+  .slider-card {
+    flex: 0 0 25%; 
+    max-width: 25%;
+    padding: 0 5px; 
+    box-sizing: border-box;
+    box-shadow: none;
+  }
+  .slider-card .card{
+    border: 1px solid white;
+  }
+
+  .slider-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  #slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none; 
+  }
+
+  #slider-controls button {
+    background-color: rgba(180, 177, 177, 0.8);
+    border: none;
+    font-size: 24px;
+    pointer-events: all;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+  #slider-controls button:hover {
+    background-color: rgb(153, 149, 149);
+  }
+
+  #slider-controls button {
+    user-select: none;
+  }
+
+  .new-nav a {
+    color: gray;
+  }
+  
+  .new-nav a:active,
+  .new-nav a:hover,
+  a.activeSideLink {
+    color: #b3952b !important;
+    ;
+  }
+  .accordion-button {
+    color: #b3952b !important;
+  }
+  .accordion-button::after {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    color: #b3952b !important;
+  }
