@@ -11,7 +11,7 @@ footer hr{
 
 footer #mobile p{
     font-size: 1.5rem;
-    font-weight: bolder;
+    font-weight: lighter;
 }
 footer #mobile p:first-child{
     font-weight: 400;
@@ -29,15 +29,7 @@ footer #links{
 footer #links a{
     margin: 0 1rem;
     font-size: 1.5rem;
-    font-weight: bold;
 }
 footer #links a:hover{
     color: #b3952b;
 }
-/* footer #social-media a{
-    width: 3rem;
-    text-align: center;
-    padding: 0.5rem;
-    border: 1px solid black;
-    border-radius: 50%;
-} */
