@@ -218,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 label.style.color = "#fff";
             } else {
                 label.style.backgroundColor = "transparent";
-                label.style.color = "#000";
+                label.style.color = "#848eb2";
             }
         });
     }
@@ -276,5 +276,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    
 });

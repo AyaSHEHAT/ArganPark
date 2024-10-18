@@ -4,58 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Revision</title>
+    <title>Book a Room</title>
     <link rel="stylesheet" href="/css/all.min.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/flatpickr.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/Payment_revision.css">
-    <link rel="stylesheet" href="/css/card.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/footer.css">
-
-    <style>
-        .with-navbar {
-            display: flex;
-
-        }
-
-        .accordion {
-            border: none;
-            box-shadow: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        @media(max-width:450) {
-            .with-navbar {
-                display: none;
-            }
-
-            .accordion {
-                display: flex;
-                flex-direction: column;
-            }
-        }
-
-        .discount {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-        }
-
-        .controls {
-            display: flex;
-            align-items: space-evenly;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/Payment_revision.css">
+    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="/css/resorts.css">
+    <link rel="stylesheet" href="/css/resortDetails.css">
+    <link rel="stylesheet" href="/css/roomDetails.css">
 </head>
 
 <body class="container-fluid">
 
     <!-- Navbar -->
-    <nav class="navbar mainNav navbar-expand-lg navbar-light bg-light mb-3">
+    <nav class="navbar mainNav navbar-expand-lg navbar-light bg-light">
         <!-- Toggler for small screens -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -341,180 +307,392 @@
         </div>
     </div>
 
-    <!-- Content -->
-    <div class="row container-fluid">
-        <div class="col 10 col-lg-6">
 
+    <!-- Resort Details -->
+
+    <div class="row container-fluid mb-3">
+        <div class="col col-lg-6">
             <div class="revision">
-                <h1 class="golden-word">Revision</h1>
-                <hr>
-                <h3 class="golden-word">Room with Twin Bed..</h3>
+                <section class="">
+                    <div class="container header-imgs">
 
-                <div
-                    class="container d-flex flex-column align-items-start flex-lg-row justify-content-between align-items-lg-center">
-                    <p class="gray-word"><i class="fa-solid fa-location-dot text-black-50 "></i> Riyadh - Al-Aziziyah
-                        Dist - Al-Shabab Street </p>
-                    <p><i class="fa-solid fa-user icon-color text-black-50"></i>Up to 2 people</p>
+                        <div class="imgs d-flex justify-content-center mx-0 mx-sm-0 ">
+                            <img class="ms-2" src="/images/El'azizia.jpg" alt="">
+                            <img class="me-2" src="/images/img1.jpg" alt="">
+                        </div>
 
-                </div>
-                <div
-                    class="container d-flex flex-column  align-items-start flex-lg-row justify-content-between align-items-lg-center">
-                    <p><i class="fa-solid fa-door-open text-black-50"></i>Unit area 40m</p>
+                        <div class="Sliderimgs  mx-0 mx-sm-0 mx-md-5">
+                            <div id="sliderOfCards" class="mb-3  position-relative">
+                                <div id="sliderOfCards-container" class="row">
+                                    <div class="col-12 col-lg-3 slider-card">
+                                        <div class="card p-2">
+                                            <img src="../images/hotelDetails1.jpeg" class="card-img-top rounded-2"
+                                                alt="...">
 
-                    <p><i class="fas fa-clock text-black-50"></i>24-hour room service</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-3 slider-card">
+                                        <div class="card p-2">
+                                            <img src="../images/hotelDetails2.jpg" class="card-img-top rounded-2"
+                                                alt="...">
 
-                </div>
-                <hr>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-3 slider-card">
+                                        <div class="card p-2">
+                                            <img src="../images/hotelDetails3.jpg" class="card-img-top rounded-2"
+                                                alt="...">
 
-                <div class="conditions">
-                    <h1>Conditions</h1>
-                    <p>Booking Requirements (by host)</p>
-                    <p>1- Adhere to the indicated exit time</p>
-                    <p>2- Maximum 3 people allowed to enter </p>
-                    <p>3- No animals</p>
-                    <p>4- hookah is strictly prohibited and smoking is only allowed</p>
-                </div>
-                <div class="cancel">
-                    <h1>Cancellation Policy</h1>
-                    <p>Cancellation and Refund Policy</p>
-                    <p>You can cancel or postpone your booking for free before 4/7/2027</p>
-                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-3 slider-card">
+                                        <div class="card p-2 ">
+                                            <img src="../images/hotelDetails1.jpeg" class="card-img-top rounded-2"
+                                                alt="...">
 
-            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-3 slider-card">
+                                        <div class="card p-2 ">
+                                            <img src="../images/hotelDetails7.jpg" class="card-img-top rounded-2"
+                                                alt="...">
 
-            <div class="payment">
-                <h1 class="golden-word">Payment</h1>
-                <div class="buttons">
-                    <button type="button" class="btn goldenbtn">CASHPARK</button>
-                    <button type="button" class="btn whitebtn">Use wallet balance</button>
-                </div>
-                <label> <input type="radio" name="payment" value="VISA" id="VISA"><img src="/images/VISA.jfif">Pay with
-                    card
-                </label>
-                <hr>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-3 slider-card">
+                                        <div class="card p-2 ">
+                                            <img src="../images/hotelDetails6.jpg" class="card-img-top rounded-2"
+                                                alt="...">
 
-                <label> <input type="radio" name="payment" value="tabby" id="tabby"><img
-                        src="/images/tabby(1)(1).png">Pay in 4 interest-free installments
-                </label>
-                <hr>
-                <label> <input type="radio" name="payment" value="tamara" id="tamara"><img
-                        src="/images/tamara(1)(1).png">Pay in 3 interest-free installments
-                </label>
-                <hr>
-                <label> <input type="radio" name="payment" value="stcpay" id="stcpa"><img src="/images/stc.png">Pay With
-                    STC Pay
-                </label>
-                <hr>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-3 slider-card">
+                                        <div class="card p-2 ">
+                                            <img src="../images/hotelDetails7.jpg" class="card-img-top rounded-2"
+                                                alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="slider-controls">
+                                    <button id="prev" class="btn btn-outline-secondary"><i
+                                            class="fas fa-chevron-right"></i></button>
+                                    <button id="next" class="btn btn-outline-secondary"><i
+                                            class="fas fa-chevron-left"></i></button>
+                                </div>
+
+                            </div> <!-- end of slider -->
+
+                            <div class="photobanner__wrap text-center">
+                                <div class="photobanner services  w-100">
+
+                                    <div class=" col-lg-1 mb-3">
+                                        <i class="fa-solid fa-wifi"></i> <br>
+                                        <span>Wi-Fi</span>
+                                    </div>
+                                    <div class=" col-2 mb-3">
+                                        <i class="fa-solid fa-p"></i> <br>
+                                        <span>مواقف</span>
+                                    </div>
+                                    <div class=" col-1 mb-3">
+                                        <i class="fa-solid fa-elevator"></i> <br>
+                                        <span>مصعد</span>
+                                    </div>
+                                    <div class=" col-2 mb-3">
+                                        <i class="fa-solid fa-wheelchair"></i> <br>
+                                        <span>مواقف خاصة</span>
+                                    </div>
+                                    <div class=" col-2 mb-3">
+                                        <i class="fa-solid fa-cart-flatbed-suitcase"></i> <br>
+                                        <span>تخزين الأمتعة</span>
+                                    </div>
+                                    <div class=" col-2 mb-3">
+                                        <i class="fa-solid fa-bell-concierge"></i> <br>
+                                        <span>خدمة الغرف</span>
+                                    </div>
+                                    <div class=" col-2 mb-3">
+                                        <i class="fa-solid fa-person-shelter"></i> <br>
+                                        <span>استقبال 24 ساعة</span>
+                                    </div>
+                                    <div class=" col-1 mb-3">
+                                        <i class="fa-solid fa-wifi"></i> <br>
+                                        <span>Wi-Fi</span>
+                                    </div>
+                                    <div class=" col-2 mb-3">
+                                        <i class="fa-solid fa-p"></i> <br>
+                                        <span>مواقف</span>
+                                    </div>
+                                    <div class=" col-1 mb-3">
+                                        <i class="fa-solid fa-elevator"></i> <br>
+                                        <span>مصعد</span>
+                                    </div>
+                                    <div class=" col-2 mb-3">
+                                        <i class="fa-solid fa-wheelchair"></i> <br>
+                                        <span>مواقف خاصة</span>
+                                    </div>
+                                    <div class=" col-2 mb-3">
+                                        <i class="fa-solid fa-cart-flatbed-suitcase"></i> <br>
+                                        <span>تخزين الأمتعة</span>
+                                    </div>
+                                    <div class=" col-2 mb-3 text">
+                                        <i class="fa-solid fa-bell-concierge"></i> <br>
+                                        <span>خدمة الغرف</span>
+                                    </div>
+                                    <div class=" col-2 mb-3">
+                                        <i class="fa-solid fa-person-shelter"></i> <br>
+                                        <span>استقبال 24 ساعة</span>
+                                    </div>
+
+                                </div>
+                            </div> <!-- end of wraper -->
+
+
+                            <h3 class="golden-word">غرفة بسرير مزدوج</h3>
+                            <div class="d-flex justify-content-between">
+                                <div class="container d-flex flex-column align-items-start justify-content-between">
+                                    <p class="gray-word"><i class="fa-solid fa-location-dot"></i> الرياض-حى
+                                        العزيزية
+                                        -شارع الشباب </p>
+                                    <p><i class="fas fa-clock text-black-50"></i> خدمة الغرف على مدار 24 ساعة </p>
+                                    <p><i class="fa-solid fa-door-open text-black-50"></i> مساحة الوحدة 40م</p>
+                                </div>
+                                <div class="bg-danger rounded-2 text-light fw-bold px-4"
+                                    style="height: fit-content; min-width: max-content;">
+                                    خصم <span>25%</span>
+                                </div>
+                            </div>
+
+                        </div> <!-- end of Sliderimgs -->
+
+                        <div class="container-fluid my-4" style="max-width: 1200px;">
+                            <div class="sidelinks">
+                                <div class="accordion accordion-flush d-lg-none" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <div class="left-toggle">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                مواصفات
+                                            </button>
+                                        </div>
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+
+                                                <h5>تفاصيل الشقة</h5>
+                                                <p> -غرفة نوم كبيرة بسرير مزدوج و جلسة جانبية مرفقة بدورة مياه</p>
+                                                <p> -غرفة نوم بسرير مزدوج مزودة بالمناشف و مجهزه بجلسة جانبيه</p>
+                                                <p> -دورة مياه مجهزة بمستلزمات العناية الشخصية</p>
+                                                <p> -جميع الغرف مكتملة بالديكورات و الآثاث الفاخر</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                سياسة الالغاء
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <div class="cancel">
+
+                                                    <h5>سياسة الإلغاء</h5>
+                                                    <p> -يمكن إلغاء الحجز بدون تكلفة قبل 24 ساعة من الوصول</p>
+                                                    <p> -إلغاء بعد 24 ساعة يترتب عليه رسوم إلغاء بنسبة 50%</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h1 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                                مرافق
+                                            </button>
+                                        </h1>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingThree"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <h5>مرافق الشقة</h5>
+                                                <p> -بركة سباحة</p>
+                                                <p> -صالة رياضية مجهزة بالكامل</p>
+                                                <p> -مواقف سيارات مجانية</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingFour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                                aria-expanded="false" aria-controls="flush-collapseFour">
+                                                الشروط
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <div class="conditions">
+                                                    <h5>الشروط</h5>
+                                                    <p> -الحيوانات الأليفة غير مسموحة</p>
+                                                    <p> -التدخين ممنوع داخل الشقة</p>
+                                                    <p> -الحد الأدنى للعمر للحجز هو 18 سنة</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <nav class="navbar navbar-expand-lg new-nav d-s-none d-lg-flex"
+                                    style="box-shadow: none;">
+                                    <div class="container-fluid">
+                                        <div class="collapse navbar-collapse" id="navbarNav">
+                                            <ul class="navbar-nav nav-fill w-100">
+                                                <li class="nav-item">
+                                                    <a class="nav-link activeSideLink" href="#">المواصفات</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#revision">مرافق</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#cancel">سياسة الالغاء</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#conditions">الشروط</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+
+                                <div class="describtion d-none d-sm-none d-md-none d-lg-block m-4 px-5"
+                                    id="describtion">
+                                </div> <!-- content -->
+
+                            </div>
+
+                        </div> <!-- end of sidelinks -->
+
+                </section>
             </div>
         </div>
-
         <div class="card mx-auto col-10 col-lg-5">
             <div class="price-info mt-4" style="text-align: start; margin: 0 auto;">
                 <div class="rate-per-night">
-                    <p class="ratepernight"><span id="night-price">255</span> SAR/night</p>
+                    <p class="ratepernight"><span id="night-price">255</span> SAR/ليلة</p>
                 </div>
-
                 <div class="total-cost">
-                    <p>Total <span class="nightNumbers">3</span> night/s
+                    <p>إجمالي <span class="nightNumbers">٣</span> ليلة
                         <span style="color: #b3952b; font-size: 2rem; font-weight: 500;" id="totalCost">SAR 765</span>
-                        Inclusive of VAT
+                        شامل ضريبة القيمة المضافة
                     </p>
                 </div>
             </div>
-
             <hr class="mx-auto" style="width:90%;">
             <div class="d-flex flex-column">
-                <p class="d-flex justify-content-end">You can edit the date</p>
+                <p class="d-flex justify-content-end">بإمكانك تعديل التاريخ</p>
                 <div class=" input d-flex justify-content-between align-items-center pt-1 mb-2" style="width: 100%;">
                     <div class="arrival-date px-4" style="width: 40%;">
                         <label class="form-label" for="arrivalDate" style="display: block; margin-bottom: 5px;">
-                            Arrival Date
+                            موعد الوصول
                         </label>
-                        <input class="form-control text-center" type="date" name="arrivalDate" id="arrivalDate" required style="padding: 5px; border-radius: 5px; 
+                        <input class="form-control" type="date" name="arrivalDate" id="arrivalDate" required style="padding: 5px; border-radius: 5px; 
                                 border: 1px solid #ccc; margin-bottom: 10px;" />
                     </div>
-
                     <div class="departural-date px-4" style="width: 40%;">
                         <label class="form-label" for="departuralDate" style="display: block; margin-bottom: 5px;">
-                            Departure Date
+                            موعد المغادرة
                         </label>
-                        <input class="form-control text-center" type="date" name="departuralDate" id="departuralDate" required
+                        <input class="form-control" type="date" name="departuralDate" id="departuralDate" required
                             style="padding: 5px; border-radius: 5px; 
                                 border: 1px solid #ccc; margin-bottom: 13px;" />
                     </div>
-
                     <div class="nights" style="width: 10%;">
-                        <span class="nightNumbers">1</span> night/s
+                        <span class="nightNumbers">1</span> ليلة
                     </div>
                 </div>
             </div>
             <hr class="mx-auto" style="width:90%;">
-
             <div class="arrival-departural mx-5">
-
                 <div class="d-flex justify-content-between align-items-center">
-                    <p>Arrival Time</p>
-                    <p>Departure Time</p>
-
+                    <p>وقت الوصول</p>
+                    <p>وقت المغادرة</p>
                 </div>
                 <div class="d-flex justify-content-between align-items-center">
-                    <p style="color:black;">4:00 pm</p>
-                    <p style="color:black;">2:00 pm</p>
-
+                    <p style="color:black;">4:00 مساءً</p>
+                    <p style="color:black;">2:00 مساءً</p>
                 </div>
-
             </div>
+
             <hr class="mx-auto" style="width:90%;">
-
-            <p class="text-center">You will pay now <span class="advanced-payment">255</span> SAR</p>
-            <p class="text-center text-black" style="font-size: 1.5rem;">Booking Summary</p>
-
-            <div class="summary-details mx-5">
-
-                <div class="d-flex justify-content-between align-items-center">
-                    <p>night/s</p>
-                    <p class="nightNumbers">3</p>
-
-                </div>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p>You will pay now <span class="advanced-payment">255</span> SAR</p>
-                    <p class="text-success">-<span class="advanced-payment">255</span>
-                        SAR</p>
-
-                </div>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p>Discount Value</p>
-                    <p class="text-success">-<span id="discount-value">100</span> SAR</p>
-
-                </div>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p>You will pay on arrival</p>
-                    <p><span id="complementary">100</span> SAR</p>
-
+            <p class="text-black" style="font-size: 1.5rem;">تأكيد الحجز</p>
+            <form method="post" action="/html/Payment_revision-ar.html">
+                <div class="mb-2">
+                    <label>
+                        <!-- دفع عربون <span id="night-price2"></span> -->
+                        <input class="form-check-input" type="radio" name="pay" id="payPart" checked>
+                        <span class="chooseAmount">دفع عربون <span id="night-price2">30</span> SAR/ليلة</span>
+                    </label>
                 </div>
 
+                <div class="mb-2">
+                    <label>
+                        <input class="form-check-input" type="radio" name="pay" id="payAll" value="">
+                        <span class="chooseAmount">دفع كامل المبلغ <span id="totalCost2">30</span> SAR/ليلة</span>
+                    </label>
+                </div>
+                <hr class="mx-auto" style="width:90%;">
+                <div class="text-center mb-2">
+                    <button type="button" class="btn checkoutBtn w-50">احجز </button>
+                </div>
+            </form>
+            <div class="d-flex mx-5 justify-content-center ">
+                <p class="">ستدفع الان</p>
+                <p><span id="chose">689</span> ريال</p>
             </div>
 
+            <div class="payment">
+                <a href="#" id="cashback">
+                    <div>
+                        <div class="d-inline-block cashback m-1 p-2 rounded-2">Cashback</div> احصل على كاش باك في
+                        المحفظة ، و نقاط على كل ريال تصرفه
+
+                    </div>
+                </a>
+
+                <a href="#" id="tabby">
+                    <div>
+                        <img src="/images/tabby(1)(1).png">قسمها
+                        على 4 دفعات أى فوائد او رسوم
+                    </div>
+                </a>
+                <a href="#" id="tamara">
+                    <div>
+                        <img src="/images/tamara(1)(1).png">
+                        ادفع على 3 دفعات بدون فوائد او رسوم
+                    </div>
+                </a>
+
+                <a href="#" id="stcpay">
+                    <div>
+                        <img src="/images/stc.png"> دفع
+                        بإستخدام
+                    </div>
+                </a>
+
+
+            </div>
             <hr class="mx-auto" style="width:100%;">
 
-            <div class="total d-flex justify-content-between align-items-center mx-5">
-                <p class="text-black">Total</p>
-                <p><span id="net">689</span> SAR</p>
-            </div>
-
-            <hr class="mx-auto" style="width:100%;">
-
-
-            <div class="discount d-flex justify-content-between align-items-center mx-5 mb-4 py-3">
-                <p class="text-black">Discount Code</p>
-
-                <div class="controls d-flex justify-content-center gap-2">
-                    <input type="text" class="form-control text-success text-center"
-                        style="background-color: #f1f5f8; width:50%; border: none;">
-                    <button type="button" class="btn text-success"
-                        style="background-color: white; border: none; ">Apply</button>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -557,13 +735,11 @@
         </div>
     </footer>
 
-    <script src="/js//payment-revision.js"></script>
     <script src="/js/all.min.js"></script>
-    <script src="/js/flatpickr.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/navbar.js"></script>
+    <script src="/js/flatpickr.js"></script>
     <script>
-        // Initialize flatpickr for arrival and departure dates
         flatpickr("#arrivalDate", {
             dateFormat: "Y-m-d",
         });
@@ -571,6 +747,11 @@
             dateFormat: "Y-m-d",
         });
     </script>
+    <script src="/js/resorts.js"></script>
+    <script src="/js/resortDetails.js"></script>
+    <script src="/js/room-payment-details.js"></script>
+
+
 </body>
 
 </html>

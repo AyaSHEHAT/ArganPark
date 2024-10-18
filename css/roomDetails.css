@@ -1,0 +1,32 @@
+.chooseAmount{
+    color: black;
+}
+
+ button.checkoutBtn{
+    font-family: TajawalRegular;
+    font-size: 25px;
+    letter-spacing: 2px;
+    border-radius: 50px;
+}
+.payment a{
+    color: #838DB1;
+    text-decoration: none;
+    margin: 1px;
+    border: 1px solid #bdc3d8;
+    border-radius: 10px;
+}
+.payment a:hover{
+    color: #bba142;
+    text-decoration: underline;
+}
+.payment a[disabled] {
+    pointer-events: none;
+    color: #838DB1;
+    cursor: default;
+    text-decoration: none;
+}
+.cashback, .cashback:hover{
+    background-color: #bba142 !important;
+    color: white !important;
+    text-decoration: none !important;
+}

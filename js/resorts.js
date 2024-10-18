@@ -8,8 +8,8 @@ flatpickr(arrivalDateInput, {
   dateFormat: 'Y-m-d',
   defaultDate: new Date(),
   minDate: 'today',
-  onChange: function(selectedDates, dateStr, instance) {
-    updateDepartureDate(dateStr);
+  onChange: function(selectedDates) {
+    updateDepartureDate(selectedDates[0]); // Pass the selected arrival date
   }
 });
 
@@ -19,22 +19,23 @@ flatpickr(departuralDateInput, {
   minDate: new Date(Date.now() + 86400000) // Tomorrow
 });
 
-// Function to update the departure date and enforce validation
-function updateDepartureDate(arrivalDate) {
-  const arrival = new Date(arrivalDate);
+function updateDepartureDate(selectedArrivalDate) {
+  const arrival = new Date(selectedArrivalDate);
   const minDeparture = new Date(arrival);
-  minDeparture.setDate(arrival.getDate() + 1);
+  minDeparture.setDate(arrival.getDate() + 1); // Set min departure to 1 day after arrival
 
-  // Update the minimum date for departure
+  // Update the minimum date for departure using flatpickr's instance
   departuralDateInput._flatpickr.set('minDate', minDeparture);
+  
+  // If the current departure date is before the new min departure, update it
   const currentDepartureDate = new Date(departuralDateInput.value);
-
   if (currentDepartureDate <= arrival) {
     departuralDateInput._flatpickr.setDate(minDeparture);
   }
 
   calculateNights();
 }
+
 
 // Function to calculate the number of nights
 function calculateNights() {
@@ -62,6 +63,7 @@ setDefaultDates();
 
 // Event listener to recalculate nights when departure date changes
 departuralDateInput.addEventListener('change', calculateNights);
+
 
 
 

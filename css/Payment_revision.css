@@ -29,35 +29,6 @@
     margin-top: 10px;
 }
 
-/* Existing styles remain unchanged */
-
-/*
-.rivision
-{
-    display: flex;
-    flex-direction: row;
- 
-}
-
-div.right-div p,div.left-div p {
-  color: gray;
-}
-
-.right-div
-{
-    display: flex;
-    flex-direction: column;
-    
-justify-content: flex-end;
-flex:1;
-}
-
-.left-div
-{    display: flex;
-    flex-direction: column;
-    flex:1;
-   */
-
 .conditions p{
     color:gray;
 }
