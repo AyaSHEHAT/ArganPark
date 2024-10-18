@@ -1,0 +1,25 @@
+:root
+{
+    --main-gold:#b3952b;
+    --main-gray:#848eb2;
+}
+body
+{
+    font-family: 'tajwal';
+}
+/* NAV */
+.navbar-nav
+{
+    background-color: white;
+    border-bottom:1px solid lightgray ;
+    font-size:1.3rem ;
+    font-weight: bold;
+}
+.navbar-nav .nav-link.active {
+    color: var(--main-gold);
+    text-decoration: underline;
+background-color: white !important;
+}
+.new-nav a {
+    color: black;
+} 
